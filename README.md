@@ -1,1 +1,1 @@
-# Point-of-interest
+# Points-of-interest
