@@ -8,7 +8,6 @@ from . import LUOGHI_INTERESSE_SICILIA, CLEANED_SICILIA
 cols = [
     "Denominazione",
     "Categoria",
-    "Sottocategoria",
     "Comune",
     "Indirizzo",
     "Latitudine",
@@ -24,6 +23,7 @@ def create_cleaned_sicilia_data():
     data = fix_columns_sicilia(data)
     data = delete_incomplete_data_sicilia(data)
     data = fix_prices_sicilia(data)
+    data = fix_categories_sicilia(data)
     data = fix_addresses_sicilia(data)
     data = retrieve_lat_long_from_addresses_sicilia(data)
     data = fix_phone_numbers_sicilia(data)
@@ -66,14 +66,17 @@ def fix_prices_sicilia(data_frame):
         data_frame["Prezzo"] = data_frame["Prezzo"].astype(float)
     except ValueError:
         print(ValueError)
-    else:
-        mean_price = data_frame["Prezzo"].mean()
-        print(round(mean_price, 2))
-        data_frame = data_frame.query('Prezzo <= @mean_price')
     return data_frame
 
-
-def extract_subcategory_from_category_sicilia(data_frame):
+def fix_categories_sicilia(data_frame):
+    data_frame["Categoria"] = data_frame["Categoria"].map(str.lower)
+    for i in range(data_frame["Categoria"].size):
+        if "musei" in data_frame["Categoria"].values[i] or "antiquaria" in data_frame["Categoria"].values[i]:
+            data_frame["Categoria"].values[i] = "museo, galleria e/o raccolta"
+        elif "archeologiche" in data_frame["Categoria"].values[i]:
+            data_frame["Categoria"].values[i] = "area o parco archeologico"
+        elif "monumentale" in data_frame["Categoria"].values[i]:
+            data_frame["Categoria"].values[i] = "monumento o complesso monumentale"
     return data_frame
 
 def fix_addresses_sicilia(data_frame):
@@ -128,7 +131,6 @@ def fix_phone_numbers_sicilia(data_frame):
         if pattern.match(data_frame["Contatti"].values[i]) == None:
             data_frame["Contatti"].values[i] = "NON REGISTRATO"
         data_frame["Contatti"].values[i] = data_frame["Contatti"].values[i].replace(";", " ")
-
     return data_frame
 
 
