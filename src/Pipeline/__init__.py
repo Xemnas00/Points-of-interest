@@ -12,6 +12,6 @@ POI_STATS = base + "/data/POI_STATS.csv"
 def files_are_present():
     files = [LUOGHI_INTERESSE_SICILIA, LUOGHI_INTERESSE_SARDEGNA, CLEANED_SARDEGNA, CLEANED_SICILIA, POI_SARDEGNA_SICILIA, POI_STATS]
     if all([Path(file).is_file() for file in files]):
-        return True
-    else:
         return False
+    else:
+        return True

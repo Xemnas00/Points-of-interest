@@ -1,6 +1,5 @@
-POI,Total(Sardegna),Total_percentage(Sardegna),Total(Sicilia),Total_percentage(Sicilia),Percentage difference_sardegna_sicilia
-"museo, galleria e/o raccolta",160,75.83%,15,24.19%,91.0%
-area o parco archeologico,30,14.22%,34,54.84%,-13.0%
-monumento o complesso monumentale,20,9.48%,12,19.35%,40.0%
-parco naturalistico,0,0.0%,1,1.61%,-inf%
-Totali,211,,62,,71.0%
+POI,Totali(Sardegna),Percentuali(Sardegna),Prezzo medio in euro(Sardegna),Totali(Sicilia),Percentuali(Sicilia),Prezzo medio in euro(Sicilia)
+"museo, galleria e/o raccolta",257,70.22%,2.74,38,33.93%,3.58
+area o parco archeologico,75,20.49%,3.79,56,50.0%,2.39
+monumento o complesso monumentale,34,9.29%,3.74,18,16.07%,1.83
+Totali,366,,,112,,

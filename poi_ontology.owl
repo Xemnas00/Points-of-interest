@@ -1,5 +1,6 @@
 @prefix : <http://www.semanticweb.org/user/ontologies/2022/7/poi_ontology#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix poi: <http://www.semanticweb.org/user/ontologies/2022/7/poi_ontology#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -15,97 +16,150 @@
 
 ###  http://www.w3.org/2000/01/rdf-schema#label
 rdfs:label rdfs:range xsd:string ;
-           rdfs:domain :Categoria ,
-                       :Comune ,
-                       :Indirizzo ,
-                       :Punto_di_interesse ,
-                       :Regione .
+           rdfs:domain poi:Categoria ,
+                       poi:Comune ,
+                       poi:Indirizzo ,
+                       poi:Punto_di_interesse ,
+                       poi:Regione ,
+                       poi:Statistica .
 
 
 #################################################################
 #    Object Properties
 #################################################################
 
-###  http://www.semanticweb.org/user/ontologies/2022/7/poi_ontology#Latitudine
-:Latitudine rdf:type owl:ObjectProperty ;
-            rdfs:domain :Coordinate ;
-            rdfs:range [ rdf:type owl:Restriction ;
-                         owl:onProperty owl:topDataProperty ;
-                         owl:someValuesFrom xsd:decimal
-                       ] ;
-            rdfs:comment "Latitudine" .
-
-
-###  http://www.semanticweb.org/user/ontologies/2022/7/poi_ontology#Longitudine
-:Longitudine rdf:type owl:ObjectProperty ;
-             rdfs:domain :Coordinate ;
-             rdfs:range [ rdf:type owl:Restriction ;
-                          owl:onProperty owl:topDataProperty ;
-                          owl:someValuesFrom xsd:decimal
-                        ] ;
-             rdfs:comment "Longitudine" .
-
-
 ###  http://www.semanticweb.org/user/ontologies/2022/7/poi_ontology#categoriaDi
-:categoriaDi rdf:type owl:ObjectProperty ;
-             owl:inverseOf :haCategoria ;
-             rdfs:domain :Categoria ;
-             rdfs:range :Punto_di_interesse ;
-             rdfs:comment "Punto di interesse associato alla categoria" .
+poi:categoriaDi rdf:type owl:ObjectProperty ;
+                owl:inverseOf poi:haCategoria ;
+                rdfs:domain poi:Categoria ;
+                rdfs:range poi:Punto_di_interesse ;
+                rdfs:comment "Punto di interesse associato alla categoria" .
 
 
 ###  http://www.semanticweb.org/user/ontologies/2022/7/poi_ontology#coordinateDi
-:coordinateDi rdf:type owl:ObjectProperty ;
-              owl:inverseOf :haCoordinate ;
-              rdfs:domain :Coordinate ;
-              rdfs:range :Indirizzo ;
-              rdfs:comment "Indirizzo a cui si riferiscono le coordinate" .
+poi:coordinateDi rdf:type owl:ObjectProperty ;
+                 owl:inverseOf poi:haCoordinate ;
+                 rdfs:domain poi:Coordinate ;
+                 rdfs:range poi:Indirizzo ;
+                 rdfs:comment "Indirizzo a cui si riferiscono le coordinate" .
 
 
 ###  http://www.semanticweb.org/user/ontologies/2022/7/poi_ontology#haCategoria
-:haCategoria rdf:type owl:ObjectProperty ;
-             rdfs:domain :Punto_di_interesse ;
-             rdfs:range :Categoria ;
-             rdfs:comment "Categoria del punto di interesse" .
+poi:haCategoria rdf:type owl:ObjectProperty ;
+                rdfs:domain poi:Punto_di_interesse ;
+                rdfs:range poi:Categoria ;
+                rdfs:comment "Categoria del punto di interesse" .
 
 
 ###  http://www.semanticweb.org/user/ontologies/2022/7/poi_ontology#haComune
-:haComune rdf:type owl:ObjectProperty ;
-          rdfs:domain :Regione ;
-          rdfs:range :Comune ;
-          rdfs:comment "Comune della Regione" .
+poi:haComune rdf:type owl:ObjectProperty ;
+             rdfs:domain poi:Regione ;
+             rdfs:range poi:Comune ;
+             rdfs:comment "Comune della Regione" .
 
 
 ###  http://www.semanticweb.org/user/ontologies/2022/7/poi_ontology#haCoordinate
-:haCoordinate rdf:type owl:ObjectProperty ;
-              rdfs:domain :Indirizzo ;
-              rdfs:range :Coordinate ;
-              rdfs:comment "Coordinate dell'indirizzo" .
+poi:haCoordinate rdf:type owl:ObjectProperty ;
+                 rdfs:domain poi:Indirizzo ;
+                 rdfs:range poi:Coordinate ;
+                 rdfs:comment "Coordinate dell'indirizzo" .
+
+
+###  http://www.semanticweb.org/user/ontologies/2022/7/poi_ontology#haIndirizzo
+poi:haIndirizzo rdf:type owl:ObjectProperty ;
+                owl:inverseOf poi:indirizzoDi ;
+                rdfs:domain poi:Punto_di_interesse ;
+                rdfs:range poi:Indirizzo ;
+                rdfs:comment "Indirizzo del POI" .
 
 
 ###  http://www.semanticweb.org/user/ontologies/2022/7/poi_ontology#inComune
-:inComune rdf:type owl:ObjectProperty ;
-          rdfs:domain :Indirizzo ;
-          rdfs:range :Comune ;
-          rdfs:comment "Comune dell'indirizzo" .
+poi:inComune rdf:type owl:ObjectProperty ;
+             rdfs:domain poi:Indirizzo ;
+             rdfs:range poi:Comune ;
+             rdfs:comment "Comune dell'indirizzo" .
 
 
 ###  http://www.semanticweb.org/user/ontologies/2022/7/poi_ontology#inRegione
-:inRegione rdf:type owl:ObjectProperty ;
-           rdfs:domain :Comune ,
-                       :Indirizzo ;
-           rdfs:range :Regione ;
-           rdfs:comment "Regione dell'indirizzo" .
+poi:inRegione rdf:type owl:ObjectProperty ;
+              rdfs:domain poi:Comune ,
+                          poi:Indirizzo ;
+              rdfs:range poi:Regione ;
+              rdfs:comment "Regione dell'indirizzo" .
+
+
+###  http://www.semanticweb.org/user/ontologies/2022/7/poi_ontology#indirizzoDi
+poi:indirizzoDi rdf:type owl:ObjectProperty ;
+                rdfs:domain poi:Indirizzo ;
+                rdfs:range poi:Punto_di_interesse ;
+                rdfs:comment "POI che si trova a quest'indirizzo" .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.semanticweb.org/user/ontologies/2022/7/poi_ontology#latitudine
+poi:latitudine rdf:type owl:DatatypeProperty ;
+               rdfs:domain poi:Coordinate ;
+               rdfs:range xsd:decimal ;
+               rdfs:comment "Latitudine" .
+
+
+###  http://www.semanticweb.org/user/ontologies/2022/7/poi_ontology#longitudine
+poi:longitudine rdf:type owl:DatatypeProperty ;
+                rdfs:domain poi:Coordinate ;
+                rdfs:range xsd:decimal ;
+                rdfs:comment "Longitudine" .
+
+
+###  http://www.semanticweb.org/user/ontologies/2022/7/poi_ontology#percentuale_sardegna
+poi:percentuale_sardegna rdf:type owl:DatatypeProperty ;
+                         rdfs:domain poi:Statistica ;
+                         rdfs:range xsd:decimal ;
+                         rdfs:comment "Percentuale POI sardegna per tipo sul totale" .
+
+
+###  http://www.semanticweb.org/user/ontologies/2022/7/poi_ontology#percentuale_sicilia
+poi:percentuale_sicilia rdf:type owl:DatatypeProperty ;
+                        rdfs:domain poi:Statistica ;
+                        rdfs:range xsd:decimal ;
+                        rdfs:comment "Percentuale POI Sicilia per tipo sul totale" .
 
 
 ###  http://www.semanticweb.org/user/ontologies/2022/7/poi_ontology#prezzo
-:prezzo rdf:type owl:ObjectProperty ;
-        rdfs:domain :Punto_di_interesse ;
-        rdfs:range [ rdf:type owl:Restriction ;
-                     owl:onProperty owl:topDataProperty ;
-                     owl:someValuesFrom xsd:decimal
-                   ] ;
-        rdfs:comment "Prezzo biglietto intero del punto di interesse" .
+poi:prezzo rdf:type owl:DatatypeProperty ;
+           rdfs:domain poi:Punto_di_interesse ;
+           rdfs:range xsd:decimal ;
+           rdfs:comment "Prezzo biglietto intero" .
+
+
+###  http://www.semanticweb.org/user/ontologies/2022/7/poi_ontology#prezzo_medio_sardegna
+poi:prezzo_medio_sardegna rdf:type owl:DatatypeProperty ;
+                          rdfs:domain poi:Statistica ;
+                          rdfs:range xsd:decimal ;
+                          rdfs:comment "Prezzo medio biglietti interi Sardegna per tipo di POI" .
+
+
+###  http://www.semanticweb.org/user/ontologies/2022/7/poi_ontology#prezzo_medio_sicilia
+poi:prezzo_medio_sicilia rdf:type owl:DatatypeProperty ;
+                         rdfs:domain poi:Statistica ;
+                         rdfs:range xsd:decimal ;
+                         rdfs:comment "Prezzo medio biglietti interi Sicilia per tipo di POI" .
+
+
+###  http://www.semanticweb.org/user/ontologies/2022/7/poi_ontology#tot_poi_sardegna
+poi:tot_poi_sardegna rdf:type owl:DatatypeProperty ;
+                     rdfs:domain poi:Statistica ;
+                     rdfs:range xsd:integer ;
+                     rdfs:comment "Totale POI Sardegna per tipo" .
+
+
+###  http://www.semanticweb.org/user/ontologies/2022/7/poi_ontology#tot_poi_sicilia
+poi:tot_poi_sicilia rdf:type owl:DatatypeProperty ;
+                    rdfs:domain poi:Statistica ;
+                    rdfs:range xsd:integer ;
+                    rdfs:comment "Totale POI Sicilia per tipo" .
 
 
 #################################################################
@@ -113,38 +167,38 @@ rdfs:label rdfs:range xsd:string ;
 #################################################################
 
 ###  http://www.semanticweb.org/user/ontologies/2022/7/poi_ontology#Categoria
-:Categoria rdf:type owl:Class ;
-           rdfs:comment "Categoria di punto di interesse" .
+poi:Categoria rdf:type owl:Class ;
+              rdfs:comment "Categoria di punto di interesse" .
 
 
 ###  http://www.semanticweb.org/user/ontologies/2022/7/poi_ontology#Comune
-:Comune rdf:type owl:Class ;
-        rdfs:comment "Comune" .
+poi:Comune rdf:type owl:Class ;
+           rdfs:comment "Comune" .
 
 
 ###  http://www.semanticweb.org/user/ontologies/2022/7/poi_ontology#Coordinate
-:Coordinate rdf:type owl:Class ;
-            rdfs:comment "Coordinate" .
+poi:Coordinate rdf:type owl:Class ;
+               rdfs:comment "Coordinate" .
 
 
 ###  http://www.semanticweb.org/user/ontologies/2022/7/poi_ontology#Indirizzo
-:Indirizzo rdf:type owl:Class ;
-           rdfs:comment "Indirizzo" .
+poi:Indirizzo rdf:type owl:Class ;
+              rdfs:comment "Indirizzo" .
 
 
 ###  http://www.semanticweb.org/user/ontologies/2022/7/poi_ontology#Punto_di_interesse
-:Punto_di_interesse rdf:type owl:Class ;
-                    rdfs:comment "Punto di interesse" .
+poi:Punto_di_interesse rdf:type owl:Class ;
+                       rdfs:comment "Punto di interesse" .
 
 
 ###  http://www.semanticweb.org/user/ontologies/2022/7/poi_ontology#Regione
-:Regione rdf:type owl:Class ;
-         rdfs:comment "Regione" .
+poi:Regione rdf:type owl:Class ;
+            rdfs:comment "Regione" .
 
 
-###  http://www.semanticweb.org/user/ontologies/2022/7/poi_ontology#Statistiche
-:Statistiche rdf:type owl:Class ;
-             rdfs:comment "Statistiche" .
+###  http://www.semanticweb.org/user/ontologies/2022/7/poi_ontology#Statistica
+poi:Statistica rdf:type owl:Class ;
+               rdfs:comment "Statistiche" .
 
 
 ###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi

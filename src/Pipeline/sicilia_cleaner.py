@@ -77,6 +77,7 @@ def fix_categories_sicilia(data_frame):
             data_frame["Categoria"].values[i] = "area o parco archeologico"
         elif "monumentale" in data_frame["Categoria"].values[i]:
             data_frame["Categoria"].values[i] = "monumento o complesso monumentale"
+    data_frame = data_frame.query("Categoria != 'parco naturalistico'")
     return data_frame
 
 def fix_addresses_sicilia(data_frame):
@@ -96,7 +97,7 @@ def fix_addresses_sicilia(data_frame):
         result = result.replace(",", "")
         result = result.replace(")", "")
         if result != "":
-            data_frame["Indirizzo"].values[i] = result + ", " + data_frame["Comune"].values[i] + ", Italia"
+            data_frame["Indirizzo"].values[i] = result + ", " + data_frame["Comune"].values[i] +", Italia"
         else:
             data_frame["Indirizzo"].values[i] = "nan"
     for i in range(data_frame["Indirizzo"].size):
@@ -104,6 +105,11 @@ def fix_addresses_sicilia(data_frame):
             data_frame["Indirizzo"].values[i] = data_frame["Comune"].values[i] + ', Italia'
         else:
             data_frame["Indirizzo"].values[i] = data_frame["Indirizzo"].values[i].replace("snc", "")
+    data_frame["Indirizzo"] = data_frame["Indirizzo"].replace(['via regina margherita, Palermo, Italia'], 'viale regina margherita, Palermo, Italia')
+    data_frame["Indirizzo"] = data_frame["Indirizzo"].replace(['via patti, Palermo, Italia'], 'via crispi, Palermo, Italia')
+    data_frame["Indirizzo"] = data_frame["Indirizzo"].replace(['corso vittorio emanuele n., Palermo, Italia'], 'corso vittorio emanuele, Palermo, Italia')
+    data_frame["Indirizzo"] = data_frame["Indirizzo"].replace(['via cavagrande, Ispica, Italia'], 'Ispica, Italia')
+    data_frame["Indirizzo"] = data_frame["Indirizzo"].replace(['via dante, Licata, Italia'], 'Licata, Italia')
     return data_frame
 
 def retrieve_lat_long_from_addresses_sicilia(data_frame):
@@ -123,6 +129,12 @@ def retrieve_lat_long_from_addresses_sicilia(data_frame):
         else:
             data_frame["Latitudine"].values[i] = df2["Point"].values[0][0]
             data_frame["Longitudine"].values[i] = df2["Point"].values[0][1]
+    #Fixing "Casa Giovanni Verga" coordinates
+    data_frame["Latitudine"] = data_frame["Latitudine"].replace(['\'37.7447759'], '37.51166')
+    data_frame["Longitudine"] = data_frame["Longitudine"].replace(['\'15.19918'], '15.0867')
+    #Odeon catania (37.502935949999994, 15.082842766671142)
+    #Palazzo Ajutamicristo (38.1135383, 13.367108349385965)
+    # Museo regionale badia (37.10329, 13.94061)
     return data_frame
 
 def fix_phone_numbers_sicilia(data_frame):

@@ -36,15 +36,15 @@ def fix_columns_sardegna(data_frame):
     #null values for tickets are the ones which were empty. They are free
     data_frame["FRBI"] = data_frame["FRBI"].replace(['nan'], 'euro 0,00')
     data_frame["CNTT"] = data_frame["CNTT"].replace(['nan'], 'NON REGISTRATO')
-
+    data_frame["OGA"] = data_frame["OGA"].replace(['monumento naturale'], 'monumento o complesso monumentale')
+    data_frame.loc[data_frame["OGN"] == "Museo Faunistico dell'Oasi di Assai", "OGA"] = "museo, galleria e/o raccolta"
     #fixing ticket prices strings to extract full prices only
     for i in range(data_frame["FRBI"].size):
         val = data_frame["FRBI"].values[i]
         val = val[val.find('e'):]
         val = ''.join([i for i in val if i.isdigit() or i == ',' or i == '/'])
         data_frame["FRBI"].values[i] = val[:val.find('/')]
-
-    data_frame = data_frame[["OGN", "OGA", "LCC", "LCI", "LATITUDINE", "LONGITUDINE", "FRBI", "CNTT"]]
+        data_frame = data_frame[["OGN", "OGA", "LCC", "LCI", "LATITUDINE", "LONGITUDINE", "FRBI", "CNTT"]]
     return data_frame
 
 
