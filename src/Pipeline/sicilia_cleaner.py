@@ -43,7 +43,6 @@ def filter_open_places_sicilia(data_frame):
 
 def fix_columns_sicilia(data_frame):
     data_frame.drop(["Provincia", "Orari", "Biglietto ridotto", "Note", "scheda"], axis=1, inplace=True)
-    data_frame["Sottocategoria"] = "nan"
     data_frame["Latitudine"] = "nan"
     data_frame["Longitudine"] = "nan"
     data_frame.rename(columns={"Biglietto intero" : "Prezzo", "Telefono" : "Contatti"}, inplace=True)
@@ -119,22 +118,52 @@ def retrieve_lat_long_from_addresses_sicilia(data_frame):
     df["Name"] = data_frame["Indirizzo"]
     df["Location"] = df["Name"].apply(geocode)
     df["Point"] = df["Location"].apply(lambda loc: tuple(loc.point) if loc else None)
-    df2 = pd.DataFrame({'Name': ['Sicilia, Italia']})
-    df2["Location"] = df2["Name"].apply(geocode)
-    df2["Point"] = df2["Location"].apply(lambda loc: tuple(loc.point) if loc else None)
     for i in range(df["Point"].size):
         if df["Point"].values[i] != None:
             data_frame["Latitudine"].values[i] = df["Point"].values[i][0]
             data_frame["Longitudine"].values[i] = df["Point"].values[i][1]
-        else:
-            data_frame["Latitudine"].values[i] = df2["Point"].values[0][0]
-            data_frame["Longitudine"].values[i] = df2["Point"].values[0][1]
-    #Fixing "Casa Giovanni Verga" coordinates
-    data_frame["Latitudine"] = data_frame["Latitudine"].replace(['\'37.7447759'], '37.51166')
-    data_frame["Longitudine"] = data_frame["Longitudine"].replace(['\'15.19918'], '15.0867')
-    #Odeon catania (37.502935949999994, 15.082842766671142)
-    #Palazzo Ajutamicristo (38.1135383, 13.367108349385965)
-    # Museo regionale badia (37.10329, 13.94061)
+    #Fixing "Casa Museo Giovanni Verga" coordinates
+    data_frame.loc[data_frame.Denominazione == "Casa Museo Giovanni Verga", ['Latitudine', 'Longitudine']] = '37.51166', '15.0867'
+    #Fixing "Teatro Romano e Odeon di Catania" coordinates
+    data_frame.loc[data_frame.Denominazione == "Teatro Romano e Odeon di Catania", ['Latitudine', 'Longitudine']] = '37.502935949999994', '15.082842766671142'
+    #Fixing "Palazzo Ajutamicristo" coordinates
+    data_frame.loc[data_frame.Denominazione == "Palazzo Ajutamicristo", ['Latitudine','Longitudine']] = '38.1135383', '13.367108349385965'
+    #Fixing "Museo regionale badia" coordinates
+    data_frame.loc[data_frame.Denominazione == "Museo archeologico regionale della Badia", ['Latitudine','Longitudine']] = '37.10329', '13.94061'
+    #Fixing "Area archeologica della Neapolis, Orecchio di Dionisio e Teatro Greco" coordinates
+    data_frame.loc[data_frame.Denominazione == "Area archeologica della Neapolis, Orecchio di Dionisio e Teatro Greco", ['Latitudine','Longitudine']] = '37.0856', '15.28407'
+    #Fixing "Castello di Spadafora" coordinates
+    data_frame.loc[data_frame.Denominazione == "Castello di Spadafora", ['Latitudine','Longitudine']] = '38.22294', '15.38009'
+    #Fixing "Castello Grifeo" coordinates
+    data_frame.loc[data_frame.Denominazione == "Castello Grifeo", ['Latitudine', 'Longitudine']] = '37.72788', '12.88747'
+    #Fixing "Museo regionale di Adrano" coordinates
+    data_frame.loc[data_frame.Denominazione == "Museo regionale di Adrano", ['Latitudine', 'Longitudine']] = '37.66048', '14.83759'
+    # Fixing "Area archeologica Caucana" coordinates
+    data_frame.loc[data_frame.Denominazione == "Area archeologica Caucana", ['Latitudine', 'Longitudine']] = '36.78818347420917', '14.506530958461992'
+    # Fixing "Teatro Greco Romano di Taormina" coordinates
+    data_frame.loc[data_frame.Denominazione == "Teatro Greco Romano di Taormina", ['Latitudine', 'Longitudine']] = '37.852929121406525', '15.290567555301687'
+    # Fixing "Chiostro Santa Maria la Nuova (Duomo)" coordinates
+    data_frame.loc[data_frame.Denominazione == "Chiostro Santa Maria la Nuova (Duomo)", ['Latitudine', 'Longitudine']] = '38.117076425936666', '13.344571841817114'
+    # Fixing "Giardino di Villa Napoli e Piccola Cuba" coordinates
+    data_frame.loc[data_frame.Denominazione == "Giardino di Villa Napoli e Piccola Cuba", ['Latitudine', 'Longitudine']] = '38.1061861890964', '13.33619745003384'
+    # Fixing "Area archeologica Teatro antico e Antiquarium di Tindari" coordinates
+    data_frame.loc[data_frame.Denominazione == "Area archeologica Teatro antico e Antiquarium di Tindari", ['Latitudine', 'Longitudine']] = '38.13854384872103', '14.96543751112948'
+    # Fixing "Museo archeologico regionale di Marianopoli" coordinates
+    data_frame.loc[data_frame.Denominazione == "Museo archeologico regionale di Marianopoli", ['Latitudine', 'Longitudine']] = '37.599103388483144', '13.913222539950656'
+    # Fixing "Museo archeologico regionale Bernabo' Brea a Lipari" coordinates
+    data_frame.loc[data_frame.Denominazione == "Museo archeologico regionale Bernabo' Brea a Lipari", ['Latitudine', 'Longitudine']] = '38.46720040958127', '14.956468718927361'
+    # Fixing "Area archeologica e Antiquarium di Solunto" coordinates
+    data_frame.loc[data_frame.Denominazione == "Area archeologica e Antiquarium di Solunto", ['Latitudine', 'Longitudine']] = '38.09191111161576', '13.532400566616872'
+    # Fixing "Antiquarium di Milazzo" coordinates
+    data_frame.loc[data_frame.Denominazione == "Antiquarium di Milazzo", ['Latitudine', 'Longitudine']] = '38.22606367442193', '15.2412067571643'
+    # Fixing "Ipogeo Romano" coordinates
+    data_frame.loc[data_frame.Denominazione == "Ipogeo Romano", ['Latitudine', 'Longitudine']] = '37.51366583510854', '15.08021203994833'
+    # Fixing "Museo archeologico regionale di Lentini" coordinates
+    data_frame.loc[data_frame.Denominazione == "Museo archeologico regionale di Lentini", ['Latitudine', 'Longitudine']] = '37.28850456039487', '15.001932180417898'
+    # Fixing "Museo archeologico regionale di Centuripe" coordinates
+    data_frame.loc[data_frame.Denominazione == "Museo archeologico regionale di Centuripe", ['Latitudine', 'Longitudine']] = '37.62224712517353', '14.741658426459338'
+    # Fixing "Museo regionale Agostino Pepoli di Trapani - Museo interdisciplinare" coordinates
+    data_frame.loc[data_frame.Denominazione == "Museo regionale Agostino Pepoli di Trapani - Museo interdisciplinare", ['Latitudine', 'Longitudine']] = '38.018939729546375', '12.54247101668273'
     return data_frame
 
 def fix_phone_numbers_sicilia(data_frame):
@@ -144,6 +173,3 @@ def fix_phone_numbers_sicilia(data_frame):
             data_frame["Contatti"].values[i] = "NON REGISTRATO"
         data_frame["Contatti"].values[i] = data_frame["Contatti"].values[i].replace(";", " ")
     return data_frame
-
-
-

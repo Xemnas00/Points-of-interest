@@ -27,8 +27,7 @@ def combine_data():
     stats = [
     ["museo, galleria e/o raccolta", tot_museums_sardegna, str(evaluate_proportion(tot_museums_sardegna, tot_poi_sardegna)) + "%", mean_price_museums_sardegna,  tot_museums_sicilia, str(evaluate_proportion(tot_museums_sicilia, tot_poi_sicilia)) + "%", mean_price_museums_sicilia],
     ["area o parco archeologico", tot_archaeological_areas_sardegna, str(evaluate_proportion(tot_archaeological_areas_sardegna, tot_poi_sardegna)) + "%", mean_price_archaeological_areas_sardegna, tot_archaeological_areas_sicilia, str(evaluate_proportion(tot_archaeological_areas_sicilia, tot_poi_sicilia)) + "%", mean_price_archaeological_areas_sicilia],
-    ["monumento o complesso monumentale", tot_monuments_sardegna, str(evaluate_proportion(tot_monuments_sardegna, tot_poi_sardegna)) + "%", mean_price_monuments_sardegna, tot_monuments_sicilia, str(evaluate_proportion(tot_monuments_sicilia, tot_poi_sicilia)) + "%", mean_price_monuments_sicilia],
-    ["Totali", tot_poi_sardegna, None, None, tot_poi_sicilia, None, None]
+    ["monumento o complesso monumentale", tot_monuments_sardegna, str(evaluate_proportion(tot_monuments_sardegna, tot_poi_sardegna)) + "%", mean_price_monuments_sardegna, tot_monuments_sicilia, str(evaluate_proportion(tot_monuments_sicilia, tot_poi_sicilia)) + "%", mean_price_monuments_sicilia]
     ]
     data_frame = pd.DataFrame(stats, columns=['POI', 'Totali(Sardegna)', 'Percentuali(Sardegna)', 'Prezzo medio in euro(Sardegna)', 'Totali(Sicilia)', 'Percentuali(Sicilia)', 'Prezzo medio in euro(Sicilia)'])
     data_frame.to_csv(POI_STATS, index=False)
