@@ -53,6 +53,7 @@ poi:haCategoria rdf:type owl:ObjectProperty ;
 
 ###  http://www.semanticweb.org/user/ontologies/2022/7/poi_ontology#haComune
 poi:haComune rdf:type owl:ObjectProperty ;
+             owl:inverseOf poi:inRegione ;
              rdfs:domain poi:Regione ;
              rdfs:range poi:Comune ;
              rdfs:comment "Comune della Regione" .
@@ -67,7 +68,7 @@ poi:haCoordinate rdf:type owl:ObjectProperty ;
 
 ###  http://www.semanticweb.org/user/ontologies/2022/7/poi_ontology#haIndirizzo
 poi:haIndirizzo rdf:type owl:ObjectProperty ;
-                owl:inverseOf poi:haPuntoDiInteresse ;
+                owl:inverseOf poi:inComune ;
                 rdfs:domain poi:Comune ;
                 rdfs:range poi:Indirizzo ;
                 rdfs:comment "Indirizzo del POI" .
@@ -75,6 +76,7 @@ poi:haIndirizzo rdf:type owl:ObjectProperty ;
 
 ###  http://www.semanticweb.org/user/ontologies/2022/7/poi_ontology#haPuntoDiInteresse
 poi:haPuntoDiInteresse rdf:type owl:ObjectProperty ;
+                       owl:inverseOf poi:inIndirizzo ;
                        rdfs:domain poi:Indirizzo ;
                        rdfs:range poi:Punto_di_interesse ;
                        rdfs:comment "POI che si trova a quest'indirizzo" .
@@ -85,6 +87,12 @@ poi:inComune rdf:type owl:ObjectProperty ;
              rdfs:domain poi:Indirizzo ;
              rdfs:range poi:Comune ;
              rdfs:comment "Comune dell'indirizzo" .
+
+
+###  http://www.semanticweb.org/user/ontologies/2022/7/poi_ontology#inIndirizzo
+poi:inIndirizzo rdf:type owl:ObjectProperty ;
+                rdfs:domain poi:Punto_di_interesse ;
+                rdfs:range poi:Indirizzo .
 
 
 ###  http://www.semanticweb.org/user/ontologies/2022/7/poi_ontology#inRegione
