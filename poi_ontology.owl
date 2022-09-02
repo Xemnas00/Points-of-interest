@@ -97,8 +97,7 @@ poi:inIndirizzo rdf:type owl:ObjectProperty ;
 
 ###  http://www.semanticweb.org/user/ontologies/2022/7/poi_ontology#inRegione
 poi:inRegione rdf:type owl:ObjectProperty ;
-              rdfs:domain poi:Comune ,
-                          poi:Indirizzo ;
+              rdfs:domain poi:Comune ;
               rdfs:range poi:Regione ;
               rdfs:comment "Regione dell'indirizzo" .
 
