@@ -71,7 +71,7 @@ def fix_categories_sicilia(data_frame):
     data_frame["Categoria"] = data_frame["Categoria"].map(str.lower)
     for i in range(data_frame["Categoria"].size):
         if "musei" in data_frame["Categoria"].values[i] or "antiquaria" in data_frame["Categoria"].values[i]:
-            data_frame["Categoria"].values[i] = "museo, galleria e/o raccolta"
+            data_frame["Categoria"].values[i] = "museo, galleria, raccolta"
         elif "archeologiche" in data_frame["Categoria"].values[i]:
             data_frame["Categoria"].values[i] = "area o parco archeologico"
         elif "monumentale" in data_frame["Categoria"].values[i]:
