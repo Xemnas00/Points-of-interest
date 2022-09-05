@@ -3,6 +3,27 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
+<https://purl.archive.org/purl/net/poi_sardegna_sicilia/risorse/stats/archaeological> a poi:Statistica_aree_archeologiche ;
+    rdfs:label "Statistica aree archeologiche"^^xsd:string ;
+    poi:prezzo_medio_sardegna 4.18 ;
+    poi:prezzo_medio_sicilia 2.39 ;
+    poi:tot_poi_sardegna 68 ;
+    poi:tot_poi_sicilia 56 .
+
+<https://purl.archive.org/purl/net/poi_sardegna_sicilia/risorse/stats/monument> a poi:Statistica_monumenti ;
+    rdfs:label "Statistica musei"^^xsd:string ;
+    poi:prezzo_medio_sardegna 4.88 ;
+    poi:prezzo_medio_sicilia 1.83 ;
+    poi:tot_poi_sardegna 26 ;
+    poi:tot_poi_sicilia 18 .
+
+<https://purl.archive.org/purl/net/poi_sardegna_sicilia/risorse/stats/museum> a poi:Statistica_musei ;
+    rdfs:label "Statistica musei"^^xsd:string ;
+    poi:prezzo_medio_sardegna 4.26 ;
+    poi:prezzo_medio_sicilia 3.58 ;
+    poi:tot_poi_sardegna 165 ;
+    poi:tot_poi_sicilia 38 .
+
 <https://purl.archive.org/purl/net/poi_sardegna_sicilia/risorse/coordinates/Acquedolci_Italia-Coordinates> a poi:Coordinate ;
     poi:coordinateDi <https://purl.archive.org/purl/net/poi_sardegna_sicilia/risorse/indirizzi/Acquedolci_Italia> ;
     poi:latitudine 38.0560399 ;

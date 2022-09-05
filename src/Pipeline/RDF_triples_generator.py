@@ -23,7 +23,7 @@ def create_rdf_from_data():
     g.bind("poi", poi)
     g.bind("owl", owl)
     g = add_poi_data(POI_SARDEGNA_SICILIA, g)
-    add_stats_data(POI_STATS, g)
+    g = add_stats_data(POI_STATS, g)
     print("Saving RDF/Turtle file...")
     g.serialize(POI_RDF_TURTLE, format="turtle")
 
@@ -86,6 +86,46 @@ def add_poi_data(csv, graph):
     return graph
 
 def add_stats_data(csv, graph):
+    dict_row = {
+        "Museum" : 0,
+        "Archaeological" : 1,
+        "Monument" : 2
+    }
+    dict_col = {
+        "Sar_tot" : 1,
+        "Sar_mean" : 2,
+        "Sic_tot" : 3,
+        "Sic_mean" : 4
+    }
+    data_frame = pd.read_csv(csv, encoding="utf-8")
+    stats_museum_uri = URIRef(base_domain + "/stats/museum")
+    stats_archaeological_uri = URIRef(base_domain + "/stats/archaeological")
+    stats_monument_uri = URIRef(base_domain + "/stats/monument")
+
+    #Adding museums stats
+    graph.add((stats_museum_uri, RDF.type, poi.Statistica_musei))
+    graph.add((stats_museum_uri, RDFS.label, Literal("Statistica musei", datatype=XSD.string)))
+    graph.add((stats_museum_uri, poi.tot_poi_sardegna, Literal(data_frame.loc[dict_row["Museum"]][dict_col["Sar_tot"]], datatype=XSD.integer)))
+    graph.add((stats_museum_uri, poi.prezzo_medio_sardegna, Literal(data_frame.loc[dict_row["Museum"]][dict_col["Sar_mean"]], datatype=XSD.decimal)))
+    graph.add((stats_museum_uri, poi.tot_poi_sicilia, Literal(data_frame.loc[dict_row["Museum"]][dict_col["Sic_tot"]], datatype=XSD.integer)))
+    graph.add((stats_museum_uri, poi.prezzo_medio_sicilia, Literal(data_frame.loc[dict_row["Museum"]][dict_col["Sic_mean"]], datatype=XSD.decimal)))
+
+    #Adding archaeological stats
+    graph.add((stats_archaeological_uri, RDF.type, poi.Statistica_aree_archeologiche))
+    graph.add((stats_archaeological_uri, RDFS.label, Literal("Statistica aree archeologiche", datatype=XSD.string)))
+    graph.add((stats_archaeological_uri, poi.tot_poi_sardegna, Literal(data_frame.loc[dict_row["Archaeological"]][dict_col["Sar_tot"]], datatype=XSD.integer)))
+    graph.add((stats_archaeological_uri, poi.prezzo_medio_sardegna, Literal(data_frame.loc[dict_row["Archaeological"]][dict_col["Sar_mean"]], datatype=XSD.decimal)))
+    graph.add((stats_archaeological_uri, poi.tot_poi_sicilia, Literal(data_frame.loc[dict_row["Archaeological"]][dict_col["Sic_tot"]], datatype=XSD.integer)))
+    graph.add((stats_archaeological_uri, poi.prezzo_medio_sicilia, Literal(data_frame.loc[dict_row["Archaeological"]][dict_col["Sic_mean"]], datatype=XSD.decimal)))
+
+    #Adding monuments stats
+    graph.add((stats_monument_uri, RDF.type, poi.Statistica_monumenti))
+    graph.add((stats_monument_uri, RDFS.label, Literal("Statistica musei", datatype=XSD.string)))
+    graph.add((stats_monument_uri, poi.tot_poi_sardegna, Literal(data_frame.loc[dict_row["Monument"]][dict_col["Sar_tot"]], datatype=XSD.integer)))
+    graph.add((stats_monument_uri, poi.prezzo_medio_sardegna, Literal(data_frame.loc[dict_row["Monument"]][dict_col["Sar_mean"]], datatype=XSD.decimal)))
+    graph.add((stats_monument_uri, poi.tot_poi_sicilia, Literal(data_frame.loc[dict_row["Monument"]][dict_col["Sic_tot"]], datatype=XSD.integer)))
+    graph.add((stats_monument_uri, poi.prezzo_medio_sicilia, Literal(data_frame.loc[dict_row["Monument"]][dict_col["Sic_mean"]], datatype=XSD.decimal)))
+
     return graph
 
 def urify_string(original_string):
