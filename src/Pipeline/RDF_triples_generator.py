@@ -54,8 +54,9 @@ def add_poi_data(csv, graph):
         graph.add((coordinates_uri, poi.latitudine, Literal(row["Latitudine"], datatype=XSD.decimal)))
         graph.add((coordinates_uri, poi.longitudine, Literal(row["Longitudine"], datatype=XSD.decimal)))
         #Adding location
-        graph.add((location_uri, RDF.type, poi.Indirizzo))
-        graph.add((location_uri, RDFS.label, Literal(row["Indirizzo"], datatype=XSD.string)))
+        if (location_uri, RDF.type, poi.Indirizzo) not in graph or (city_uri, RDF.type, poi.Comune) not in graph:
+            graph.add((location_uri, RDF.type, poi.Indirizzo))
+            graph.add((location_uri, RDFS.label, Literal(row["Indirizzo"], datatype=XSD.string)))
         #Adding category
         if (category_uri, RDF.type, poi.Categoria) not in graph:
             graph.add((category_uri, RDF.type, poi.Categoria))
@@ -83,6 +84,7 @@ def add_poi_data(csv, graph):
         #POI
         graph.add((poi_uri, poi.haCategoria, category_uri))
         graph.add((poi_uri, poi.inIndirizzo, location_uri))
+        #graph.add((poi_uri, owl.sameAs, URIRef(dbpedia + urify_string(row["Denominazione"]))))
     return graph
 
 def add_stats_data(csv, graph):
