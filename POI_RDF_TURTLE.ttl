@@ -4650,13 +4650,15 @@
 
 <https://purl.archive.org/purl/net/poi_sardegna_sicilia/risorse/stats/archaeological> a poi:Statistica ;
     rdfs:label "Statistica aree archeologiche"^^xsd:string ;
+    poi:dellaCategoria <https://purl.archive.org/purl/net/poi_sardegna_sicilia/risorse/categorie_poi/area_o_parco_archeologico> ;
     poi:prezzo_medio_sardegna 4.18 ;
     poi:prezzo_medio_sicilia 2.39 ;
     poi:tot_poi_sardegna 68 ;
     poi:tot_poi_sicilia 56 .
 
 <https://purl.archive.org/purl/net/poi_sardegna_sicilia/risorse/stats/monument> a poi:Statistica ;
-    rdfs:label "Statistica musei"^^xsd:string ;
+    rdfs:label "Statistica monumenti"^^xsd:string ;
+    poi:dellaCategoria <https://purl.archive.org/purl/net/poi_sardegna_sicilia/risorse/categorie_poi/monumento_o_complesso_monumentale> ;
     poi:prezzo_medio_sardegna 4.88 ;
     poi:prezzo_medio_sicilia 1.83 ;
     poi:tot_poi_sardegna 26 ;
@@ -4664,9 +4666,7 @@
 
 <https://purl.archive.org/purl/net/poi_sardegna_sicilia/risorse/stats/museum> a poi:Statistica ;
     rdfs:label "Statistica musei"^^xsd:string ;
-    poi:dellaCategoria <https://purl.archive.org/purl/net/poi_sardegna_sicilia/risorse/categorie_poi/area_o_parco_archeologico>,
-        <https://purl.archive.org/purl/net/poi_sardegna_sicilia/risorse/categorie_poi/monumento_o_complesso_monumentale>,
-        <https://purl.archive.org/purl/net/poi_sardegna_sicilia/risorse/categorie_poi/museo_galleria_raccolta> ;
+    poi:dellaCategoria <https://purl.archive.org/purl/net/poi_sardegna_sicilia/risorse/categorie_poi/museo_galleria_raccolta> ;
     poi:prezzo_medio_sardegna 4.26 ;
     poi:prezzo_medio_sicilia 3.58 ;
     poi:tot_poi_sardegna 165 ;
