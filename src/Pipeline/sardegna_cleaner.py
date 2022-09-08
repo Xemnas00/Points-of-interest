@@ -49,6 +49,7 @@ def fix_columns_sardegna(data_frame):
         val = ''.join([i for i in val if i.isdigit() or i == ',' or i == '/'])
         data_frame["FRBI"].values[i] = val[:val.find('/')]
         data_frame["OGA"] = data_frame["OGA"].replace(['museo, galleria e/o raccolta'], 'museo, galleria, raccolta')
+        data_frame["LCC"] = data_frame["LCC"].replace(['Santa Teresa di Gallura'], 'Santa Teresa Gallura')
         data_frame = data_frame[["OGN", "OGA", "LCC", "LCI", "LATITUDINE", "LONGITUDINE", "FRBI", "CNTT"]]
     return data_frame
 

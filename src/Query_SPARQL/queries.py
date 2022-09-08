@@ -65,10 +65,10 @@ def query3(graph):
 
         SELECT ?regione (ROUND(AVG(?prez)*100)/100 AS ?average_price)
         WHERE {
-            ?regione rdf:type poi:Regione ;
-                     poi:haComune ?comune .
-            ?comune poi:haIndirizzo ?indirizzo .
-            ?indirizzo poi:haPuntoDiInteresse ?poi .
+            ?poi rdf:type poi:Punto_di_interesse ;
+                 poi:inIndirizzo ?indirizzo .
+            ?indirizzo poi:inComune ?comune .
+            ?comune poi:inRegione ?regione .
             ?poi poi:prezzo ?prez .
         } 
         GROUP BY ?regione

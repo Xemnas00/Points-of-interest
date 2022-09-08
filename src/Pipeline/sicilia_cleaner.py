@@ -23,6 +23,7 @@ def create_cleaned_sicilia_data():
     data = fix_columns_sicilia(data)
     data = delete_incomplete_data_sicilia(data)
     data = fix_prices_sicilia(data)
+    data = fix_cities_sicilia(data)
     data = fix_categories_sicilia(data)
     data = fix_addresses_sicilia(data)
     data = retrieve_lat_long_from_addresses_sicilia(data)
@@ -65,6 +66,14 @@ def fix_prices_sicilia(data_frame):
         data_frame["Prezzo"] = data_frame["Prezzo"].astype(float)
     except ValueError:
         print(ValueError)
+    return data_frame
+
+def fix_cities_sicilia(data_frame):
+    data_frame["Comune"] = data_frame["Comune"].replace(['Giardini-Naxos'], 'Giardini Naxos')
+    data_frame["Comune"] = data_frame["Comune"].replace(['Canicatti\''], 'Canicattì')
+    data_frame["Comune"] = data_frame["Comune"].replace(['Calatafimi Segesta'], 'Calatafimi-Segesta')
+    data_frame["Comune"] = data_frame["Comune"].replace(['Cefala\' Diana'], 'Cefalà Diana')
+
     return data_frame
 
 def fix_categories_sicilia(data_frame):
