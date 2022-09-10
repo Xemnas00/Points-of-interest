@@ -26,7 +26,7 @@ def create_cleaned_sicilia_data():
     data = fix_cities_sicilia(data)
     data = fix_categories_sicilia(data)
     data = fix_addresses_sicilia(data)
-    data = retrieve_lat_long_from_addresses_sicilia(data)
+    #data = retrieve_lat_long_from_addresses_sicilia(data)
     data = fix_phone_numbers_sicilia(data)
     data.to_csv(CLEANED_SICILIA, header=cols, index=False)
 
