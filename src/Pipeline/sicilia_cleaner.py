@@ -26,7 +26,7 @@ def create_cleaned_sicilia_data():
     data = fix_cities_sicilia(data)
     data = fix_categories_sicilia(data)
     data = fix_addresses_sicilia(data)
-    #data = retrieve_lat_long_from_addresses_sicilia(data)
+    data = retrieve_lat_long_from_addresses_sicilia(data)
     data = fix_phone_numbers_sicilia(data)
     data.to_csv(CLEANED_SICILIA, header=cols, index=False)
 
@@ -113,6 +113,7 @@ def fix_addresses_sicilia(data_frame):
             data_frame["Indirizzo"].values[i] = data_frame["Comune"].values[i] + ', Italia'
         else:
             data_frame["Indirizzo"].values[i] = data_frame["Indirizzo"].values[i].replace("snc", "")
+            data_frame["Indirizzo"].values[i] = data_frame["Indirizzo"].values[i].replace("s.n.c.", "")
     data_frame["Indirizzo"] = data_frame["Indirizzo"].replace(['via regina margherita, Palermo, Italia'], 'viale regina margherita, Palermo, Italia')
     data_frame["Indirizzo"] = data_frame["Indirizzo"].replace(['via patti, Palermo, Italia'], 'via crispi, Palermo, Italia')
     data_frame["Indirizzo"] = data_frame["Indirizzo"].replace(['corso vittorio emanuele n., Palermo, Italia'], 'corso vittorio emanuele, Palermo, Italia')
@@ -176,9 +177,18 @@ def retrieve_lat_long_from_addresses_sicilia(data_frame):
     return data_frame
 
 def fix_phone_numbers_sicilia(data_frame):
-    pattern = re.compile(".*[0-9]{5}.*")
     for i in range(data_frame["Contatti"].size):
-        if pattern.match(data_frame["Contatti"].values[i]) == None:
-            data_frame["Contatti"].values[i] = "NON REGISTRATO"
         data_frame["Contatti"].values[i] = data_frame["Contatti"].values[i].replace(";", " ")
+        data_frame["Contatti"].values[i] = data_frame["Contatti"].values[i].replace(" ", "")
+        c = re.findall("[0-9]*/*[0-9]{5}[0-9]*", data_frame["Contatti"].values[i])
+        contacts = ""
+        for number in c:
+            if number[0] != "/":
+                contacts += number + "-"
+        if(contacts == ""):
+            data_frame["Contatti"].values[i] = "NON REGISTRATO"
+        else:
+            final_str = contacts.replace("/", "").replace("-", "//")
+            final_str = final_str[:len(final_str) - 2]
+            data_frame["Contatti"].values[i] = final_str
     return data_frame

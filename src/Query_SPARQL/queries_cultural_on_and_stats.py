@@ -17,6 +17,8 @@ def queries():
     query3(g)
     print("*" * 100)
     query4(g)
+    print("*" * 100)
+    query5(g)
 
 def create_stats(g):
     # Retrieving stats data using queries
@@ -128,7 +130,6 @@ def query3(graph):
 def query4(graph):
     results = graph.query("""
                 PREFIX cis: <http://dati.beniculturali.it/cis/>
-                PREFIX clvapit: <https://ontopia-lodview.agid.gov.it/onto/CLV/>
                 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
                 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 
@@ -139,6 +140,30 @@ def query4(graph):
                     FILTER(REGEX(?n, "casa ", "i"))
                 }
             """)
+
+    for row in results:
+        print(row)
+
+def query5(graph):
+    results = graph.query("""
+                 PREFIX cis: <http://dati.beniculturali.it/cis/>
+                 PREFIX clvapit: <https://ontopia-lodview.agid.gov.it/onto/CLV/>
+                 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+                 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+                 SELECT ?n ?t
+                 WHERE {
+                     ?i rdf:type cis:CulturalInstituteOrSite ;
+                        cis:institutionalName ?n ;
+                        cis:hasSite ?s ;
+                        cis:hasContactPoint ?p .
+                     ?p cis:hasTelephone ?t .
+                     ?s cis:hasAddress ?a .
+                     ?a clvapit:hasCity ?c .
+                     ?c rdfs:label ?city .
+                     FILTER(?city = "Cagliari")
+                 }
+             """)
 
     for row in results:
         print(row)

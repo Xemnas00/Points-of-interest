@@ -1,8 +1,10 @@
 import pandas as pd
 import unidecode
+import rdflib
 from rdflib import Graph, RDF, RDFS, URIRef, Literal, XSD
 from rdflib.namespace import Namespace
 from . import POI_SARDEGNA_SICILIA, POI_RDF_TURTLE
+from SPARQLWrapper import SPARQLWrapper, JSON
 
 #Domain base URIs
 
@@ -30,12 +32,13 @@ def create_rdf_from_data_cultural_on():
 
 def add_poi_data(csv, g):
     data_frame = pd.read_csv(csv, encoding="utf-8")
+    institutes = retrieve_institutes()
     for _, row in data_frame.iterrows():
         region_uri = URIRef(base_domain + "/luoghi/" + row["Regione"].lower())
         city_uri = URIRef(base_domain + "/luoghi/comune/" + our_urify_string(urify_string(row["Comune"])))
         address_uri = URIRef(base_domain + "/indirizzi/" + our_urify_string(urify_string(row["Indirizzo"])))
-        site_uri = URIRef(base_domain + "/site/" + our_urify_string(urify_string(row["Denominazione"] + row["Contatti"] + row["Indirizzo"] + "_SITE")))
-        cultural_institute_uri = URIRef(base_domain + "/poi/cultural_institute/" + our_urify_string(urify_string(row["Denominazione"] + row["Contatti"] + row["Indirizzo"]+ "_INSTITUTE")))
+        site_uri = URIRef(base_domain + "/site/" + our_urify_string(urify_string(row["Denominazione"] + "_" + row["Contatti"] + "_" + row["Indirizzo"] + "_SITE")))
+        cultural_institute_uri = URIRef(base_domain + "/poi/cultural_institute/" + our_urify_string(urify_string(row["Denominazione"] + "_" + row["Contatti"] + "_" + row["Indirizzo"]+ "_INSTITUTE")))
         contact_point_uri = URIRef(base_domain + "/poi/contacts/" + our_urify_string(urify_string(row["Denominazione"] + row["Contatti"] + row["Indirizzo"] + "_CONTACTS")))
         price_specification_uri = URIRef(base_domain + "/poi/price_specification/" + our_urify_string(urify_string(row["Denominazione"] + row["Contatti"] + row["Indirizzo"] + "_PRICESPEC")))
         offer_uri = URIRef(base_domain + "/offer/" + our_urify_string(urify_string(row["Denominazione"] + row["Contatti"] + row["Indirizzo"] + "_OFFER")))
@@ -48,27 +51,29 @@ def add_poi_data(csv, g):
         if ((city_uri, RDF.type, clvapit.City)) not in g:
             g.add((city_uri, RDF.type, clvapit.City))
             g.add((city_uri, RDFS.label, Literal(row["Comune"], datatype=XSD.string)))
-            """if is_city(urify_string(row["Comune"])) == True:
+            if is_city(urify_string(row["Comune"])) == True:
                 g.add((city_uri, owl.sameAs, URIRef(dbpedia + urify_string(row["Comune"]))))
             elif row["Regione"] == "Sardegna" and is_city(urify_string(row["Comune"]) + ",_Sardinia") == True:
                 g.add((city_uri, owl.sameAs, URIRef(dbpedia + urify_string(row["Comune"]) + ",_Sardinia")))
             elif row["Regione"] == "Sicilia" and is_city(urify_string(row["Comune"]) + ",_Sicily") == True:
-                g.add((city_uri, owl.sameAs, URIRef(dbpedia + urify_string(row["Comune"]) + ",_Sicily")))"""
-
-        g.add((URIRef(base_domain + "/luoghi/" + urify_string("Siracusa")), owl.sameAs, URIRef(dbpedia + "Syracuse,_Sicily")))
-        g.add((URIRef(base_domain + "/luoghi/" + urify_string("Campobello di Mazara")), owl.sameAs, URIRef(dbpedia + urify_string("Campobello di Mazara"))))
+                g.add((city_uri, owl.sameAs, URIRef(dbpedia + urify_string(row["Comune"]) + ",_Sicily")))
 
         g.add((address_uri, RDF.type, clvapit.Address))
         g.add((address_uri, clvapit.hasRegion, region_uri))
         g.add((address_uri, clvapit.hasCity, city_uri))
 
         g.add((contact_point_uri, RDF.type, cis.ContactPoint))
-        g.add((contact_point_uri, RDFS.label, Literal("Contatti: " + row["Contatti"], datatype=XSD.string)))
+        g.add((contact_point_uri, RDFS.label, Literal("Contatti: " + row["Denominazione"], datatype=XSD.string)))
+        if row["Contatti"] != "NON REGISTRATO":
+            contatti = row["Contatti"].split("//")
+            for contatto in contatti:
+                g.add((contact_point_uri, cis.hasTelephone, URIRef(base_domain + "/contatti/" + contatto)))
 
         g.add((site_uri, RDF.type, cis.Site))
         g.add((site_uri, cis.isSiteOf, cultural_institute_uri))
         g.add((site_uri, cis.hasAddress, address_uri))
         g.add((site_uri, cis.hasContactPoint, contact_point_uri))
+
 
         g.add((cultural_institute_uri, RDF.type, cis.CulturalInstituteOrSite))
         g.add((cultural_institute_uri, RDFS.label, Literal("Istituto della cultura: " + row["Denominazione"], datatype=XSD.string)))
@@ -85,6 +90,10 @@ def add_poi_data(csv, g):
         else:
             g.add((cultural_institute_uri, cis.hasCISType, cis.MonumentalArea))
 
+        for hit in institutes["results"]["bindings"]:
+            if hit["l"]["value"] == row["Denominazione"]:
+                g.add((cultural_institute_uri, owl.sameAs, URIRef(hit["i"]["value"])))
+
         g.add((price_specification_uri, RDF.type, cis.PriceSpecification))
         g.add((price_specification_uri, cis.hasCurrency, cis.Euro))
         g.add((price_specification_uri, cis.hasCurrencyValue, Literal(row["Prezzo"], datatype=XSD.float)))
@@ -95,6 +104,9 @@ def add_poi_data(csv, g):
         g.add((offer_uri, RDF.type, cis.Offer))
         g.add((offer_uri, cis.hasPriceSpecification, price_specification_uri))
         g.add((offer_uri, cis.includes, ticket_uri))
+
+    g.add((URIRef(base_domain + "/luoghi/" + urify_string("Siracusa")), owl.sameAs, URIRef(dbpedia + "Syracuse,_Sicily")))
+    g.add((URIRef(base_domain + "/luoghi/" + urify_string("Campobello di Mazara")), owl.sameAs, URIRef(dbpedia + urify_string("Campobello di Mazara"))))
 
     return g
 
@@ -123,16 +135,22 @@ def is_city(urificated_city):
 
     return response.askAnswer
 
-def is_poi(urificated_institute):
-    uri = URIRef('http://dbpedia.org/resource/' + urificated_institute)
-    pp = URIRef('http://dbpedia.org/ontology/PopulatedPlace')
-    g_temp = Graph()
-    g_temp.parse(uri)
-    response = g_temp.query(
-        "ASK {?uri a ?pp}",
-        initBindings={'uri': uri, 'pp': pp}
-    )
+def retrieve_institutes():
+    sparql = SPARQLWrapper("https://dati.beniculturali.it/sparql") #Querying a remote SPARQL endpoint
+    sparql.setQuery("""
+        SELECT DISTINCT ?i ?l
+        WHERE {
+            ?i rdf:type cis:CulturalInstituteOrSite ;
+               rdfs:label ?l ;
+               cis:hasSite ?s .
+            ?s cis:siteAddress ?a .
+            ?a clvapit:hasRegion ?r .
+            ?r rdfs:label ?region .
+            FILTER(?region = "Sicilia" || ?region = "Sardegna")   
+        }
+    """)
 
-    print(str(uri) + " is a PopulatedPlace? " + str(response.askAnswer))
+    sparql.setReturnFormat(JSON)
+    result = sparql.query().convert()
 
-    return response.askAnswer
+    return result

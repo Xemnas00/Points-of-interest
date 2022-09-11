@@ -22,6 +22,7 @@ def create_cleaned_sardegna_data():
     data = fix_columns_sardegna(data)
     data = filter_prices_sardegna(data)
   # print(data.isin(['nan']).sum())  used to detect null values
+    data = fix_fax(data)
     data.to_csv(CLEANED_SARDEGNA, header=cols, index=False)
 
 #Function that removes all rows with a null value in ""
@@ -60,4 +61,17 @@ def filter_prices_sardegna(data_frame):
         data_frame["FRBI"] = data_frame["FRBI"].str.replace(',', '.').astype(float)
     except ValueError:
         print(ValueError)
+    return data_frame
+
+def fix_fax(data_frame):
+    data_frame["CNTT"] = data_frame["CNTT"].str.replace(' ', '')
+    for i in range(data_frame["CNTT"].size):
+        c = data_frame["CNTT"].values[i].split('//')
+        contacts = ""
+        for j in range(len(c)):
+            if "FAX" not in c[j]:
+                contacts += c[j] + "//"
+        final_str = contacts[:len(contacts) - 2]
+        final_str.replace("+39", "+39 ")
+        data_frame["CNTT"].values[i] = final_str
     return data_frame

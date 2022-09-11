@@ -13,6 +13,6 @@ POI_RDF_TURTLE = base + "/POI_RDF_TURTLE.ttl"
 def files_are_present():
     files = [LUOGHI_INTERESSE_SICILIA, LUOGHI_INTERESSE_SARDEGNA, CLEANED_SARDEGNA, CLEANED_SICILIA, POI_SARDEGNA_SICILIA, POI_STATS, POI_RDF_TURTLE]
     if all([Path(file).is_file() for file in files]):
-        return False
-    else:
         return True
+    else:
+        return False
