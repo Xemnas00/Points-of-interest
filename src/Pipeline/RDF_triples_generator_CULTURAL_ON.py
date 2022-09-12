@@ -1,5 +1,4 @@
 from urllib.error import HTTPError
-
 import pandas as pd
 import unidecode
 from rdflib import Graph, RDF, RDFS, URIRef, Literal, XSD
@@ -123,11 +122,11 @@ def urify_string(original_string):
         string = string[1:]
     if string[len(string) - 1] == '_':
         string = string[0:len(string) - 1]
-    return unidecode.unidecode(string)
+    return string
 
 #This function performs an operation that should not be performed when we try to match URIs with DBPedia ones
 def our_urify_string(string):
-    return string.replace('\'', '_')
+    return unidecode.unidecode(string.replace('\'', '_'))
 
 def is_city(urificated_city):
     uri = URIRef('http://dbpedia.org/resource/' + urificated_city)

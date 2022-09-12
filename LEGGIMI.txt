@@ -1,0 +1,5 @@
+Il file "poi_ontology.owl" contiene la vecchia ontologia da noi sviluppata.
+Nelle cartelle "/src/Pipeline" e "/src/Query_SPARQL" sono presenti due file che sfruttano la vecchia ontologia poi scartata, preferendo CULTURAL-ON.
+Questi due file sono "RDF_triples_generator.py" e "queries.py".
+
+SI POSSONO IGNORARE I FILE CITATI CHE SONO STATI INSERITI SOLO COME LAVORO SVOLTO.

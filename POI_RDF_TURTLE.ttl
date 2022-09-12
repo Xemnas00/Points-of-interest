@@ -1534,14 +1534,16 @@
     owl1:sameAs <http://dbpedia.org/resource/Berchidda> .
 
 <https://purl.archive.org/purl/net/poi_sardegna_sicilia/risorse/comuni/Bidoni> a clvapit:City ;
-    rdfs:label "Bidonì"^^xsd:string .
+    rdfs:label "Bidonì"^^xsd:string ;
+    owl1:sameAs <http://dbpedia.org/resource/Bidonì> .
 
 <https://purl.archive.org/purl/net/poi_sardegna_sicilia/risorse/comuni/Borutta> a clvapit:City ;
     rdfs:label "Borutta"^^xsd:string ;
     owl1:sameAs <http://dbpedia.org/resource/Borutta> .
 
 <https://purl.archive.org/purl/net/poi_sardegna_sicilia/risorse/comuni/Budduso> a clvapit:City ;
-    rdfs:label "Buddusò"^^xsd:string .
+    rdfs:label "Buddusò"^^xsd:string ;
+    owl1:sameAs <http://dbpedia.org/resource/Buddusò> .
 
 <https://purl.archive.org/purl/net/poi_sardegna_sicilia/risorse/comuni/Burgos> a clvapit:City ;
     rdfs:label "Burgos"^^xsd:string ;
@@ -1567,7 +1569,8 @@
     rdfs:label "Campobello di Mazara"^^xsd:string .
 
 <https://purl.archive.org/purl/net/poi_sardegna_sicilia/risorse/comuni/Canicatti> a clvapit:City ;
-    rdfs:label "Canicattì"^^xsd:string .
+    rdfs:label "Canicattì"^^xsd:string ;
+    owl1:sameAs <http://dbpedia.org/resource/Canicattì> .
 
 <https://purl.archive.org/purl/net/poi_sardegna_sicilia/risorse/comuni/Capo_d_Orlando> a clvapit:City ;
     rdfs:label "Capo d'Orlando"^^xsd:string ;
@@ -1590,7 +1593,8 @@
     owl1:sameAs <http://dbpedia.org/resource/Cattolica_Eraclea> .
 
 <https://purl.archive.org/purl/net/poi_sardegna_sicilia/risorse/comuni/Cefala_Diana> a clvapit:City ;
-    rdfs:label "Cefalà Diana"^^xsd:string .
+    rdfs:label "Cefalà Diana"^^xsd:string ;
+    owl1:sameAs <http://dbpedia.org/resource/Cefalà_Diana> .
 
 <https://purl.archive.org/purl/net/poi_sardegna_sicilia/risorse/comuni/Centuripe> a clvapit:City ;
     rdfs:label "Centuripe"^^xsd:string ;
@@ -1621,7 +1625,8 @@
     owl1:sameAs <http://dbpedia.org/resource/Favignana> .
 
 <https://purl.archive.org/purl/net/poi_sardegna_sicilia/risorse/comuni/Galtelli> a clvapit:City ;
-    rdfs:label "Galtellì"^^xsd:string .
+    rdfs:label "Galtellì"^^xsd:string ;
+    owl1:sameAs <http://dbpedia.org/resource/Galtellì> .
 
 <https://purl.archive.org/purl/net/poi_sardegna_sicilia/risorse/comuni/Gavoi> a clvapit:City ;
     rdfs:label "Gavoi"^^xsd:string ;
@@ -1888,7 +1893,8 @@
     owl1:sameAs <http://dbpedia.org/resource/Sedini> .
 
 <https://purl.archive.org/purl/net/poi_sardegna_sicilia/risorse/comuni/Senorbi> a clvapit:City ;
-    rdfs:label "Senorbì"^^xsd:string .
+    rdfs:label "Senorbì"^^xsd:string ;
+    owl1:sameAs <http://dbpedia.org/resource/Senorbì> .
 
 <https://purl.archive.org/purl/net/poi_sardegna_sicilia/risorse/comuni/Serri> a clvapit:City ;
     rdfs:label "Serri"^^xsd:string ;
@@ -1923,7 +1929,8 @@
     owl1:sameAs <http://dbpedia.org/resource/Teti,_Sardinia> .
 
 <https://purl.archive.org/purl/net/poi_sardegna_sicilia/risorse/comuni/Tortoli> a clvapit:City ;
-    rdfs:label "Tortolì"^^xsd:string .
+    rdfs:label "Tortolì"^^xsd:string ;
+    owl1:sameAs <http://dbpedia.org/resource/Tortolì> .
 
 <https://purl.archive.org/purl/net/poi_sardegna_sicilia/risorse/comuni/Trapani> a clvapit:City ;
     rdfs:label "Trapani"^^xsd:string ;
