@@ -10,6 +10,7 @@ POI_SARDEGNA_SICILIA = base + "/data/POI_SARDEGNA_SICILIA.csv"
 POI_STATS = base + "/data/POI_STATS.csv"
 POI_RDF_TURTLE = base + "/POI_RDF_TURTLE.ttl"
 
+#Function that verifies if all files already exist
 def files_are_present():
     files = [LUOGHI_INTERESSE_SICILIA, LUOGHI_INTERESSE_SARDEGNA, CLEANED_SARDEGNA, CLEANED_SICILIA, POI_SARDEGNA_SICILIA, POI_STATS, POI_RDF_TURTLE]
     if all([Path(file).is_file() for file in files]):

@@ -19,6 +19,8 @@ def queries():
     query4(g)
     print("*" * 100)
     query5(g)
+    print("*" * 100)
+    query6(g)
 
 def create_stats(g):
     # Retrieving stats data using queries
@@ -167,3 +169,28 @@ def query5(graph):
 
     for row in results:
         print(row)
+
+def query6(graph):
+    results = graph.query("""
+                     PREFIX cis: <http://dati.beniculturali.it/cis/>
+                     PREFIX clvapit: <https://ontopia-lodview.agid.gov.it/onto/CLV/>
+                     PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+                     PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+                     SELECT ?n
+                     WHERE {
+                        ?c rdf:type cis:CulturalInstituteOrSite ;
+                           cis:institutionalName ?n ;
+                           cis:hasCISType cis:Museum ;
+                           cis:hasSite ?s .
+                        ?s cis:hasAddress ?a .
+                        ?a clvapit:hasRegion ?r .
+                        ?r rdfs:label ?l .
+                        FILTER (?l = "Sardegna")
+                     }
+                 """)
+    for row in results:
+        print(row)
+
+
+

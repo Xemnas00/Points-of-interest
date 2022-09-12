@@ -1,6 +1,7 @@
+from urllib.error import HTTPError
+
 import pandas as pd
 import unidecode
-import rdflib
 from rdflib import Graph, RDF, RDFS, URIRef, Literal, XSD
 from rdflib.namespace import Namespace
 from . import POI_SARDEGNA_SICILIA, POI_RDF_TURTLE
@@ -30,27 +31,30 @@ def create_rdf_from_data_cultural_on():
     print("Saving RDF/Turtle file...")
     g.serialize(POI_RDF_TURTLE, format="turtle")
 
+#Function that populates RDF Graph
 def add_poi_data(csv, g):
     data_frame = pd.read_csv(csv, encoding="utf-8")
     institutes = retrieve_institutes()
     for _, row in data_frame.iterrows():
-        region_uri = URIRef(base_domain + "/luoghi/" + row["Regione"].lower())
-        city_uri = URIRef(base_domain + "/luoghi/comune/" + our_urify_string(urify_string(row["Comune"])))
+        region_uri = URIRef(base_domain + "/regioni/" + row["Regione"].lower())
+        city_uri = URIRef(base_domain + "/comuni/" + our_urify_string(urify_string(row["Comune"])))
         address_uri = URIRef(base_domain + "/indirizzi/" + our_urify_string(urify_string(row["Indirizzo"])))
-        site_uri = URIRef(base_domain + "/site/" + our_urify_string(urify_string(row["Denominazione"] + "_" + row["Contatti"] + "_" + row["Indirizzo"] + "_SITE")))
+        site_uri = URIRef(base_domain + "/sedi/" + our_urify_string(urify_string(row["Denominazione"] + "_" + row["Contatti"] + "_" + row["Indirizzo"] + "_SITE")))
         cultural_institute_uri = URIRef(base_domain + "/poi/cultural_institute/" + our_urify_string(urify_string(row["Denominazione"] + "_" + row["Contatti"] + "_" + row["Indirizzo"]+ "_INSTITUTE")))
-        contact_point_uri = URIRef(base_domain + "/poi/contacts/" + our_urify_string(urify_string(row["Denominazione"] + row["Contatti"] + row["Indirizzo"] + "_CONTACTS")))
-        price_specification_uri = URIRef(base_domain + "/poi/price_specification/" + our_urify_string(urify_string(row["Denominazione"] + row["Contatti"] + row["Indirizzo"] + "_PRICESPEC")))
-        offer_uri = URIRef(base_domain + "/offer/" + our_urify_string(urify_string(row["Denominazione"] + row["Contatti"] + row["Indirizzo"] + "_OFFER")))
-        ticket_uri = URIRef(base_domain + "/ticket/" + our_urify_string(urify_string(row["Denominazione"] + row["Contatti"] + row["Indirizzo"] + "_TICKET")))
+        contact_point_uri = URIRef(base_domain + "/punti_contattabili/" + our_urify_string(urify_string(row["Denominazione"] + "_" + row["Contatti"] + "_" + row["Indirizzo"] + "_CONTACTS")))
+        price_specification_uri = URIRef(base_domain + "/specifiche_prezzo/" + our_urify_string(urify_string(row["Denominazione"] + "_" + row["Contatti"] + "_" +  row["Indirizzo"] + "_PRICESPEC")))
+        offer_uri = URIRef(base_domain + "/offerte/" + our_urify_string(urify_string(row["Denominazione"] + row["Contatti"] + row["Indirizzo"] + "_OFFER")))
+        ticket_uri = URIRef(base_domain + "/biglietti/" + our_urify_string(urify_string(row["Denominazione"] + row["Contatti"] + row["Indirizzo"] + "_TICKET")))
 
         g.add((region_uri, RDF.type, clvapit.Region))
         g.add((region_uri, RDFS.label, Literal(row["Regione"], datatype=XSD.string)))
+        #Interlinking with DBPedia
         g.add((region_uri, owl.sameAs, URIRef(dbpedia + row["Regione"])))
 
         if ((city_uri, RDF.type, clvapit.City)) not in g:
             g.add((city_uri, RDF.type, clvapit.City))
             g.add((city_uri, RDFS.label, Literal(row["Comune"], datatype=XSD.string)))
+            #Interlinking with DBPedia
             if is_city(urify_string(row["Comune"])) == True:
                 g.add((city_uri, owl.sameAs, URIRef(dbpedia + urify_string(row["Comune"]))))
             elif row["Regione"] == "Sardegna" and is_city(urify_string(row["Comune"]) + ",_Sardinia") == True:
@@ -90,21 +94,24 @@ def add_poi_data(csv, g):
         else:
             g.add((cultural_institute_uri, cis.hasCISType, cis.MonumentalArea))
 
-        for hit in institutes["results"]["bindings"]:
-            if hit["l"]["value"] == row["Denominazione"]:
-                g.add((cultural_institute_uri, owl.sameAs, URIRef(hit["i"]["value"])))
+        #Interlinking with MiC catalogue
+        if institutes != False:
+            for hit in institutes["results"]["bindings"]:
+                if hit["l"]["value"] == row["Denominazione"]:
+                    g.add((cultural_institute_uri, owl.sameAs, URIRef(hit["i"]["value"])))
 
         g.add((price_specification_uri, RDF.type, cis.PriceSpecification))
         g.add((price_specification_uri, cis.hasCurrency, cis.Euro))
         g.add((price_specification_uri, cis.hasCurrencyValue, Literal(row["Prezzo"], datatype=XSD.float)))
 
         g.add((ticket_uri, RDF.type, cis.Ticket))
+        g.add((ticket_uri, RDFS.label, Literal("Biglietto intero per accedere a: " + row["Denominazione"], datatype=XSD.string)))
         g.add((ticket_uri, cis.forAccessTo, cultural_institute_uri))
 
         g.add((offer_uri, RDF.type, cis.Offer))
         g.add((offer_uri, cis.hasPriceSpecification, price_specification_uri))
         g.add((offer_uri, cis.includes, ticket_uri))
-
+    #Interlinkng particular cities
     g.add((URIRef(base_domain + "/luoghi/" + urify_string("Siracusa")), owl.sameAs, URIRef(dbpedia + "Syracuse,_Sicily")))
     g.add((URIRef(base_domain + "/luoghi/" + urify_string("Campobello di Mazara")), owl.sameAs, URIRef(dbpedia + urify_string("Campobello di Mazara"))))
 
@@ -118,6 +125,7 @@ def urify_string(original_string):
         string = string[0:len(string) - 1]
     return unidecode.unidecode(string)
 
+#This function performs an operation that should not be performed when we try to match URIs with DBPedia ones
 def our_urify_string(string):
     return string.replace('\'', '_')
 
@@ -126,11 +134,13 @@ def is_city(urificated_city):
     pp = URIRef('http://dbpedia.org/ontology/PopulatedPlace')
     g_temp = Graph()
     g_temp.parse(uri)
-    response = g_temp.query(
-        "ASK {?uri a ?pp}",
-        initBindings={'uri': uri, 'pp': pp}
-    )
-
+    try:
+        response = g_temp.query(
+            "ASK {?uri a ?pp}",
+            initBindings={'uri': uri, 'pp': pp}
+        )
+    except HTTPError:
+        return False
     print(str(uri) + " is a PopulatedPlace? " + str(response.askAnswer))
 
     return response.askAnswer
@@ -151,6 +161,10 @@ def retrieve_institutes():
     """)
 
     sparql.setReturnFormat(JSON)
-    result = sparql.query().convert()
+    try:
+        result = sparql.query().convert()
+    except HTTPError:
+        return False
 
     return result
+
