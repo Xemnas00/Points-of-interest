@@ -1,9 +1,10 @@
 {
   "type": "umap",
-  "uri": "http://umap.openstreetmap.fr/it/map/poi_sardegna_sicilia_804184#6/38.465/13.667",
+  "uri": "http://umap.openstreetmap.fr/it/map/poi_sardegna_sicilia_804184#7/38.899/12.381",
   "properties": {
     "easing": true,
     "tilelayersControl": false,
+    "measureControl": null,
     "embedControl": true,
     "editinosmControl": false,
     "fullscreenControl": true,
@@ -19,7 +20,12 @@
     "popupShape": "Large",
     "iconClass": "Drop",
     "color": "Black",
-    "limitBounds": {},
+    "limitBounds": {
+      "east": null,
+      "west": null,
+      "north": null,
+      "south": null
+    },
     "tilelayer": {
       "tms": false,
       "name": "OSM-Fr",
@@ -29,7 +35,7 @@
       "url_template": "//{s}.tile.openstreetmap.fr/osmfr/{z}/{x}/{y}.png"
     },
     "licence": "",
-    "description": "",
+    "description": "Punti di interesse Sardegna e Sicilia",
     "name": "POI_SARDEGNA_SICILIA",
     "onLoadPanel": "none",
     "displayPopupFooter": false,
@@ -55,11 +61,11 @@
           "properties": {
             "Regione": "Sardegna",
             "Denominazione": "Museo della Statuaria Preistorica in Sardegna",
-            "Categoria": "museo, galleria e/o raccolta",
+            "Categoria": "museo, galleria, raccolta",
             "Comune": "Laconi",
             "Indirizzo": "Piazza G. Marconi, 10",
             "Prezzo": "5.0",
-            "Contatti": "+39 0782 693238// +39 3423507760"
+            "Contatti": "+390782693238//+393423507760"
           },
           "geometry": {
             "type": "Point",
@@ -74,11 +80,11 @@
           "properties": {
             "Regione": "Sardegna",
             "Denominazione": "MEOC (Museo Etnografico Oliva Carta Cannas)",
-            "Categoria": "museo, galleria e/o raccolta",
+            "Categoria": "museo, galleria, raccolta",
             "Comune": "Aggius",
             "Indirizzo": "Via Monti di Lizu, 6",
             "Prezzo": "4.0",
-            "Contatti": "+39 079 621029// +39 3494533208"
+            "Contatti": "+39079621029//+393494533208"
           },
           "geometry": {
             "type": "Point",
@@ -93,11 +99,11 @@
           "properties": {
             "Regione": "Sardegna",
             "Denominazione": "Museo del Banditismo",
-            "Categoria": "museo, galleria e/o raccolta",
+            "Categoria": "museo, galleria, raccolta",
             "Comune": "Aggius",
             "Indirizzo": "Via Pretura, s.n.c.",
             "Prezzo": "4.0",
-            "Contatti": "+39 079 621029// +39 3494533208"
+            "Contatti": "+39079621029//+393494533208"
           },
           "geometry": {
             "type": "Point",
@@ -112,11 +118,11 @@
           "properties": {
             "Regione": "Sardegna",
             "Denominazione": "Museo del Giocattolo Tradizionale della Sardegna",
-            "Categoria": "museo, galleria e/o raccolta",
+            "Categoria": "museo, galleria, raccolta",
             "Comune": "Ales",
             "Indirizzo": "Via San Simeone, 9",
             "Prezzo": "3.0",
-            "Contatti": "+39 0783 998072// +39 3406742512"
+            "Contatti": "+390783998072//+393406742512"
           },
           "geometry": {
             "type": "Point",
@@ -131,11 +137,11 @@
           "properties": {
             "Regione": "Sardegna",
             "Denominazione": "Museo Diocesano d'Arte Sacra",
-            "Categoria": "museo, galleria e/o raccolta",
+            "Categoria": "museo, galleria, raccolta",
             "Comune": "Ales",
             "Indirizzo": "Piazza Cattedrale, 1",
             "Prezzo": "3.0",
-            "Contatti": "+39 0783 91974// +39 3287824283"
+            "Contatti": "+39078391974//+393287824283"
           },
           "geometry": {
             "type": "Point",
@@ -154,7 +160,7 @@
             "Comune": "Alghero",
             "Indirizzo": "SP 42, Strada dei Due Mari",
             "Prezzo": "5.0",
-            "Contatti": "+39 3294385947"
+            "Contatti": "+393294385947"
           },
           "geometry": {
             "type": "Point",
@@ -173,7 +179,7 @@
             "Comune": "Alghero",
             "Indirizzo": "SS 127bis",
             "Prezzo": "10.0",
-            "Contatti": "+39 3294385947// +39 3490871963"
+            "Contatti": "+393294385947//+393490871963"
           },
           "geometry": {
             "type": "Point",
@@ -188,11 +194,11 @@
           "properties": {
             "Regione": "Sardegna",
             "Denominazione": "Museo Casa Manno",
-            "Categoria": "museo, galleria e/o raccolta",
+            "Categoria": "museo, galleria, raccolta",
             "Comune": "Alghero",
             "Indirizzo": "Via Santa Barbara, 23",
             "Prezzo": "5.0",
-            "Contatti": "+39 079 9732026// +39 3911254574"
+            "Contatti": "+390799732026//+393911254574"
           },
           "geometry": {
             "type": "Point",
@@ -207,11 +213,11 @@
           "properties": {
             "Regione": "Sardegna",
             "Denominazione": "Museo del Corallo",
-            "Categoria": "museo, galleria e/o raccolta",
+            "Categoria": "museo, galleria, raccolta",
             "Comune": "Alghero",
             "Indirizzo": "Via XX Settembre, 8",
             "Prezzo": "5.0",
-            "Contatti": "+39 079 9734045// +39 079 979054"
+            "Contatti": "+390799734045//+39079979054"
           },
           "geometry": {
             "type": "Point",
@@ -226,11 +232,11 @@
           "properties": {
             "Regione": "Sardegna",
             "Denominazione": "Museo Diocesano d'Arte Sacra",
-            "Categoria": "museo, galleria e/o raccolta",
+            "Categoria": "museo, galleria, raccolta",
             "Comune": "Alghero",
             "Indirizzo": "Piazza Duomo, s.n.c.",
             "Prezzo": "4.0",
-            "Contatti": "+39 079 9733041"
+            "Contatti": "+390799733041"
           },
           "geometry": {
             "type": "Point",
@@ -245,11 +251,11 @@
           "properties": {
             "Regione": "Sardegna",
             "Denominazione": "Museo Naturalistico Mare Nostrum Aquarium",
-            "Categoria": "museo, galleria e/o raccolta",
+            "Categoria": "museo, galleria, raccolta",
             "Comune": "Alghero",
             "Indirizzo": "Via XX Settembre, 1",
             "Prezzo": "8.0",
-            "Contatti": "+39 079 978333"
+            "Contatti": "+39079978333"
           },
           "geometry": {
             "type": "Point",
@@ -268,7 +274,7 @@
             "Comune": "Alghero",
             "Indirizzo": "Località Mastru Antoni, SS 127 bis km 45,450",
             "Prezzo": "5.0",
-            "Contatti": "+39 3294385947"
+            "Contatti": "+393294385947"
           },
           "geometry": {
             "type": "Point",
@@ -283,11 +289,11 @@
           "properties": {
             "Regione": "Sardegna",
             "Denominazione": "M.U.B.A. Museo della Bonifica di Arborea",
-            "Categoria": "museo, galleria e/o raccolta",
+            "Categoria": "museo, galleria, raccolta",
             "Comune": "Arborea",
             "Indirizzo": "Corso Italia, 24",
             "Prezzo": "3.0",
-            "Contatti": "+39 0783 802005"
+            "Contatti": "+390783802005"
           },
           "geometry": {
             "type": "Point",
@@ -302,11 +308,11 @@
           "properties": {
             "Regione": "Sardegna",
             "Denominazione": "Museo Alberto e Giovanni Antonio Castoldi - Museo Mineralogico - Collezione Diorami Dellacà",
-            "Categoria": "museo, galleria e/o raccolta",
+            "Categoria": "museo, galleria, raccolta",
             "Comune": "Arbus",
             "Indirizzo": "Piazza G. Rolandi, s.n.c.",
             "Prezzo": "5.0",
-            "Contatti": "+39 3396939435// +39 3281540281"
+            "Contatti": "+393396939435//+393281540281"
           },
           "geometry": {
             "type": "Point",
@@ -321,11 +327,11 @@
           "properties": {
             "Regione": "Sardegna",
             "Denominazione": "Ecomuseo della Montagna Sarda o del Gennargentu",
-            "Categoria": "museo, galleria e/o raccolta",
+            "Categoria": "museo, galleria, raccolta",
             "Comune": "Aritzo",
             "Indirizzo": "Parco Comunale Pastissu, 3",
             "Prezzo": "3.0",
-            "Contatti": "+39 3898731853// +39 0784 627200"
+            "Contatti": "+393898731853//+390784627200"
           },
           "geometry": {
             "type": "Point",
@@ -340,11 +346,11 @@
           "properties": {
             "Regione": "Sardegna",
             "Denominazione": "Museo Bottega Del Fabbro",
-            "Categoria": "museo, galleria e/o raccolta",
+            "Categoria": "museo, galleria, raccolta",
             "Comune": "Armungia",
             "Indirizzo": "Vico I G. Mazzini, 14",
             "Prezzo": "6.0",
-            "Contatti": "+39 070 9589011// +39 070 958076 FAX"
+            "Contatti": "+390709589011"
           },
           "geometry": {
             "type": "Point",
@@ -359,11 +365,11 @@
           "properties": {
             "Regione": "Sardegna",
             "Denominazione": "Museo Etnografico Sa Domu De Is Ainas",
-            "Categoria": "museo, galleria e/o raccolta",
+            "Categoria": "museo, galleria, raccolta",
             "Comune": "Armungia",
             "Indirizzo": "Piazza Municipio, 3",
             "Prezzo": "6.0",
-            "Contatti": "+39 070 9589011// +39 070 958076 FAX"
+            "Contatti": "+390709589011"
           },
           "geometry": {
             "type": "Point",
@@ -378,11 +384,11 @@
           "properties": {
             "Regione": "Sardegna",
             "Denominazione": "Museo Storico Emilio e Joyce Lussu",
-            "Categoria": "museo, galleria e/o raccolta",
+            "Categoria": "museo, galleria, raccolta",
             "Comune": "Armungia",
             "Indirizzo": "Via E. Lussu, s.n.c.",
             "Prezzo": "6.0",
-            "Contatti": "+39 070 9589011// +39 070 958076 FAX"
+            "Contatti": "+390709589011"
           },
           "geometry": {
             "type": "Point",
@@ -401,7 +407,7 @@
             "Comune": "Arzachena",
             "Indirizzo": "SS 427, Località Capichera, 1",
             "Prezzo": "4.0",
-            "Contatti": "+39 3938975528// +39 3457200094"
+            "Contatti": "+393938975528//+393457200094"
           },
           "geometry": {
             "type": "Point",
@@ -420,7 +426,7 @@
             "Comune": "Arzachena",
             "Indirizzo": "SS 125 Olbia - Palau",
             "Prezzo": "4.0",
-            "Contatti": "+39 3457200094"
+            "Contatti": "+393457200094"
           },
           "geometry": {
             "type": "Point",
@@ -439,7 +445,7 @@
             "Comune": "Arzachena",
             "Indirizzo": "SP 14, Località Coddu Ecchju",
             "Prezzo": "4.0",
-            "Contatti": "+39 3457200094// +39 3455760643"
+            "Contatti": "+393457200094//+393455760643"
           },
           "geometry": {
             "type": "Point",
@@ -458,7 +464,7 @@
             "Comune": "Arzachena",
             "Indirizzo": "SP 115 per Luogosanto, km 45, Località M.Giu di Li Lolghi",
             "Prezzo": "4.0",
-            "Contatti": "+39 3457200380// +39 3457200094"
+            "Contatti": "+393457200380//+393457200094"
           },
           "geometry": {
             "type": "Point",
@@ -477,7 +483,7 @@
             "Comune": "Arzachena",
             "Indirizzo": "SS 125 Olbia - Palau",
             "Prezzo": "4.0",
-            "Contatti": "+39 3455760538// +39 3457200094"
+            "Contatti": "+393455760538//+393457200094"
           },
           "geometry": {
             "type": "Point",
@@ -492,11 +498,11 @@
           "properties": {
             "Regione": "Sardegna",
             "Denominazione": "Museo d'Arte Moderna e Contemporanea Antonio Ortiz Echague",
-            "Categoria": "museo, galleria e/o raccolta",
+            "Categoria": "museo, galleria, raccolta",
             "Comune": "Atzara",
             "Indirizzo": "Piazza Antonio Ortiz Echague, 1",
             "Prezzo": "3.0",
-            "Contatti": "+39 0784 65508// +39 3477983242"
+            "Contatti": "+39078465508//+393477983242"
           },
           "geometry": {
             "type": "Point",
@@ -511,11 +517,11 @@
           "properties": {
             "Regione": "Sardegna",
             "Denominazione": "Polo Museale Casa Zapata",
-            "Categoria": "museo, galleria e/o raccolta",
+            "Categoria": "museo, galleria, raccolta",
             "Comune": "Barumini",
             "Indirizzo": "Piazza Giovanni XXIII, s.n.c.",
             "Prezzo": "14.0",
-            "Contatti": "+39 070 9368476"
+            "Contatti": "+390709368476"
           },
           "geometry": {
             "type": "Point",
@@ -530,11 +536,11 @@
           "properties": {
             "Regione": "Sardegna",
             "Denominazione": "Museo del Vino - Enoteca Regionale della Sardegna",
-            "Categoria": "museo, galleria e/o raccolta",
+            "Categoria": "museo, galleria, raccolta",
             "Comune": "Berchidda",
             "Indirizzo": "Via Gian Giorgio Casu, 5",
             "Prezzo": "3.0",
-            "Contatti": "+39 079 705268"
+            "Contatti": "+39079705268"
           },
           "geometry": {
             "type": "Point",
@@ -549,11 +555,11 @@
           "properties": {
             "Regione": "Sardegna",
             "Denominazione": "Museo S'Omo e Sa Majarza",
-            "Categoria": "museo, galleria e/o raccolta",
+            "Categoria": "museo, galleria, raccolta",
             "Comune": "Bidonì",
             "Indirizzo": "Via Monte, 9",
             "Prezzo": "3.0",
-            "Contatti": "+39 0783 69044// +39 3483943842"
+            "Contatti": "+39078369044//+393483943842"
           },
           "geometry": {
             "type": "Point",
@@ -568,11 +574,11 @@
           "properties": {
             "Regione": "Sardegna",
             "Denominazione": "Museo della Civiltà Pastorale e Contadina",
-            "Categoria": "museo, galleria e/o raccolta",
+            "Categoria": "museo, galleria, raccolta",
             "Comune": "Bitti",
             "Indirizzo": "Via Goffredo Mameli, 52",
             "Prezzo": "2.5",
-            "Contatti": "+39 0784 414314// +39 3333211346"
+            "Contatti": "+390784414314//+393333211346"
           },
           "geometry": {
             "type": "Point",
@@ -587,11 +593,11 @@
           "properties": {
             "Regione": "Sardegna",
             "Denominazione": "Museo Multimediale del canto a tenore",
-            "Categoria": "museo, galleria e/o raccolta",
+            "Categoria": "museo, galleria, raccolta",
             "Comune": "Bitti",
             "Indirizzo": "Via Goffredo Mameli, 52",
             "Prezzo": "2.5",
-            "Contatti": "+39 0784 414314// +39 3333211346"
+            "Contatti": "+390784414314//+393333211346"
           },
           "geometry": {
             "type": "Point",
@@ -610,7 +616,7 @@
             "Comune": "Bitti",
             "Indirizzo": "SS 389, km 54",
             "Prezzo": "4.0",
-            "Contatti": "+39 3333211346// +39 0784 414314"
+            "Contatti": "+393333211346//+390784414314"
           },
           "geometry": {
             "type": "Point",
@@ -625,11 +631,11 @@
           "properties": {
             "Regione": "Sardegna",
             "Denominazione": "Museo Civico Archeologico",
-            "Categoria": "museo, galleria e/o raccolta",
+            "Categoria": "museo, galleria, raccolta",
             "Comune": "Bonorva",
             "Indirizzo": "Piazza S. Antonio, s.n.c.",
             "Prezzo": "4.0",
-            "Contatti": "+39 3485642611// +39 079 867894"
+            "Contatti": "+393485642611//+39079867894"
           },
           "geometry": {
             "type": "Point",
@@ -648,7 +654,7 @@
             "Comune": "Bonorva",
             "Indirizzo": "SP 43, località Santa Lucia",
             "Prezzo": "6.0",
-            "Contatti": "+39 3485642611// +39 079 867894"
+            "Contatti": "+393485642611//+39079867894"
           },
           "geometry": {
             "type": "Point",
@@ -663,11 +669,11 @@
           "properties": {
             "Regione": "Sardegna",
             "Denominazione": "Museo della Cattedrale di San Pietro di Sorres",
-            "Categoria": "museo, galleria e/o raccolta",
+            "Categoria": "museo, galleria, raccolta",
             "Comune": "Borutta",
             "Indirizzo": "San Pietro di Sorres, s.n.c.",
             "Prezzo": "3.0",
-            "Contatti": "+39 3393312355// +39 079 824001// +39 079 824025"
+            "Contatti": "+393393312355//+39079824001//+39079824025"
           },
           "geometry": {
             "type": "Point",
@@ -686,7 +692,7 @@
             "Comune": "Bosa",
             "Indirizzo": "Via San Pietro, s.n.c.",
             "Prezzo": "2.0",
-            "Contatti": "+39 0785 373286// +39 3335445675// +39 3403955048// +39 3298505079"
+            "Contatti": "+390785373286//+393335445675//+393403955048//+393298505079"
           },
           "geometry": {
             "type": "Point",
@@ -705,7 +711,7 @@
             "Comune": "Bosa",
             "Indirizzo": "Via Canonico Nino Gavino, 9",
             "Prezzo": "4.0",
-            "Contatti": "+39 0785 373286"
+            "Contatti": "+390785373286"
           },
           "geometry": {
             "type": "Point",
@@ -720,11 +726,11 @@
           "properties": {
             "Regione": "Sardegna",
             "Denominazione": "Collezione permanente Pinanoteca Antonio Atza",
-            "Categoria": "museo, galleria e/o raccolta",
+            "Categoria": "museo, galleria, raccolta",
             "Comune": "Bosa",
             "Indirizzo": "Corso Vittorio Emanuele II, 74",
             "Prezzo": "4.5",
-            "Contatti": "+39 3288789521"
+            "Contatti": "+393288789521"
           },
           "geometry": {
             "type": "Point",
@@ -739,11 +745,11 @@
           "properties": {
             "Regione": "Sardegna",
             "Denominazione": "Museo Casa Deriu",
-            "Categoria": "museo, galleria e/o raccolta",
+            "Categoria": "museo, galleria, raccolta",
             "Comune": "Bosa",
             "Indirizzo": "Corso Vittorio Emanuele II, 59",
             "Prezzo": "4.5",
-            "Contatti": "+39 3288789521"
+            "Contatti": "+393288789521"
           },
           "geometry": {
             "type": "Point",
@@ -758,11 +764,11 @@
           "properties": {
             "Regione": "Sardegna",
             "Denominazione": "Museo delle Conce",
-            "Categoria": "museo, galleria e/o raccolta",
+            "Categoria": "museo, galleria, raccolta",
             "Comune": "Bosa",
             "Indirizzo": "Via Sas Conzas, 62",
             "Prezzo": "3.5",
-            "Contatti": "+39 3288789521"
+            "Contatti": "+393288789521"
           },
           "geometry": {
             "type": "Point",
@@ -777,11 +783,11 @@
           "properties": {
             "Regione": "Sardegna",
             "Denominazione": "Museo d'Arte Contemporanea",
-            "Categoria": "museo, galleria e/o raccolta",
+            "Categoria": "museo, galleria, raccolta",
             "Comune": "Buddusò",
             "Indirizzo": "Corso Antonio Segni, s.n.c.",
             "Prezzo": "2.5",
-            "Contatti": "+39 079 5610041// +39 3925234333// +39 079 715519"
+            "Contatti": "+390795610041//+393925234333//+39079715519"
           },
           "geometry": {
             "type": "Point",
@@ -800,7 +806,7 @@
             "Comune": "Buggerru",
             "Indirizzo": "Via Pranu Sartu, s.n.c.",
             "Prezzo": "10.0",
-            "Contatti": "+39 3341142910"
+            "Contatti": "+393341142910"
           },
           "geometry": {
             "type": "Point",
@@ -815,11 +821,11 @@
           "properties": {
             "Regione": "Sardegna",
             "Denominazione": "Museo del Minatore",
-            "Categoria": "museo, galleria e/o raccolta",
+            "Categoria": "museo, galleria, raccolta",
             "Comune": "Buggerru",
             "Indirizzo": "Via Marina, s.n.c.",
             "Prezzo": "2.5",
-            "Contatti": "+39 3341142910"
+            "Contatti": "+393341142910"
           },
           "geometry": {
             "type": "Point",
@@ -838,7 +844,7 @@
             "Comune": "Burgos",
             "Indirizzo": "Vico Castello, s.n.c.",
             "Prezzo": "3.0",
-            "Contatti": "+39 3479018930"
+            "Contatti": "+393479018930"
           },
           "geometry": {
             "type": "Point",
@@ -853,11 +859,11 @@
           "properties": {
             "Regione": "Sardegna",
             "Denominazione": "Museo dei Castelli",
-            "Categoria": "museo, galleria e/o raccolta",
+            "Categoria": "museo, galleria, raccolta",
             "Comune": "Burgos",
             "Indirizzo": "Vico Castello, s.n.c.",
             "Prezzo": "3.0",
-            "Contatti": "+39 3479018930"
+            "Contatti": "+393479018930"
           },
           "geometry": {
             "type": "Point",
@@ -872,11 +878,11 @@
           "properties": {
             "Regione": "Sardegna",
             "Denominazione": "Museo Civico Giovanni Marongiu",
-            "Categoria": "museo, galleria e/o raccolta",
+            "Categoria": "museo, galleria, raccolta",
             "Comune": "Cabras",
             "Indirizzo": "Via Tharros, 121",
             "Prezzo": "6.5",
-            "Contatti": "+39 0783 290636"
+            "Contatti": "+390783290636"
           },
           "geometry": {
             "type": "Point",
@@ -895,7 +901,7 @@
             "Comune": "Cabras",
             "Indirizzo": "SP 6, Località San Giovanni di Sinis",
             "Prezzo": "4.0",
-            "Contatti": "+39 0783 370019"
+            "Contatti": "+390783370019"
           },
           "geometry": {
             "type": "Point",
@@ -914,7 +920,7 @@
             "Comune": "Cagliari",
             "Indirizzo": "Via Sant'Ignazio da Laconi, 27",
             "Prezzo": "3.0",
-            "Contatti": "+39 3662562826// +39 070 6670168"
+            "Contatti": "+393662562826//+390706670168"
           },
           "geometry": {
             "type": "Point",
@@ -933,7 +939,7 @@
             "Comune": "Cagliari",
             "Indirizzo": "Via Sirai, s.n.c.",
             "Prezzo": "3.0",
-            "Contatti": "+39 070 15240479// +39 3466673657"
+            "Contatti": "+3907015240479//+393466673657"
           },
           "geometry": {
             "type": "Point",
@@ -948,11 +954,11 @@
           "properties": {
             "Regione": "Sardegna",
             "Denominazione": "Centro Comunale d'Arte e Cultura Exmà",
-            "Categoria": "museo, galleria e/o raccolta",
+            "Categoria": "museo, galleria, raccolta",
             "Comune": "Cagliari",
             "Indirizzo": "Via San Lucifero, 71",
             "Prezzo": "5.0",
-            "Contatti": "+39 070 666399// +39 3466673565"
+            "Contatti": "+39070666399//+393466673565"
           },
           "geometry": {
             "type": "Point",
@@ -967,11 +973,11 @@
           "properties": {
             "Regione": "Sardegna",
             "Denominazione": "Galleria Comunale d'Arte",
-            "Categoria": "museo, galleria e/o raccolta",
+            "Categoria": "museo, galleria, raccolta",
             "Comune": "Cagliari",
             "Indirizzo": "Largo giuseppe Dessì, s.n.c.",
             "Prezzo": "6.0",
-            "Contatti": "+39 070 6776454// +39 070 6777598"
+            "Contatti": "+390706776454//+390706777598"
           },
           "geometry": {
             "type": "Point",
@@ -986,11 +992,11 @@
           "properties": {
             "Regione": "Sardegna",
             "Denominazione": "Museo d'Arte Siamese Stefano Cardu",
-            "Categoria": "museo, galleria e/o raccolta",
+            "Categoria": "museo, galleria, raccolta",
             "Comune": "Cagliari",
             "Indirizzo": "Piazza Arsenale, 1",
             "Prezzo": "3.0",
-            "Contatti": "+39 070 6776543"
+            "Contatti": "+390706776543"
           },
           "geometry": {
             "type": "Point",
@@ -1005,11 +1011,11 @@
           "properties": {
             "Regione": "Sardegna",
             "Denominazione": "Museo del Duomo",
-            "Categoria": "museo, galleria e/o raccolta",
+            "Categoria": "museo, galleria, raccolta",
             "Comune": "Cagliari",
             "Indirizzo": "Via Fossario, 5",
             "Prezzo": "4.0",
-            "Contatti": "+39 3282687731// +39 070 680244"
+            "Contatti": "+393282687731//+39070680244"
           },
           "geometry": {
             "type": "Point",
@@ -1024,11 +1030,11 @@
           "properties": {
             "Regione": "Sardegna",
             "Denominazione": "MUTSEU - Museo del Tesoro e Area Archeologica di S. Eulalia",
-            "Categoria": "museo, galleria e/o raccolta",
+            "Categoria": "museo, galleria, raccolta",
             "Comune": "Cagliari",
             "Indirizzo": "Vico del Collegio, 2",
             "Prezzo": "5.0",
-            "Contatti": "+39 3489310225"
+            "Contatti": "+393489310225"
           },
           "geometry": {
             "type": "Point",
@@ -1043,11 +1049,11 @@
           "properties": {
             "Regione": "Sardegna",
             "Denominazione": "Antico Palazzo di Città",
-            "Categoria": "museo, galleria e/o raccolta",
+            "Categoria": "museo, galleria, raccolta",
             "Comune": "Cagliari",
             "Indirizzo": "Piazza Palazzo, 6",
             "Prezzo": "9.0",
-            "Contatti": "+39 070 6776482"
+            "Contatti": "+390706776482"
           },
           "geometry": {
             "type": "Point",
@@ -1062,11 +1068,11 @@
           "properties": {
             "Regione": "Sardegna",
             "Denominazione": "Raccolta delle Cere Anatomiche di Clemente Susini",
-            "Categoria": "museo, galleria e/o raccolta",
+            "Categoria": "museo, galleria, raccolta",
             "Comune": "Cagliari",
             "Indirizzo": "Piazza Arsenale, s.n.c.",
             "Prezzo": "1.5",
-            "Contatti": "+39 070 6754027// +39 070 6757624// +39 070 6754083"
+            "Contatti": "+390706754027//+390706757624//+390706754083"
           },
           "geometry": {
             "type": "Point",
@@ -1085,7 +1091,7 @@
             "Comune": "Cagliari",
             "Indirizzo": "Via Carbonazzi, 7",
             "Prezzo": "2.0",
-            "Contatti": "+39 3662562826"
+            "Contatti": "+393662562826"
           },
           "geometry": {
             "type": "Point",
@@ -1100,11 +1106,11 @@
           "properties": {
             "Regione": "Sardegna",
             "Denominazione": "Museo Diocesano di Arte Sacra Santa Giusta",
-            "Categoria": "museo, galleria e/o raccolta",
+            "Categoria": "museo, galleria, raccolta",
             "Comune": "Calangianus",
             "Indirizzo": "Via Rosario, s.n.c.",
             "Prezzo": "4.0",
-            "Contatti": "+39 3393469370// +39 3471884456"
+            "Contatti": "+393393469370//+393471884456"
           },
           "geometry": {
             "type": "Point",
@@ -1119,11 +1125,11 @@
           "properties": {
             "Regione": "Sardegna",
             "Denominazione": "Museo d'arte contemporanea MACC",
-            "Categoria": "museo, galleria e/o raccolta",
+            "Categoria": "museo, galleria, raccolta",
             "Comune": "Calasetta",
             "Indirizzo": "Via Savoia, 2",
             "Prezzo": "4.0",
-            "Contatti": "+39 0781 887219"
+            "Contatti": "+390781887219"
           },
           "geometry": {
             "type": "Point",
@@ -1138,11 +1144,11 @@
           "properties": {
             "Regione": "Sardegna",
             "Denominazione": "Museo Archeologico Villa Sulcis",
-            "Categoria": "museo, galleria e/o raccolta",
+            "Categoria": "museo, galleria, raccolta",
             "Comune": "Carbonia",
             "Indirizzo": "Via Campania, s.n.c.",
             "Prezzo": "6.0",
-            "Contatti": "+39 0781 1867304// +39 3458886058"
+            "Contatti": "+3907811867304//+393458886058"
           },
           "geometry": {
             "type": "Point",
@@ -1157,11 +1163,11 @@
           "properties": {
             "Regione": "Sardegna",
             "Denominazione": "Museo del Carbone",
-            "Categoria": "museo, galleria e/o raccolta",
+            "Categoria": "museo, galleria, raccolta",
             "Comune": "Carbonia",
             "Indirizzo": "SS 126, Serbariu",
             "Prezzo": "8.0",
-            "Contatti": "+39 0781 62727"
+            "Contatti": "+39078162727"
           },
           "geometry": {
             "type": "Point",
@@ -1176,11 +1182,11 @@
           "properties": {
             "Regione": "Sardegna",
             "Denominazione": "Museo dei Paleo Ambienti Sulcitani \"E.A. Martel\"",
-            "Categoria": "museo, galleria e/o raccolta",
+            "Categoria": "museo, galleria, raccolta",
             "Comune": "Carbonia",
             "Indirizzo": "SS 126, Serbariu",
             "Prezzo": "6.0",
-            "Contatti": "+39 3402689043"
+            "Contatti": "+393402689043"
           },
           "geometry": {
             "type": "Point",
@@ -1199,7 +1205,7 @@
             "Comune": "Carbonia",
             "Indirizzo": "SS 126, Monte Sirai",
             "Prezzo": "6.0",
-            "Contatti": "+39 0781 1888256// +39 3457559751"
+            "Contatti": "+3907811888256//+393457559751"
           },
           "geometry": {
             "type": "Point",
@@ -1214,11 +1220,11 @@
           "properties": {
             "Regione": "Sardegna",
             "Denominazione": "Museo Casa del Duca",
-            "Categoria": "museo, galleria e/o raccolta",
+            "Categoria": "museo, galleria, raccolta",
             "Comune": "Carloforte",
             "Indirizzo": "Via della Cisterna del Re, 20-24",
             "Prezzo": "5.0",
-            "Contatti": "+39 0781 8589260// +39 0781 8589207"
+            "Contatti": "+3907818589260//+3907818589207"
           },
           "geometry": {
             "type": "Point",
@@ -1233,11 +1239,11 @@
           "properties": {
             "Regione": "Sardegna",
             "Denominazione": "Museo dell'intreccio Mediterraneo",
-            "Categoria": "museo, galleria e/o raccolta",
+            "Categoria": "museo, galleria, raccolta",
             "Comune": "Castelsardo",
             "Indirizzo": "Via Guglielmo Marconi, s.n.c.",
             "Prezzo": "3.0",
-            "Contatti": "+39 079 6014769// +39 3471118547"
+            "Contatti": "+390796014769//+393471118547"
           },
           "geometry": {
             "type": "Point",
@@ -1252,11 +1258,11 @@
           "properties": {
             "Regione": "Sardegna",
             "Denominazione": "Museum Ampuriense - Cattedrale S. Antonio Abate",
-            "Categoria": "museo, galleria e/o raccolta",
+            "Categoria": "museo, galleria, raccolta",
             "Comune": "Castelsardo",
             "Indirizzo": "Via Manganella, 42",
             "Prezzo": "4.0",
-            "Contatti": "+39 079 6393099"
+            "Contatti": "+390796393099"
           },
           "geometry": {
             "type": "Point",
@@ -1275,7 +1281,7 @@
             "Comune": "Codrongianos",
             "Indirizzo": "SS 597",
             "Prezzo": "3.0",
-            "Contatti": "+39 3470007882"
+            "Contatti": "+393470007882"
           },
           "geometry": {
             "type": "Point",
@@ -1290,11 +1296,11 @@
           "properties": {
             "Regione": "Sardegna",
             "Denominazione": "Museo dell'Olio dr. Giorgio Zampa",
-            "Categoria": "museo, galleria e/o raccolta",
+            "Categoria": "museo, galleria, raccolta",
             "Comune": "Cuglieri",
             "Indirizzo": "Corso Umberto I, 68",
             "Prezzo": "3.0",
-            "Contatti": "+39 3405291175"
+            "Contatti": "+393405291175"
           },
           "geometry": {
             "type": "Point",
@@ -1309,11 +1315,11 @@
           "properties": {
             "Regione": "Sardegna",
             "Denominazione": "Museo della Tradizione Olearia Sa Mola De Su Notariu",
-            "Categoria": "museo, galleria e/o raccolta",
+            "Categoria": "museo, galleria, raccolta",
             "Comune": "Dolianova",
             "Indirizzo": "Viale Europa, 18",
             "Prezzo": "25.0",
-            "Contatti": "+39 070 740651// +39 3355468560"
+            "Contatti": "+39070740651//+393355468560"
           },
           "geometry": {
             "type": "Point",
@@ -1328,11 +1334,11 @@
           "properties": {
             "Regione": "Sardegna",
             "Denominazione": "Casa Museo",
-            "Categoria": "museo, galleria e/o raccolta",
+            "Categoria": "museo, galleria, raccolta",
             "Comune": "Domus de Maria",
             "Indirizzo": "Piazza Vittorio Emauele, s.n.c.",
             "Prezzo": "1.6",
-            "Contatti": "+39 070 7331424"
+            "Contatti": "+390707331424"
           },
           "geometry": {
             "type": "Point",
@@ -1351,7 +1357,7 @@
             "Comune": "Dorgali",
             "Indirizzo": "Supramonte di Dorgali, località Monte Tiscali",
             "Prezzo": "5.0",
-            "Contatti": "+39 3484780104"
+            "Contatti": "+393484780104"
           },
           "geometry": {
             "type": "Point",
@@ -1366,11 +1372,11 @@
           "properties": {
             "Regione": "Sardegna",
             "Denominazione": "Museo Archeologico Dorgali",
-            "Categoria": "museo, galleria e/o raccolta",
+            "Categoria": "museo, galleria, raccolta",
             "Comune": "Dorgali",
             "Indirizzo": "Via Lamarmora, s.n.c",
             "Prezzo": "3.0",
-            "Contatti": "+39 3484780104"
+            "Contatti": "+393484780104"
           },
           "geometry": {
             "type": "Point",
@@ -1385,11 +1391,11 @@
           "properties": {
             "Regione": "Sardegna",
             "Denominazione": "Museo della Foca Monaca",
-            "Categoria": "museo, galleria e/o raccolta",
+            "Categoria": "museo, galleria, raccolta",
             "Comune": "Dorgali",
             "Indirizzo": "Viale Bue Marino, 1",
             "Prezzo": "5.0",
-            "Contatti": "+39 3460366858"
+            "Contatti": "+393460366858"
           },
           "geometry": {
             "type": "Point",
@@ -1408,7 +1414,7 @@
             "Comune": "Dorgali",
             "Indirizzo": "SP 38",
             "Prezzo": "5.0",
-            "Contatti": "+39 3484780104"
+            "Contatti": "+393484780104"
           },
           "geometry": {
             "type": "Point",
@@ -1427,7 +1433,7 @@
             "Comune": "Dorgali",
             "Indirizzo": "Strada per Nuraghe Mannu",
             "Prezzo": "4.0",
-            "Contatti": "+39 3484780104"
+            "Contatti": "+393484780104"
           },
           "geometry": {
             "type": "Point",
@@ -1446,7 +1452,7 @@
             "Comune": "Fluminimaggiore",
             "Indirizzo": "Località Antas",
             "Prezzo": "4.0",
-            "Contatti": "+39 3478174989// +39 0781 580990 FAX"
+            "Contatti": "+393478174989"
           },
           "geometry": {
             "type": "Point",
@@ -1461,11 +1467,11 @@
           "properties": {
             "Regione": "Sardegna",
             "Denominazione": "Museo Etnografico Antico Mulino ad acqua Licheri",
-            "Categoria": "museo, galleria e/o raccolta",
+            "Categoria": "museo, galleria, raccolta",
             "Comune": "Fluminimaggiore",
             "Indirizzo": "Piazza Antonio Gramsci, s.n.c.",
             "Prezzo": "3.0",
-            "Contatti": "+39 3478174989// +39 0781 580990 FAX"
+            "Contatti": "+393478174989"
           },
           "geometry": {
             "type": "Point",
@@ -1484,7 +1490,7 @@
             "Comune": "Fordongianus",
             "Indirizzo": "Via Vittorio Veneto, s.n.c.",
             "Prezzo": "4.0",
-            "Contatti": "+39 0783 60157"
+            "Contatti": "+39078360157"
           },
           "geometry": {
             "type": "Point",
@@ -1503,7 +1509,7 @@
             "Comune": "Fordongianus",
             "Indirizzo": "Via Traiano, 10",
             "Prezzo": "4.0",
-            "Contatti": "+39 0783 60157"
+            "Contatti": "+39078360157"
           },
           "geometry": {
             "type": "Point",
@@ -1518,11 +1524,11 @@
           "properties": {
             "Regione": "Sardegna",
             "Denominazione": "Museo Etnografico sa Domo E' Marras",
-            "Categoria": "museo, galleria e/o raccolta",
+            "Categoria": "museo, galleria, raccolta",
             "Comune": "Galtellì",
             "Indirizzo": "Via Garibaldi, 14",
             "Prezzo": "5.0",
-            "Contatti": "+39 3472211296// +39 3451312441// +39 3471942842"
+            "Contatti": "+393472211296//+393451312441//+393471942842"
           },
           "geometry": {
             "type": "Point",
@@ -1537,11 +1543,11 @@
           "properties": {
             "Regione": "Sardegna",
             "Denominazione": "Museo Casa Porcu Satta",
-            "Categoria": "museo, galleria e/o raccolta",
+            "Categoria": "museo, galleria, raccolta",
             "Comune": "Gavoi",
             "Indirizzo": "Via Roma, 187",
             "Prezzo": "2.0",
-            "Contatti": "+39 0784 53633"
+            "Contatti": "+39078453633"
           },
           "geometry": {
             "type": "Point",
@@ -1556,11 +1562,11 @@
           "properties": {
             "Regione": "Sardegna",
             "Denominazione": "Civico Museo del Cavallino della Giara",
-            "Categoria": "museo, galleria e/o raccolta",
+            "Categoria": "museo, galleria, raccolta",
             "Comune": "Genoni",
             "Indirizzo": "Via Chiesa, 7",
             "Prezzo": "3.5",
-            "Contatti": "+39 3391676863"
+            "Contatti": "+393391676863"
           },
           "geometry": {
             "type": "Point",
@@ -1575,11 +1581,11 @@
           "properties": {
             "Regione": "Sardegna",
             "Denominazione": "P.Ar.C. - Paleo Archeo Centro",
-            "Categoria": "museo, galleria e/o raccolta",
+            "Categoria": "museo, galleria, raccolta",
             "Comune": "Genoni",
             "Indirizzo": "Località Santu Antine, s.n.c.",
             "Prezzo": "3.5",
-            "Contatti": "+39 3391676863"
+            "Contatti": "+393391676863"
           },
           "geometry": {
             "type": "Point",
@@ -1594,11 +1600,11 @@
           "properties": {
             "Regione": "Sardegna",
             "Denominazione": "Museo della Giara",
-            "Categoria": "museo, galleria e/o raccolta",
+            "Categoria": "museo, galleria, raccolta",
             "Comune": "Gesturi",
             "Indirizzo": "Via Camillo Benso Conte di Cavour, 4",
             "Prezzo": "2.0",
-            "Contatti": "+39 070 9369052"
+            "Contatti": "+390709369052"
           },
           "geometry": {
             "type": "Point",
@@ -1613,11 +1619,11 @@
           "properties": {
             "Regione": "Sardegna",
             "Denominazione": "Casa museo Antonio Gramsci",
-            "Categoria": "museo, galleria e/o raccolta",
+            "Categoria": "museo, galleria, raccolta",
             "Comune": "Ghilarza",
             "Indirizzo": "Corso Umberto I, 57",
             "Prezzo": "4.0",
-            "Contatti": "+39 0785 53075"
+            "Contatti": "+39078553075"
           },
           "geometry": {
             "type": "Point",
@@ -1636,7 +1642,7 @@
             "Comune": "Goni",
             "Indirizzo": "Località Pranu Muttedu",
             "Prezzo": "5.0",
-            "Contatti": "+39 070 982059"
+            "Contatti": "+39070982059"
           },
           "geometry": {
             "type": "Point",
@@ -1651,11 +1657,11 @@
           "properties": {
             "Regione": "Sardegna",
             "Denominazione": "Museo Turcus e Morus",
-            "Categoria": "museo, galleria e/o raccolta",
+            "Categoria": "museo, galleria, raccolta",
             "Comune": "Gonnostramatza",
             "Indirizzo": "Piazza San Michele Arcangelo, 5",
             "Prezzo": "3.0",
-            "Contatti": "+39 0783 92587// +39 3476008108// +39 3477299298"
+            "Contatti": "+39078392587//+393476008108//+393477299298"
           },
           "geometry": {
             "type": "Point",
@@ -1670,11 +1676,11 @@
           "properties": {
             "Regione": "Sardegna",
             "Denominazione": "Casa Murgia",
-            "Categoria": "museo, galleria e/o raccolta",
+            "Categoria": "museo, galleria, raccolta",
             "Comune": "Guspini",
             "Indirizzo": "Via Petrarca, 2",
             "Prezzo": "3.0",
-            "Contatti": "+39 070 973173// +39 3384592082// +39 3891643692"
+            "Contatti": "+39070973173//+393384592082//+393891643692"
           },
           "geometry": {
             "type": "Point",
@@ -1693,7 +1699,7 @@
             "Comune": "Guspini",
             "Indirizzo": "Piazzale Rolandi, 2",
             "Prezzo": "5.0",
-            "Contatti": "+39 070 973173// +39 3384592082// +39 3891643692"
+            "Contatti": "+39070973173//+393384592082//+393891643692"
           },
           "geometry": {
             "type": "Point",
@@ -1712,7 +1718,7 @@
             "Comune": "Guspini",
             "Indirizzo": "Miniera Montevecchio, SP 66",
             "Prezzo": "12.0",
-            "Contatti": "+39 3384592082// +39 3891643692// +39 0781 491300"
+            "Contatti": "+393384592082//+393891643692//+390781491300"
           },
           "geometry": {
             "type": "Point",
@@ -1727,11 +1733,11 @@
           "properties": {
             "Regione": "Sardegna",
             "Denominazione": "Museo Monte Tempo",
-            "Categoria": "museo, galleria e/o raccolta",
+            "Categoria": "museo, galleria, raccolta",
             "Comune": "Guspini",
             "Indirizzo": "Via Ferracciu, 1",
             "Prezzo": "3.0",
-            "Contatti": "+39 070 973173// +39 3384592082// +39 3891643692"
+            "Contatti": "+39070973173//+393384592082//+393891643692"
           },
           "geometry": {
             "type": "Point",
@@ -1750,7 +1756,7 @@
             "Comune": "Iglesias",
             "Indirizzo": "Frazione San Giovanni, Miniera, SS 126",
             "Prezzo": "15.0",
-            "Contatti": "+39 0781 274507"
+            "Contatti": "+390781274507"
           },
           "geometry": {
             "type": "Point",
@@ -1765,11 +1771,11 @@
           "properties": {
             "Regione": "Sardegna",
             "Denominazione": "Museo dell'Arte Mineraria",
-            "Categoria": "museo, galleria e/o raccolta",
+            "Categoria": "museo, galleria, raccolta",
             "Comune": "Iglesias",
             "Indirizzo": "Via Roma, 47",
             "Prezzo": "5.0",
-            "Contatti": "+39 0781 350037// +39 3394051486// +39 3389221392"
+            "Contatti": "+390781350037//+393394051486//+393389221392"
           },
           "geometry": {
             "type": "Point",
@@ -1788,7 +1794,7 @@
             "Comune": "Iglesias",
             "Indirizzo": "Strada Provinciale, 83",
             "Prezzo": "10.0",
-            "Contatti": "+39 0781 274507"
+            "Contatti": "+390781274507"
           },
           "geometry": {
             "type": "Point",
@@ -1803,11 +1809,11 @@
           "properties": {
             "Regione": "Sardegna",
             "Denominazione": "Antiquarium Comunale di Irgoli",
-            "Categoria": "museo, galleria e/o raccolta",
+            "Categoria": "museo, galleria, raccolta",
             "Comune": "Irgoli",
             "Indirizzo": "Via San Michele, 14",
             "Prezzo": "2.0",
-            "Contatti": "+39 0784 979074// +39 3806390589"
+            "Contatti": "+390784979074//+393806390589"
           },
           "geometry": {
             "type": "Point",
@@ -1826,7 +1832,7 @@
             "Comune": "Irgoli",
             "Indirizzo": "Monte 'E Senes",
             "Prezzo": "2.0",
-            "Contatti": "+39 0784 979074// +39 3806390589"
+            "Contatti": "+390784979074//+393806390589"
           },
           "geometry": {
             "type": "Point",
@@ -1841,11 +1847,11 @@
           "properties": {
             "Regione": "Sardegna",
             "Denominazione": "MARATE - Museo Per L'Arte del Rame e del Tessuto",
-            "Categoria": "museo, galleria e/o raccolta",
+            "Categoria": "museo, galleria, raccolta",
             "Comune": "Isili",
             "Indirizzo": "Piazza San Giuseppe Calasanzio, 8",
             "Prezzo": "2.5",
-            "Contatti": "+39 0782 802641// +39 3804553856// +39 0782 804163 FAX"
+            "Contatti": "+390782802641//+393804553856"
           },
           "geometry": {
             "type": "Point",
@@ -1864,7 +1870,7 @@
             "Comune": "Isili",
             "Indirizzo": "Via Grazia Deledda, s.n.c.",
             "Prezzo": "3.0",
-            "Contatti": "+39 0782 802641// +39 0782 804163 FAX// +39 3804553856// +39 3391121384// +39 3482231271"
+            "Contatti": "+390782802641//+393804553856//+393391121384//+393482231271"
           },
           "geometry": {
             "type": "Point",
@@ -1879,11 +1885,11 @@
           "properties": {
             "Regione": "Sardegna",
             "Denominazione": "Museo Civico Archeologico Etnografico",
-            "Categoria": "museo, galleria e/o raccolta",
+            "Categoria": "museo, galleria, raccolta",
             "Comune": "Ittireddu",
             "Indirizzo": "Via San Giacomo, 3",
             "Prezzo": "3.0",
-            "Contatti": "+39 079 767623// +39 079 767625 FAX"
+            "Contatti": "+39079767623"
           },
           "geometry": {
             "type": "Point",
@@ -1898,11 +1904,11 @@
           "properties": {
             "Regione": "Sardegna",
             "Denominazione": "Museo Diocesano La Maddalena",
-            "Categoria": "museo, galleria e/o raccolta",
+            "Categoria": "museo, galleria, raccolta",
             "Comune": "La Maddalena",
             "Indirizzo": "Via Baron Manno, s.n.c.",
             "Prezzo": "3.0",
-            "Contatti": "+39 3491534391"
+            "Contatti": "+393491534391"
           },
           "geometry": {
             "type": "Point",
@@ -1921,7 +1927,7 @@
             "Comune": "Lanusei",
             "Indirizzo": "Località Bosco Seleni, s.n.c.",
             "Prezzo": "4.0",
-            "Contatti": "+39 0782 41051"
+            "Contatti": "+39078241051"
           },
           "geometry": {
             "type": "Point",
@@ -1936,11 +1942,11 @@
           "properties": {
             "Regione": "Sardegna",
             "Denominazione": "Museo Muda",
-            "Categoria": "museo, galleria e/o raccolta",
+            "Categoria": "museo, galleria, raccolta",
             "Comune": "Las Plassas",
             "Indirizzo": "Via Alessandro Manzoni, 4",
             "Prezzo": "5.0",
-            "Contatti": "+39 070 9790410// +39 3475383803"
+            "Contatti": "+390709790410//+393475383803"
           },
           "geometry": {
             "type": "Point",
@@ -1955,11 +1961,11 @@
           "properties": {
             "Regione": "Sardegna",
             "Denominazione": "Museo Naturalistico del Territorio Giovanni Pusceddu",
-            "Categoria": "museo, galleria e/o raccolta",
+            "Categoria": "museo, galleria, raccolta",
             "Comune": "Lunamatrona",
             "Indirizzo": "Strada Comunale Mogoro-Lunamatrona, Località Spinarba",
             "Prezzo": "6.0",
-            "Contatti": "+39 070 9300242// +39 070 9341009// +39 070 9300212 FAX"
+            "Contatti": "+390709300242//+390709341009"
           },
           "geometry": {
             "type": "Point",
@@ -1974,11 +1980,11 @@
           "properties": {
             "Regione": "Sardegna",
             "Denominazione": "Collezione Forteleoni",
-            "Categoria": "museo, galleria e/o raccolta",
+            "Categoria": "museo, galleria, raccolta",
             "Comune": "Luras",
             "Indirizzo": "Corso Carlo Alberto, 1",
             "Prezzo": "5.0",
-            "Contatti": "+39 079 647547"
+            "Contatti": "+39079647547"
           },
           "geometry": {
             "type": "Point",
@@ -1993,11 +1999,11 @@
           "properties": {
             "Regione": "Sardegna",
             "Denominazione": "Museo Etnografico Galluras, Il Museo della Femina Agabbadora",
-            "Categoria": "museo, galleria e/o raccolta",
+            "Categoria": "museo, galleria, raccolta",
             "Comune": "Luras",
             "Indirizzo": "Via Nazionale, 35",
             "Prezzo": "5.0",
-            "Contatti": "+39 3683376321"
+            "Contatti": "+393683376321"
           },
           "geometry": {
             "type": "Point",
@@ -2016,7 +2022,7 @@
             "Comune": "Macomer",
             "Indirizzo": "Strada Comunale Monte",
             "Prezzo": "4.0",
-            "Contatti": "+39 3479481337// +39 0785 743044// +39 0785 70475"
+            "Contatti": "+393479481337//+390785743044//+39078570475"
           },
           "geometry": {
             "type": "Point",
@@ -2031,11 +2037,11 @@
           "properties": {
             "Regione": "Sardegna",
             "Denominazione": "Museo Etnografico Le Arti Antiche",
-            "Categoria": "museo, galleria e/o raccolta",
+            "Categoria": "museo, galleria, raccolta",
             "Comune": "Macomer",
             "Indirizzo": "Corso Umberto I, 225",
             "Prezzo": "4.0",
-            "Contatti": "+39 0785 743044// +39 0785 70475// +39 3479481337"
+            "Contatti": "+390785743044//+39078570475//+393479481337"
           },
           "geometry": {
             "type": "Point",
@@ -2054,7 +2060,7 @@
             "Comune": "Macomer",
             "Indirizzo": "SS 129bis",
             "Prezzo": "4.0",
-            "Contatti": "+39 0785 743044// +39 0785 70475// +39 3479481337"
+            "Contatti": "+390785743044//+39078570475//+393479481337"
           },
           "geometry": {
             "type": "Point",
@@ -2073,7 +2079,7 @@
             "Comune": "Macomer",
             "Indirizzo": "SS 131",
             "Prezzo": "4.0",
-            "Contatti": "+39 0785 743044// +39 0785 70475// +39 3479481337"
+            "Contatti": "+390785743044//+39078570475//+393479481337"
           },
           "geometry": {
             "type": "Point",
@@ -2092,7 +2098,7 @@
             "Comune": "Macomer",
             "Indirizzo": "SS 129 bis",
             "Prezzo": "4.0",
-            "Contatti": "+39 0785 743044// +39 0785 70475// +39 3479481337"
+            "Contatti": "+390785743044//+39078570475//+393479481337"
           },
           "geometry": {
             "type": "Point",
@@ -2107,11 +2113,11 @@
           "properties": {
             "Regione": "Sardegna",
             "Denominazione": "Museo della Cultura e del Lavoro",
-            "Categoria": "museo, galleria e/o raccolta",
+            "Categoria": "museo, galleria, raccolta",
             "Comune": "Mamoiada",
             "Indirizzo": "Via Sardegna, 17",
             "Prezzo": "4.0",
-            "Contatti": "+39 0784 569018// +39 0784 56719 FAX"
+            "Contatti": "+390784569018"
           },
           "geometry": {
             "type": "Point",
@@ -2126,11 +2132,11 @@
           "properties": {
             "Regione": "Sardegna",
             "Denominazione": "Museo delle Maschere Mediterranee",
-            "Categoria": "museo, galleria e/o raccolta",
+            "Categoria": "museo, galleria, raccolta",
             "Comune": "Mamoiada",
             "Indirizzo": "Piazza Europa, 15",
             "Prezzo": "5.0",
-            "Contatti": "+39 0784 569018// +39 0784 56719 FAX"
+            "Contatti": "+390784569018"
           },
           "geometry": {
             "type": "Point",
@@ -2145,11 +2151,11 @@
           "properties": {
             "Regione": "Sardegna",
             "Denominazione": "Casa Museo Is Lollas de Is Aiaiusu",
-            "Categoria": "museo, galleria e/o raccolta",
+            "Categoria": "museo, galleria, raccolta",
             "Comune": "Mandas",
             "Indirizzo": "Via S. Antonio, 15",
             "Prezzo": "2.0",
-            "Contatti": "+39 3491973677// +39 070 987801// +39 3489335805"
+            "Contatti": "+393491973677//+39070987801//+393489335805"
           },
           "geometry": {
             "type": "Point",
@@ -2164,11 +2170,11 @@
           "properties": {
             "Regione": "Sardegna",
             "Denominazione": "Museo di Arte Sacra Peregrinatio Fidei",
-            "Categoria": "museo, galleria e/o raccolta",
+            "Categoria": "museo, galleria, raccolta",
             "Comune": "Mandas",
             "Indirizzo": "Piazza Carlo Alberto, s.n.c.",
             "Prezzo": "2.0",
-            "Contatti": "+39 3493607889// +39 070 987801// +39 3489335805"
+            "Contatti": "+393493607889//+39070987801//+393489335805"
           },
           "geometry": {
             "type": "Point",
@@ -2183,11 +2189,11 @@
           "properties": {
             "Regione": "Sardegna",
             "Denominazione": "Geomuseo Monte Arci Stefano Incani",
-            "Categoria": "museo, galleria e/o raccolta",
+            "Categoria": "museo, galleria, raccolta",
             "Comune": "Masullas",
             "Indirizzo": "Piazza Convento, s.n.c.",
             "Prezzo": "4.0",
-            "Contatti": "+39 3891777100// +39 0783 990251"
+            "Contatti": "+393891777100//+390783990251"
           },
           "geometry": {
             "type": "Point",
@@ -2202,11 +2208,11 @@
           "properties": {
             "Regione": "Sardegna",
             "Denominazione": "Museo I Cavalieri delle Colline",
-            "Categoria": "museo, galleria e/o raccolta",
+            "Categoria": "museo, galleria, raccolta",
             "Comune": "Masullas",
             "Indirizzo": "Piazza San Leonardo, s.n.c.",
             "Prezzo": "4.0",
-            "Contatti": "+39 3891777100// +39 0783 991122"
+            "Contatti": "+393891777100//+390783991122"
           },
           "geometry": {
             "type": "Point",
@@ -2225,7 +2231,7 @@
             "Comune": "Meana Sardo",
             "Indirizzo": "Località Nolza",
             "Prezzo": "3.0",
-            "Contatti": "+39 0784 64183// +39 3311092120"
+            "Contatti": "+39078464183//+393311092120"
           },
           "geometry": {
             "type": "Point",
@@ -2244,7 +2250,7 @@
             "Comune": "Mogoro",
             "Indirizzo": "SP 44",
             "Prezzo": "2.0",
-            "Contatti": "+39 3281156539"
+            "Contatti": "+393281156539"
           },
           "geometry": {
             "type": "Point",
@@ -2259,11 +2265,11 @@
           "properties": {
             "Regione": "Sardegna",
             "Denominazione": "Ecomuseo Miniere Rosas",
-            "Categoria": "museo, galleria e/o raccolta",
+            "Categoria": "museo, galleria, raccolta",
             "Comune": "Narcao",
             "Indirizzo": "Via Rosas, s.n.c.",
             "Prezzo": "8.0",
-            "Contatti": "+39 0781 1855139// +39 3292773342"
+            "Contatti": "+3907811855139//+393292773342"
           },
           "geometry": {
             "type": "Point",
@@ -2278,11 +2284,11 @@
           "properties": {
             "Regione": "Sardegna",
             "Denominazione": "Museo dell'Immagine e del Design Interattivo",
-            "Categoria": "museo, galleria e/o raccolta",
+            "Categoria": "museo, galleria, raccolta",
             "Comune": "Norbello",
             "Indirizzo": "Vico San Giovanni, 10",
             "Prezzo": "3.0",
-            "Contatti": "+39 0785 519927// +39 3473846907"
+            "Contatti": "+390785519927//+393473846907"
           },
           "geometry": {
             "type": "Point",
@@ -2297,11 +2303,11 @@
           "properties": {
             "Regione": "Sardegna",
             "Denominazione": "MAN Museo d'Arte Provincia di Nuoro",
-            "Categoria": "museo, galleria e/o raccolta",
+            "Categoria": "museo, galleria, raccolta",
             "Comune": "Nuoro",
             "Indirizzo": "Via Sebastiano Satta, 27",
             "Prezzo": "5.0",
-            "Contatti": "+39 0784 252110// +39 0784 36243 FAX"
+            "Contatti": "+390784252110"
           },
           "geometry": {
             "type": "Point",
@@ -2316,11 +2322,11 @@
           "properties": {
             "Regione": "Sardegna",
             "Denominazione": "Museo Deleddiano - Casa Natale di Grazia Deledda",
-            "Categoria": "museo, galleria e/o raccolta",
+            "Categoria": "museo, galleria, raccolta",
             "Comune": "Nuoro",
             "Indirizzo": "Via Grazia Deledda, 42",
             "Prezzo": "3.0",
-            "Contatti": "+39 0784 36101"
+            "Contatti": "+39078436101"
           },
           "geometry": {
             "type": "Point",
@@ -2335,11 +2341,11 @@
           "properties": {
             "Regione": "Sardegna",
             "Denominazione": "Museo della Vita e delle Tradizioni Popolari Sarde",
-            "Categoria": "museo, galleria e/o raccolta",
+            "Categoria": "museo, galleria, raccolta",
             "Comune": "Nuoro",
             "Indirizzo": "Via Antonio Mereu, 56",
             "Prezzo": "5.0",
-            "Contatti": "+39 0784 257035// +39 0784 242900// +39 0784 37484 FAX// +39 0784 253943 FAX"
+            "Contatti": "+390784257035//+390784242900"
           },
           "geometry": {
             "type": "Point",
@@ -2358,7 +2364,7 @@
             "Comune": "Oliena",
             "Indirizzo": "SP 46, Valle di Lanaitto",
             "Prezzo": "5.0",
-            "Contatti": "+39 3478249517"
+            "Contatti": "+393478249517"
           },
           "geometry": {
             "type": "Point",
@@ -2377,7 +2383,7 @@
             "Comune": "Oliena",
             "Indirizzo": "SP 46, Valle di Lanaitto, località Carros",
             "Prezzo": "5.0",
-            "Contatti": "+39 3478249517"
+            "Contatti": "+393478249517"
           },
           "geometry": {
             "type": "Point",
@@ -2392,11 +2398,11 @@
           "properties": {
             "Regione": "Sardegna",
             "Denominazione": "Casa Museo Carmelo Floris",
-            "Categoria": "museo, galleria e/o raccolta",
+            "Categoria": "museo, galleria, raccolta",
             "Comune": "Olzai",
             "Indirizzo": "Via S. Anastasio, 30",
             "Prezzo": "2.5",
-            "Contatti": "+39 3664625022// +39 3486094727"
+            "Contatti": "+393664625022//+393486094727"
           },
           "geometry": {
             "type": "Point",
@@ -2411,11 +2417,11 @@
           "properties": {
             "Regione": "Sardegna",
             "Denominazione": "Museo Nivola",
-            "Categoria": "museo, galleria e/o raccolta",
+            "Categoria": "museo, galleria, raccolta",
             "Comune": "Orani",
             "Indirizzo": "Via Gonare, 2",
             "Prezzo": "5.0",
-            "Contatti": "+39 0784 730063"
+            "Contatti": "+390784730063"
           },
           "geometry": {
             "type": "Point",
@@ -2430,11 +2436,11 @@
           "properties": {
             "Regione": "Sardegna",
             "Denominazione": "Museo Archeologico Antiquarium Arborense",
-            "Categoria": "museo, galleria e/o raccolta",
+            "Categoria": "museo, galleria, raccolta",
             "Comune": "Oristano",
             "Indirizzo": "Piazza Giovanni Corrias, s.n.c.",
             "Prezzo": "5.0",
-            "Contatti": "+39 0783 791262"
+            "Contatti": "+390783791262"
           },
           "geometry": {
             "type": "Point",
@@ -2449,11 +2455,11 @@
           "properties": {
             "Regione": "Sardegna",
             "Denominazione": "Pinacoteca Comunale Carlo Contini",
-            "Categoria": "museo, galleria e/o raccolta",
+            "Categoria": "museo, galleria, raccolta",
             "Comune": "Oristano",
             "Indirizzo": "Via Sant'Antonio, s.n.c.",
             "Prezzo": "4.0",
-            "Contatti": "+39 0783 791262// +39 0783 791204"
+            "Contatti": "+390783791262//+390783791204"
           },
           "geometry": {
             "type": "Point",
@@ -2472,7 +2478,7 @@
             "Comune": "Orroli",
             "Indirizzo": "SP 10, località Su Pranu",
             "Prezzo": "4.0",
-            "Contatti": "+39 0782 847269// +39 3297867983"
+            "Contatti": "+390782847269//+393297867983"
           },
           "geometry": {
             "type": "Point",
@@ -2487,11 +2493,11 @@
           "properties": {
             "Regione": "Sardegna",
             "Denominazione": "Museo Omu Axiu",
-            "Categoria": "museo, galleria e/o raccolta",
+            "Categoria": "museo, galleria, raccolta",
             "Comune": "Orroli",
             "Indirizzo": "Via Roma, 46",
             "Prezzo": "3.0",
-            "Contatti": "+39 0782 845023"
+            "Contatti": "+390782845023"
           },
           "geometry": {
             "type": "Point",
@@ -2506,11 +2512,11 @@
           "properties": {
             "Regione": "Sardegna",
             "Denominazione": "Sa domu de Su Nuraxi Arrubiu",
-            "Categoria": "museo, galleria e/o raccolta",
+            "Categoria": "museo, galleria, raccolta",
             "Comune": "Orroli",
             "Indirizzo": "Via Roma, 119",
             "Prezzo": "5.0",
-            "Contatti": "+39 0782 847269// +39 3297867983"
+            "Contatti": "+390782847269//+393297867983"
           },
           "geometry": {
             "type": "Point",
@@ -2525,11 +2531,11 @@
           "properties": {
             "Regione": "Sardegna",
             "Denominazione": "Museo del Grano",
-            "Categoria": "museo, galleria e/o raccolta",
+            "Categoria": "museo, galleria, raccolta",
             "Comune": "Ortacesus",
             "Indirizzo": "Via J.F. Kennedy, 25",
             "Prezzo": "2.0",
-            "Contatti": "+39 070 9819027"
+            "Contatti": "+390709819027"
           },
           "geometry": {
             "type": "Point",
@@ -2548,7 +2554,7 @@
             "Comune": "Orune",
             "Indirizzo": "Località Sa Costa e Sa Binza",
             "Prezzo": "3.0",
-            "Contatti": "+39 3287565148"
+            "Contatti": "+393287565148"
           },
           "geometry": {
             "type": "Point",
@@ -2567,7 +2573,7 @@
             "Comune": "Osini",
             "Indirizzo": "Altopiano Del Taccu",
             "Prezzo": "3.0",
-            "Contatti": "+39 3297643343// +39 3204960927// +39 3287623515"
+            "Contatti": "+393297643343//+393204960927//+393287623515"
           },
           "geometry": {
             "type": "Point",
@@ -2582,11 +2588,11 @@
           "properties": {
             "Regione": "Sardegna",
             "Denominazione": "Civico Museo Archeologico Alle Clarisse",
-            "Categoria": "museo, galleria e/o raccolta",
+            "Categoria": "museo, galleria, raccolta",
             "Comune": "Ozieri",
             "Indirizzo": "Piazza P. Micca, s.n.c.",
             "Prezzo": "5.0",
-            "Contatti": "+39 079 7851052// +39 079 7851090// +39 079 787638"
+            "Contatti": "+390797851052//+390797851090//+39079787638"
           },
           "geometry": {
             "type": "Point",
@@ -2605,7 +2611,7 @@
             "Comune": "Ozieri",
             "Indirizzo": "Via San Michele, s.n.c.",
             "Prezzo": "3.0",
-            "Contatti": "+39 079 787638"
+            "Contatti": "+39079787638"
           },
           "geometry": {
             "type": "Point",
@@ -2620,11 +2626,11 @@
           "properties": {
             "Regione": "Sardegna",
             "Denominazione": "Museo Diocesano d'Arte Sacra",
-            "Categoria": "museo, galleria e/o raccolta",
+            "Categoria": "museo, galleria, raccolta",
             "Comune": "Ozieri",
             "Indirizzo": "Via Umberto I, 37",
             "Prezzo": "3.0",
-            "Contatti": "+39 079 786093// +39 34715460083// +39 079 787638"
+            "Contatti": "+39079786093//+3934715460083//+39079787638"
           },
           "geometry": {
             "type": "Point",
@@ -2639,11 +2645,11 @@
           "properties": {
             "Regione": "Sardegna",
             "Denominazione": "Pinacoteca Giuseppe Altana",
-            "Categoria": "museo, galleria e/o raccolta",
+            "Categoria": "museo, galleria, raccolta",
             "Comune": "Ozieri",
             "Indirizzo": "Via Alcide De Gasperi, 2",
             "Prezzo": "3.0",
-            "Contatti": "+39 079 787638"
+            "Contatti": "+39079787638"
           },
           "geometry": {
             "type": "Point",
@@ -2662,7 +2668,7 @@
             "Comune": "Ozieri",
             "Indirizzo": "SS 597",
             "Prezzo": "3.0",
-            "Contatti": "+39 079 787638// +39 079 7851052"
+            "Contatti": "+39079787638//+390797851052"
           },
           "geometry": {
             "type": "Point",
@@ -2677,11 +2683,11 @@
           "properties": {
             "Regione": "Sardegna",
             "Denominazione": "Museo Civico Archeologico",
-            "Categoria": "museo, galleria e/o raccolta",
+            "Categoria": "museo, galleria, raccolta",
             "Comune": "Padria",
             "Indirizzo": "Via Nazionale, 3",
             "Prezzo": "1.0",
-            "Contatti": "+39 079 807018// +39 340 2836246// +39 347 9384533"
+            "Contatti": "+39079807018//+393402836246//+393479384533"
           },
           "geometry": {
             "type": "Point",
@@ -2700,7 +2706,7 @@
             "Comune": "Palau",
             "Indirizzo": "SS 133, strada per Porto Rafael",
             "Prezzo": "5.0",
-            "Contatti": "+39 3203407436"
+            "Contatti": "+393203407436"
           },
           "geometry": {
             "type": "Point",
@@ -2715,11 +2721,11 @@
           "properties": {
             "Regione": "Sardegna",
             "Denominazione": "Museo Etnografico",
-            "Categoria": "museo, galleria e/o raccolta",
+            "Categoria": "museo, galleria, raccolta",
             "Comune": "Palau",
             "Indirizzo": "Via Nazionale, s.n.c.",
             "Prezzo": "2.5",
-            "Contatti": "+39 3470913032"
+            "Contatti": "+393470913032"
           },
           "geometry": {
             "type": "Point",
@@ -2734,11 +2740,11 @@
           "properties": {
             "Regione": "Sardegna",
             "Denominazione": "CULTER - Museo del Coltello Internazionale",
-            "Categoria": "museo, galleria e/o raccolta",
+            "Categoria": "museo, galleria, raccolta",
             "Comune": "Pattada",
             "Indirizzo": "Via Vittorio Emanuele, 64",
             "Prezzo": "4.0",
-            "Contatti": "+39 079 755918"
+            "Contatti": "+39079755918"
           },
           "geometry": {
             "type": "Point",
@@ -2753,11 +2759,11 @@
           "properties": {
             "Regione": "Sardegna",
             "Denominazione": "Museo dell'Ossidiana",
-            "Categoria": "museo, galleria e/o raccolta",
+            "Categoria": "museo, galleria, raccolta",
             "Comune": "Pau",
             "Indirizzo": "Via San Giorgio, 8",
             "Prezzo": "6.0",
-            "Contatti": "+39 0783 934011// +39 0783 934011 FAX"
+            "Contatti": "+390783934011"
           },
           "geometry": {
             "type": "Point",
@@ -2772,11 +2778,11 @@
           "properties": {
             "Regione": "Sardegna",
             "Denominazione": "Museo della Donna",
-            "Categoria": "museo, galleria e/o raccolta",
+            "Categoria": "museo, galleria, raccolta",
             "Comune": "Pauli Arbarei",
             "Indirizzo": "Via Roma, 12/ Via Mannu, 3",
             "Prezzo": "2.0",
-            "Contatti": "+39 070 939039"
+            "Contatti": "+39070939039"
           },
           "geometry": {
             "type": "Point",
@@ -2795,7 +2801,7 @@
             "Comune": "Paulilatino",
             "Indirizzo": "SS 131",
             "Prezzo": "7.0",
-            "Contatti": "+39 0785 55438// +39 0785 55438 FAX// +39 3477746747"
+            "Contatti": "+39078555438//+393477746747"
           },
           "geometry": {
             "type": "Point",
@@ -2810,11 +2816,11 @@
           "properties": {
             "Regione": "Sardegna",
             "Denominazione": "Museo Archeologico Etnografico Palazzo Atzori",
-            "Categoria": "museo, galleria e/o raccolta",
+            "Categoria": "museo, galleria, raccolta",
             "Comune": "Paulilatino",
             "Indirizzo": "Via Nazionale, 127-129",
             "Prezzo": "7.0",
-            "Contatti": "+39 0785 55438// +39 0785 55438 FAX// +39 3477746747"
+            "Contatti": "+39078555438//+393477746747"
           },
           "geometry": {
             "type": "Point",
@@ -2829,11 +2835,11 @@
           "properties": {
             "Regione": "Sardegna",
             "Denominazione": "Museo Diocesano - Sacristia Santa Maria Degli Angeli",
-            "Categoria": "museo, galleria e/o raccolta",
+            "Categoria": "museo, galleria, raccolta",
             "Comune": "Perfugas",
             "Indirizzo": "Piazza Domenico Alberto Azuni, s.n.c.",
             "Prezzo": "4.0",
-            "Contatti": "+39 079 6393099// +39 3497777103// +39 3459388019"
+            "Contatti": "+390796393099//+393497777103//+393459388019"
           },
           "geometry": {
             "type": "Point",
@@ -2848,11 +2854,11 @@
           "properties": {
             "Regione": "Sardegna",
             "Denominazione": "Quadreria Spano",
-            "Categoria": "museo, galleria e/o raccolta",
+            "Categoria": "museo, galleria, raccolta",
             "Comune": "Ploaghe",
             "Indirizzo": "Piazza San Pietro, s.n.c.",
             "Prezzo": "2.5",
-            "Contatti": "+39 3493672110"
+            "Contatti": "+393493672110"
           },
           "geometry": {
             "type": "Point",
@@ -2871,7 +2877,7 @@
             "Comune": "Porto Torres",
             "Indirizzo": "Via Ponte Romano, 99",
             "Prezzo": "4.0",
-            "Contatti": "+39 079 514433"
+            "Contatti": "+39079514433"
           },
           "geometry": {
             "type": "Point",
@@ -2890,7 +2896,7 @@
             "Comune": "Posada",
             "Indirizzo": "Via Eleonora d'Arborea, s.n.c.",
             "Prezzo": "2.5",
-            "Contatti": "+39 3474801421"
+            "Contatti": "+393474801421"
           },
           "geometry": {
             "type": "Point",
@@ -2905,11 +2911,11 @@
           "properties": {
             "Regione": "Sardegna",
             "Denominazione": "Museo del Cavallo di Pozzomaggiore",
-            "Categoria": "museo, galleria e/o raccolta",
+            "Categoria": "museo, galleria, raccolta",
             "Comune": "Pozzomaggiore",
             "Indirizzo": "Piazza Convento, 39",
             "Prezzo": "2.0",
-            "Contatti": "+39 3408070619// +39 3283831764// +39 079 801969"
+            "Contatti": "+393408070619//+393283831764//+39079801969"
           },
           "geometry": {
             "type": "Point",
@@ -2924,11 +2930,11 @@
           "properties": {
             "Regione": "Sardegna",
             "Denominazione": "Museo Unico Regionale dell'Arte Tessile Sarda",
-            "Categoria": "museo, galleria e/o raccolta",
+            "Categoria": "museo, galleria, raccolta",
             "Comune": "Samugheo",
             "Indirizzo": "Via Bologna, s.n.c.",
             "Prezzo": "2.5",
-            "Contatti": "+39 0783 631052"
+            "Contatti": "+390783631052"
           },
           "geometry": {
             "type": "Point",
@@ -2943,11 +2949,11 @@
           "properties": {
             "Regione": "Sardegna",
             "Denominazione": "Museo della Civiltà del Mare",
-            "Categoria": "museo, galleria e/o raccolta",
+            "Categoria": "museo, galleria, raccolta",
             "Comune": "San Teodoro",
             "Indirizzo": "Via Niuloni, 1",
             "Prezzo": "2.0",
-            "Contatti": "+39 0784 866180// +39 3477256278"
+            "Contatti": "+390784866180//+393477256278"
           },
           "geometry": {
             "type": "Point",
@@ -2962,11 +2968,11 @@
           "properties": {
             "Regione": "Sardegna",
             "Denominazione": "Castello Giudicale Eleonora d'Arborea Museo del Risorgimento e Collezione di Ceroplastiche",
-            "Categoria": "museo, galleria e/o raccolta",
+            "Categoria": "museo, galleria, raccolta",
             "Comune": "Sanluri",
             "Indirizzo": "Via Generale Nino Villa Santa, 1",
             "Prezzo": "6.0",
-            "Contatti": "+39 070 9307184// +39 3939916135"
+            "Contatti": "+390709307184//+393939916135"
           },
           "geometry": {
             "type": "Point",
@@ -2981,11 +2987,11 @@
           "properties": {
             "Regione": "Sardegna",
             "Denominazione": "Museo del Convento dei Cappuccini",
-            "Categoria": "museo, galleria e/o raccolta",
+            "Categoria": "museo, galleria, raccolta",
             "Comune": "Sanluri",
             "Indirizzo": "Via San Rocco, 6",
             "Prezzo": "3.0",
-            "Contatti": "+39 070 3293920"
+            "Contatti": "+390703293920"
           },
           "geometry": {
             "type": "Point",
@@ -3004,7 +3010,7 @@
             "Comune": "Santadi",
             "Indirizzo": "Località Pani Loriga",
             "Prezzo": "5.0",
-            "Contatti": "+39 0781 954203// +39 3488866797"
+            "Contatti": "+390781954203//+393488866797"
           },
           "geometry": {
             "type": "Point",
@@ -3019,11 +3025,11 @@
           "properties": {
             "Regione": "Sardegna",
             "Denominazione": "Museo Civico Archeologico Santadi",
-            "Categoria": "museo, galleria e/o raccolta",
+            "Categoria": "museo, galleria, raccolta",
             "Comune": "Santadi",
             "Indirizzo": "Via Umberto I, 17",
             "Prezzo": "5.0",
-            "Contatti": "+39 0781 954203// +39 3488866797"
+            "Contatti": "+390781954203//+393488866797"
           },
           "geometry": {
             "type": "Point",
@@ -3038,11 +3044,11 @@
           "properties": {
             "Regione": "Sardegna",
             "Denominazione": "Museo Etnografico Sa Domu Antiga",
-            "Categoria": "museo, galleria e/o raccolta",
+            "Categoria": "museo, galleria, raccolta",
             "Comune": "Santadi",
             "Indirizzo": "Via Mazzini, 45",
             "Prezzo": "5.0",
-            "Contatti": "+39 3488866797"
+            "Contatti": "+393488866797"
           },
           "geometry": {
             "type": "Point",
@@ -3061,7 +3067,7 @@
             "Comune": "Sant'Antioco",
             "Indirizzo": "Via Castello, s.n.c.",
             "Prezzo": "2.5",
-            "Contatti": "+39 0781 800596// +39 3897962114// +39 0781 800596 FAX"
+            "Contatti": "+390781800596//+393897962114"
           },
           "geometry": {
             "type": "Point",
@@ -3076,11 +3082,11 @@
           "properties": {
             "Regione": "Sardegna",
             "Denominazione": "Museo Archeologico Ferruccio Barreca",
-            "Categoria": "museo, galleria e/o raccolta",
+            "Categoria": "museo, galleria, raccolta",
             "Comune": "Sant'Antioco",
             "Indirizzo": "Via Sabatino Moscati, 1",
             "Prezzo": "6.0",
-            "Contatti": "+39 0781 82105// +39 3897962114// +39 0781 800596 FAX"
+            "Contatti": "+39078182105//+393897962114"
           },
           "geometry": {
             "type": "Point",
@@ -3095,11 +3101,11 @@
           "properties": {
             "Regione": "Sardegna",
             "Denominazione": "Museo Etnografico Su Magasinu e Su Binu",
-            "Categoria": "museo, galleria e/o raccolta",
+            "Categoria": "museo, galleria, raccolta",
             "Comune": "Sant'Antioco",
             "Indirizzo": "Via Necropoli, 24d",
             "Prezzo": "3.0",
-            "Contatti": "+39 3890505107// +39 0781 800596// +39 3897962114"
+            "Contatti": "+393890505107//+390781800596//+393897962114"
           },
           "geometry": {
             "type": "Point",
@@ -3118,7 +3124,7 @@
             "Comune": "Sant'Antioco",
             "Indirizzo": "Via Castello, s.n.c.",
             "Prezzo": "5.0",
-            "Contatti": "+39 0781 82105// +39 370 1592448// +39 0781 80301// +39 0781 800596// +39 3897962114"
+            "Contatti": "+39078182105//+393701592448//+39078180301//+390781800596//+393897962114"
           },
           "geometry": {
             "type": "Point",
@@ -3133,11 +3139,11 @@
           "properties": {
             "Regione": "Sardegna",
             "Denominazione": "Museo della Tecnologia Contadina - Maestro Francesco Salis",
-            "Categoria": "museo, galleria e/o raccolta",
+            "Categoria": "museo, galleria, raccolta",
             "Comune": "Santu Lussurgiu",
             "Indirizzo": "Via Deodato Meloni, 1",
             "Prezzo": "5.0",
-            "Contatti": "+39 3407706673// +39 3496868600"
+            "Contatti": "+393407706673//+393496868600"
           },
           "geometry": {
             "type": "Point",
@@ -3156,7 +3162,7 @@
             "Comune": "Sardara",
             "Indirizzo": "Vico Eleonora D'Arborea, 10",
             "Prezzo": "5.0",
-            "Contatti": "+39 070 9386183// +39 070 9386011"
+            "Contatti": "+390709386183//+390709386011"
           },
           "geometry": {
             "type": "Point",
@@ -3171,11 +3177,11 @@
           "properties": {
             "Regione": "Sardegna",
             "Denominazione": "Civico Museo Archeologico Villa Abbas",
-            "Categoria": "museo, galleria e/o raccolta",
+            "Categoria": "museo, galleria, raccolta",
             "Comune": "Sardara",
             "Indirizzo": "Piazza della Libertà, 7",
             "Prezzo": "5.0",
-            "Contatti": "+39 070 9386183// +39 070 9386011"
+            "Contatti": "+390709386183//+390709386011"
           },
           "geometry": {
             "type": "Point",
@@ -3190,11 +3196,11 @@
           "properties": {
             "Regione": "Sardegna",
             "Denominazione": "Museo della Città - Palazzo di Città",
-            "Categoria": "museo, galleria e/o raccolta",
+            "Categoria": "museo, galleria, raccolta",
             "Comune": "Sassari",
             "Indirizzo": "Corso Vittorio Emanuele II, 35",
             "Prezzo": "4.0",
-            "Contatti": "+ 39 079 2008072// + 39 079 231777 FAX// +39 079 2015122// +39 3314377156"
+            "Contatti": "+390792008072//+390792015122//+393314377156"
           },
           "geometry": {
             "type": "Point",
@@ -3209,11 +3215,11 @@
           "properties": {
             "Regione": "Sardegna",
             "Denominazione": "Museo Diocesano di Sassari",
-            "Categoria": "museo, galleria e/o raccolta",
+            "Categoria": "museo, galleria, raccolta",
             "Comune": "Sassari",
             "Indirizzo": "Piazza del Duomo, s.n.c.",
             "Prezzo": "2.0",
-            "Contatti": "+39 079 232067// +39 3472174128"
+            "Contatti": "+39079232067//+393472174128"
           },
           "geometry": {
             "type": "Point",
@@ -3228,11 +3234,11 @@
           "properties": {
             "Regione": "Sardegna",
             "Denominazione": "Museo Domu De Janas La Rocca",
-            "Categoria": "museo, galleria e/o raccolta",
+            "Categoria": "museo, galleria, raccolta",
             "Comune": "Sedini",
             "Indirizzo": "Via Nazionale, 35",
             "Prezzo": "8.0",
-            "Contatti": "+39 079 589215// +39 3498440436// +39 079 588581"
+            "Contatti": "+39079589215//+393498440436//+39079588581"
           },
           "geometry": {
             "type": "Point",
@@ -3247,11 +3253,11 @@
           "properties": {
             "Regione": "Sardegna",
             "Denominazione": "Museo Sa Domu Nosta",
-            "Categoria": "museo, galleria e/o raccolta",
+            "Categoria": "museo, galleria, raccolta",
             "Comune": "Senorbì",
             "Indirizzo": "Via Scaledda, 1",
             "Prezzo": "3.0",
-            "Contatti": "+39 070 9809071"
+            "Contatti": "+390709809071"
           },
           "geometry": {
             "type": "Point",
@@ -3270,7 +3276,7 @@
             "Comune": "Serri",
             "Indirizzo": "Strada Comunale Santa Vittoria",
             "Prezzo": "5.0",
-            "Contatti": "+39 3460669068"
+            "Contatti": "+393460669068"
           },
           "geometry": {
             "type": "Point",
@@ -3285,11 +3291,11 @@
           "properties": {
             "Regione": "Sardegna",
             "Denominazione": "Palazzina Liberty - Museo della civiltà contadina",
-            "Categoria": "museo, galleria e/o raccolta",
+            "Categoria": "museo, galleria, raccolta",
             "Comune": "Seui",
             "Indirizzo": "Via Roma, 241",
             "Prezzo": "5.0",
-            "Contatti": "+39 0782 539002"
+            "Contatti": "+390782539002"
           },
           "geometry": {
             "type": "Point",
@@ -3304,11 +3310,11 @@
           "properties": {
             "Regione": "Sardegna",
             "Denominazione": "Museo delle Tradizioni Agroalimentari della Sardegna - Casa Steri",
-            "Categoria": "museo, galleria e/o raccolta",
+            "Categoria": "museo, galleria, raccolta",
             "Comune": "Siddi",
             "Indirizzo": "Via Roma, 2",
             "Prezzo": "5.0",
-            "Contatti": "+39 3496304621"
+            "Contatti": "+393496304621"
           },
           "geometry": {
             "type": "Point",
@@ -3323,11 +3329,11 @@
           "properties": {
             "Regione": "Sardegna",
             "Denominazione": "Museo Ornitologico della Sardegna",
-            "Categoria": "museo, galleria e/o raccolta",
+            "Categoria": "museo, galleria, raccolta",
             "Comune": "Siddi",
             "Indirizzo": "Piazza Leonardo da Vinci, s.n.c.",
             "Prezzo": "2.0",
-            "Contatti": "+39 070 939888// +39 3475116787"
+            "Contatti": "+39070939888//+393475116787"
           },
           "geometry": {
             "type": "Point",
@@ -3346,7 +3352,7 @@
             "Comune": "Siddi",
             "Indirizzo": "Giara di Siddi",
             "Prezzo": "2.0",
-            "Contatti": "+39 070 939888// +39 3475116787"
+            "Contatti": "+39070939888//+393475116787"
           },
           "geometry": {
             "type": "Point",
@@ -3365,7 +3371,7 @@
             "Comune": "Siliqua",
             "Indirizzo": "SS 293",
             "Prezzo": "6.0",
-            "Contatti": "+39 3491564023// +39 3497428014"
+            "Contatti": "+393491564023//+393497428014"
           },
           "geometry": {
             "type": "Point",
@@ -3380,11 +3386,11 @@
           "properties": {
             "Regione": "Sardegna",
             "Denominazione": "Museo Civico Archeologico e Pinacoteca",
-            "Categoria": "museo, galleria e/o raccolta",
+            "Categoria": "museo, galleria, raccolta",
             "Comune": "Sinnai",
             "Indirizzo": "Via P. Colletta, 20",
             "Prezzo": "2.0",
-            "Contatti": "+39 3406671868"
+            "Contatti": "+393406671868"
           },
           "geometry": {
             "type": "Point",
@@ -3399,11 +3405,11 @@
           "properties": {
             "Regione": "Sardegna",
             "Denominazione": "Casa Museo  della Tecnologia Contadina Tiu Virgiliu",
-            "Categoria": "museo, galleria e/o raccolta",
+            "Categoria": "museo, galleria, raccolta",
             "Comune": "Suni",
             "Indirizzo": "Via Regina Margherita, 7",
             "Prezzo": "5.0",
-            "Contatti": "+39 3288789521"
+            "Contatti": "+393288789521"
           },
           "geometry": {
             "type": "Point",
@@ -3422,7 +3428,7 @@
             "Comune": "Suni",
             "Indirizzo": "SS 292 bis",
             "Prezzo": "2.5",
-            "Contatti": "+39 3288789521"
+            "Contatti": "+393288789521"
           },
           "geometry": {
             "type": "Point",
@@ -3441,7 +3447,7 @@
             "Comune": "Suni",
             "Indirizzo": "SS 292 bis",
             "Prezzo": "2.5",
-            "Contatti": "+39 3288789521"
+            "Contatti": "+393288789521"
           },
           "geometry": {
             "type": "Point",
@@ -3460,7 +3466,7 @@
             "Comune": "Suni",
             "Indirizzo": "Via Bosa, s.n.c.",
             "Prezzo": "2.5",
-            "Contatti": "+39 3288789521"
+            "Contatti": "+393288789521"
           },
           "geometry": {
             "type": "Point",
@@ -3479,7 +3485,7 @@
             "Comune": "Suni",
             "Indirizzo": "Vico B Bosa, 3",
             "Prezzo": "5.0",
-            "Contatti": "+39 3288789521"
+            "Contatti": "+393288789521"
           },
           "geometry": {
             "type": "Point",
@@ -3494,11 +3500,11 @@
           "properties": {
             "Regione": "Sardegna",
             "Denominazione": "Museo Diocesano San Pietro Apostolo",
-            "Categoria": "museo, galleria e/o raccolta",
+            "Categoria": "museo, galleria, raccolta",
             "Comune": "Tempio Pausania",
             "Indirizzo": "Via Villa Marina, 1",
             "Prezzo": "4.0",
-            "Contatti": "+39 079 6393099// +39 3459388019"
+            "Contatti": "+390796393099//+393459388019"
           },
           "geometry": {
             "type": "Point",
@@ -3517,7 +3523,7 @@
             "Comune": "Tempio Pausania",
             "Indirizzo": "SS 133",
             "Prezzo": "3.5",
-            "Contatti": "+39 3472995933// +39 3203060634"
+            "Contatti": "+393472995933//+393203060634"
           },
           "geometry": {
             "type": "Point",
@@ -3536,7 +3542,7 @@
             "Comune": "Teti",
             "Indirizzo": "Via Roma, 7",
             "Prezzo": "2.5",
-            "Contatti": "+39 0784 68120// +39 0784 9364481"
+            "Contatti": "+39078468120//+3907849364481"
           },
           "geometry": {
             "type": "Point",
@@ -3551,11 +3557,11 @@
           "properties": {
             "Regione": "Sardegna",
             "Denominazione": "Museo Archeologico Comprensoriale",
-            "Categoria": "museo, galleria e/o raccolta",
+            "Categoria": "museo, galleria, raccolta",
             "Comune": "Teti",
             "Indirizzo": "Via Roma, 7",
             "Prezzo": "2.5",
-            "Contatti": "+39 0784 68120"
+            "Contatti": "+39078468120"
           },
           "geometry": {
             "type": "Point",
@@ -3574,7 +3580,7 @@
             "Comune": "Teti",
             "Indirizzo": "Via Roma, 7",
             "Prezzo": "2.5",
-            "Contatti": "+39 0784 68120"
+            "Contatti": "+39078468120"
           },
           "geometry": {
             "type": "Point",
@@ -3593,7 +3599,7 @@
             "Comune": "Torralba",
             "Indirizzo": "SP 21",
             "Prezzo": "8.0",
-            "Contatti": "+39 079 847481// +39 3664353484// +39 3479138479"
+            "Contatti": "+39079847481//+393664353484//+393479138479"
           },
           "geometry": {
             "type": "Point",
@@ -3612,7 +3618,7 @@
             "Comune": "Tratalias",
             "Indirizzo": "Piazza Chiesa, s.n.c.",
             "Prezzo": "2.5",
-            "Contatti": "+39 0781 688046// +39 0781 697023"
+            "Contatti": "+390781688046//+390781697023"
           },
           "geometry": {
             "type": "Point",
@@ -3627,11 +3633,11 @@
           "properties": {
             "Regione": "Sardegna",
             "Denominazione": "Museo dell'olivo e dell'olio e Museo degli strumenti musicali - Villa Asquer",
-            "Categoria": "museo, galleria e/o raccolta",
+            "Categoria": "museo, galleria, raccolta",
             "Comune": "Tuili",
             "Indirizzo": "Piazza San Pietro, s.n.c.",
             "Prezzo": "4.0",
-            "Contatti": "+39 070 0950283// +39 3479446052"
+            "Contatti": "+390700950283//+393479446052"
           },
           "geometry": {
             "type": "Point",
@@ -3646,11 +3652,11 @@
           "properties": {
             "Regione": "Sardegna",
             "Denominazione": "Museo Stazione dell'Arte",
-            "Categoria": "museo, galleria e/o raccolta",
+            "Categoria": "museo, galleria, raccolta",
             "Comune": "Ulassai",
             "Indirizzo": "SP 11",
             "Prezzo": "6.0",
-            "Contatti": "+39 0782 787055"
+            "Contatti": "+390782787055"
           },
           "geometry": {
             "type": "Point",
@@ -3665,11 +3671,11 @@
           "properties": {
             "Regione": "Sardegna",
             "Denominazione": "Museo Archeologico di Viddalba",
-            "Categoria": "museo, galleria e/o raccolta",
+            "Categoria": "museo, galleria, raccolta",
             "Comune": "Viddalba",
             "Indirizzo": "Via Giovanni Maria Angioy, 5",
             "Prezzo": "3.0",
-            "Contatti": "+39 3273834604"
+            "Contatti": "+393273834604"
           },
           "geometry": {
             "type": "Point",
@@ -3684,11 +3690,11 @@
           "properties": {
             "Regione": "Sardegna",
             "Denominazione": "Museo Civico Archeologico Villa Leni",
-            "Categoria": "museo, galleria e/o raccolta",
+            "Categoria": "museo, galleria, raccolta",
             "Comune": "Villacidro",
             "Indirizzo": "Piazza Zampillo, 1",
             "Prezzo": "2.0",
-            "Contatti": "+39 070 93442215"
+            "Contatti": "+3907093442215"
           },
           "geometry": {
             "type": "Point",
@@ -3707,7 +3713,7 @@
             "Comune": "Villagrande Strisaili",
             "Indirizzo": "SS 389 var. Buddusò Correboi, località Genna Troculu",
             "Prezzo": "3.0",
-            "Contatti": "+39 0782 32704// +39 3939020917// +39 0782 319163 FAX"
+            "Contatti": "+39078232704//+393939020917"
           },
           "geometry": {
             "type": "Point",
@@ -3726,7 +3732,7 @@
             "Comune": "Villagrande Strisaili",
             "Indirizzo": "SS 389 var. Buddusò Correboi",
             "Prezzo": "3.0",
-            "Contatti": "+39 0782 32704// +39 3939020917// +39 0782 319163 FAX"
+            "Contatti": "+39078232704//+393939020917"
           },
           "geometry": {
             "type": "Point",
@@ -3745,7 +3751,7 @@
             "Comune": "Villagrande Strisaili",
             "Indirizzo": "SS 389 var. Buddusò Correboi, località Arcu e Is Forros",
             "Prezzo": "3.0",
-            "Contatti": "+39 0782 32704// +39 3939020917// +39 0782 319163 FAX"
+            "Contatti": "+39078232704//+393939020917"
           },
           "geometry": {
             "type": "Point",
@@ -3764,7 +3770,7 @@
             "Comune": "Villanova Monteleone",
             "Indirizzo": "SS 292",
             "Prezzo": "2.0",
-            "Contatti": "+39 3381586752// +39 3381809055// +39 3668412916// +39 079 960607"
+            "Contatti": "+393381586752//+393381809055//+393668412916//+39079960607"
           },
           "geometry": {
             "type": "Point",
@@ -3779,11 +3785,11 @@
           "properties": {
             "Regione": "Sardegna",
             "Denominazione": "Museo Etnografico Sa Domo Manna",
-            "Categoria": "museo, galleria e/o raccolta",
+            "Categoria": "museo, galleria, raccolta",
             "Comune": "Villanova Monteleone",
             "Indirizzo": "Via Papa Giovanni XXIII, 8",
             "Prezzo": "2.0",
-            "Contatti": "+39 079 960268"
+            "Contatti": "+39079960268"
           },
           "geometry": {
             "type": "Point",
@@ -3802,7 +3808,7 @@
             "Comune": "Villanova Monteleone",
             "Indirizzo": "Strada consortile Monte Cuccu, Baddu 'e Pessighes",
             "Prezzo": "2.5",
-            "Contatti": "+39 3381586752// +39 3381809055// +39 3668412916"
+            "Contatti": "+393381586752//+393381809055//+393668412916"
           },
           "geometry": {
             "type": "Point",
@@ -3821,7 +3827,7 @@
             "Comune": "Villanovaforru",
             "Indirizzo": "Piazza Costituzione, 4/ Località Monte Genna Maria",
             "Prezzo": "4.0",
-            "Contatti": "+39 070 9300050// +39 070 9300048"
+            "Contatti": "+390709300050//+390709300048"
           },
           "geometry": {
             "type": "Point",
@@ -3840,7 +3846,7 @@
             "Comune": "Villanovafranca",
             "Indirizzo": "Strada Comunale Cuccuru Meu",
             "Prezzo": "3.0",
-            "Contatti": "+39 070 9367458"
+            "Contatti": "+390709367458"
           },
           "geometry": {
             "type": "Point",
@@ -3855,11 +3861,11 @@
           "properties": {
             "Regione": "Sardegna",
             "Denominazione": "Civico Museo Archeologico Su Mulinu",
-            "Categoria": "museo, galleria e/o raccolta",
+            "Categoria": "museo, galleria, raccolta",
             "Comune": "Villanovafranca",
             "Indirizzo": "Piazza Risorgimento, 6",
             "Prezzo": "3.0",
-            "Contatti": "+39 070 9367458"
+            "Contatti": "+390709367458"
           },
           "geometry": {
             "type": "Point",
@@ -3878,7 +3884,7 @@
             "Comune": "Villaperuccio",
             "Indirizzo": "SP 80, Località Montessu",
             "Prezzo": "5.0",
-            "Contatti": "+39 3407433521"
+            "Contatti": "+393407433521"
           },
           "geometry": {
             "type": "Point",
@@ -3897,7 +3903,7 @@
             "Comune": "Villasimius",
             "Indirizzo": "Località Torre Vecchia",
             "Prezzo": "1.0",
-            "Contatti": "+39 070 7930290// +39 070 7930232"
+            "Contatti": "+390707930290//+390707930232"
           },
           "geometry": {
             "type": "Point",
@@ -3912,11 +3918,11 @@
           "properties": {
             "Regione": "Sardegna",
             "Denominazione": "Museo Archeologico di Villasimius",
-            "Categoria": "museo, galleria e/o raccolta",
+            "Categoria": "museo, galleria, raccolta",
             "Comune": "Villasimius",
             "Indirizzo": "Via Aventino Frau, 5",
             "Prezzo": "3.0",
-            "Contatti": "+39 070 7930290"
+            "Contatti": "+390707930290"
           },
           "geometry": {
             "type": "Point",
@@ -3935,7 +3941,7 @@
             "Comune": "Abbasanta",
             "Indirizzo": "SS 131 Carlo Felice",
             "Prezzo": "5.0",
-            "Contatti": "+39 0785 52302// +39 3319128790"
+            "Contatti": "+39078552302//+393319128790"
           },
           "geometry": {
             "type": "Point",
@@ -3954,7 +3960,7 @@
             "Comune": "Arzachena",
             "Indirizzo": "SS 427",
             "Prezzo": "4.0",
-            "Contatti": "+39 3457200094"
+            "Contatti": "+393457200094"
           },
           "geometry": {
             "type": "Point",
@@ -3969,11 +3975,11 @@
           "properties": {
             "Regione": "Sardegna",
             "Denominazione": "Museo Rossoblù",
-            "Categoria": "museo, galleria e/o raccolta",
+            "Categoria": "museo, galleria, raccolta",
             "Comune": "Quartu Sant'Elena",
             "Indirizzo": "Via Armando Diaz, 77",
             "Prezzo": "5.0",
-            "Contatti": "+39 3476413293"
+            "Contatti": "+393476413293"
           },
           "geometry": {
             "type": "Point",
@@ -3992,7 +3998,7 @@
             "Comune": "Arzachena",
             "Indirizzo": "Località Malchittu",
             "Prezzo": "4.0",
-            "Contatti": "+39 3457200094"
+            "Contatti": "+393457200094"
           },
           "geometry": {
             "type": "Point",
@@ -4011,7 +4017,7 @@
             "Comune": "Barumini",
             "Indirizzo": "Viale Su Nuraxi, s.n.c./ SP 44 km 0,55",
             "Prezzo": "14.0",
-            "Contatti": "+39 070 9368128// +39 3771805443// +39 3771716166"
+            "Contatti": "+390709368128//+393771805443//+393771716166"
           },
           "geometry": {
             "type": "Point",
@@ -4026,11 +4032,11 @@
           "properties": {
             "Regione": "Sardegna",
             "Denominazione": "Museo Archeologico Nazionale",
-            "Categoria": "museo, galleria e/o raccolta",
+            "Categoria": "museo, galleria, raccolta",
             "Comune": "Cagliari",
             "Indirizzo": "Piazza Arsenale, 1",
             "Prezzo": "7.0",
-            "Contatti": "+39 070 60518245// +39 070 60518248// +39 070 655911"
+            "Contatti": "+3907060518245//+3907060518248//+39070655911"
           },
           "geometry": {
             "type": "Point",
@@ -4045,11 +4051,11 @@
           "properties": {
             "Regione": "Sardegna",
             "Denominazione": "Pinacoteca nazionale di Cagliari",
-            "Categoria": "museo, galleria e/o raccolta",
+            "Categoria": "museo, galleria, raccolta",
             "Comune": "Cagliari",
             "Indirizzo": "Piazza Arsenale, 1",
             "Prezzo": "4.0",
-            "Contatti": "+39 070 662496// +39 070 655911"
+            "Contatti": "+39070662496//+39070655911"
           },
           "geometry": {
             "type": "Point",
@@ -4064,11 +4070,11 @@
           "properties": {
             "Regione": "Sardegna",
             "Denominazione": "Centro di educazione ambientale - Laguna di Nora",
-            "Categoria": "museo, galleria e/o raccolta",
+            "Categoria": "museo, galleria, raccolta",
             "Comune": "Pula",
             "Indirizzo": "Viale Nora, s.n.c. - Laguna di Nora",
             "Prezzo": "8.0",
-            "Contatti": "+39 070 9209544// +39 3331864668"
+            "Contatti": "+390709209544//+393331864668"
           },
           "geometry": {
             "type": "Point",
@@ -4087,7 +4093,7 @@
             "Comune": "Cagliari",
             "Indirizzo": "Piazza Arsenale, 1",
             "Prezzo": "4.0",
-            "Contatti": "+39 070 60518245// +39 070 60518248// +39 070 655911"
+            "Contatti": "+3907060518245//+3907060518248//+39070655911"
           },
           "geometry": {
             "type": "Point",
@@ -4102,11 +4108,11 @@
           "properties": {
             "Regione": "Sardegna",
             "Denominazione": "Museo dell'archeologia e del territorio - MATER",
-            "Categoria": "museo, galleria e/o raccolta",
+            "Categoria": "museo, galleria, raccolta",
             "Comune": "Mamoiada",
             "Indirizzo": "Via G. Manno, 18",
             "Prezzo": "4.0",
-            "Contatti": "+39 0784 569018"
+            "Contatti": "+390784569018"
           },
           "geometry": {
             "type": "Point",
@@ -4121,11 +4127,11 @@
           "properties": {
             "Regione": "Sardegna",
             "Denominazione": "Museo della Valle dei Nuraghi del Logudoro-Meilogu",
-            "Categoria": "museo, galleria e/o raccolta",
+            "Categoria": "museo, galleria, raccolta",
             "Comune": "Torralba",
             "Indirizzo": "Via Carlo Felice, 151",
             "Prezzo": "6.0",
-            "Contatti": "+39 079 847481// +39 3664353484// +39 3479138479"
+            "Contatti": "+39079847481//+393664353484//+393479138479"
           },
           "geometry": {
             "type": "Point",
@@ -4140,11 +4146,11 @@
           "properties": {
             "Regione": "Sardegna",
             "Denominazione": "Museo Antoine De Saint-Exupéry - MASE",
-            "Categoria": "museo, galleria e/o raccolta",
+            "Categoria": "museo, galleria, raccolta",
             "Comune": "Alghero",
             "Indirizzo": "Via Porto Conte, s.n.c., Torre di Porto Conte",
             "Prezzo": "5.0",
-            "Contatti": "+39 3295658813"
+            "Contatti": "+393295658813"
           },
           "geometry": {
             "type": "Point",
@@ -4159,11 +4165,11 @@
           "properties": {
             "Regione": "Sardegna",
             "Denominazione": "META - Museo etnografico di Abbasanta",
-            "Categoria": "museo, galleria e/o raccolta",
+            "Categoria": "museo, galleria, raccolta",
             "Comune": "Abbasanta",
             "Indirizzo": "Via S. Caterina, 25",
             "Prezzo": "2.5",
-            "Contatti": "+39 0785 52302// +39 3319128790"
+            "Contatti": "+39078552302//+393319128790"
           },
           "geometry": {
             "type": "Point",
@@ -4178,11 +4184,11 @@
           "properties": {
             "Regione": "Sardegna",
             "Denominazione": "Compendio Garibaldino di Caprera",
-            "Categoria": "museo, galleria e/o raccolta",
+            "Categoria": "museo, galleria, raccolta",
             "Comune": "La Maddalena",
             "Indirizzo": "Isola di Caprera",
             "Prezzo": "7.0",
-            "Contatti": "+39 0789 727162// +39 0789 726015// +39 3357505401"
+            "Contatti": "+390789727162//+390789726015//+393357505401"
           },
           "geometry": {
             "type": "Point",
@@ -4197,11 +4203,11 @@
           "properties": {
             "Regione": "Sardegna",
             "Denominazione": "Memoriale Giuseppe Garibaldi",
-            "Categoria": "museo, galleria e/o raccolta",
+            "Categoria": "museo, galleria, raccolta",
             "Comune": "La Maddalena",
             "Indirizzo": "Forte Arbuticci - Isola di Caprera",
             "Prezzo": "6.0",
-            "Contatti": "+39 0789 727162// +39 0789 726015"
+            "Contatti": "+390789727162//+390789726015"
           },
           "geometry": {
             "type": "Point",
@@ -4216,11 +4222,11 @@
           "properties": {
             "Regione": "Sardegna",
             "Denominazione": "MAGMMA - Museo d’arte grafica mediterraneo Marchionni",
-            "Categoria": "museo, galleria e/o raccolta",
+            "Categoria": "museo, galleria, raccolta",
             "Comune": "Villacidro",
             "Indirizzo": "Via Vittorio Emanuele, 15",
             "Prezzo": "5.0",
-            "Contatti": "+39 3403473320"
+            "Contatti": "+393403473320"
           },
           "geometry": {
             "type": "Point",
@@ -4235,11 +4241,11 @@
           "properties": {
             "Regione": "Sardegna",
             "Denominazione": "Museo Casa Deriu Tresnuraghes",
-            "Categoria": "museo, galleria e/o raccolta",
+            "Categoria": "museo, galleria, raccolta",
             "Comune": "Tresnuraghes",
             "Indirizzo": "Via San Giorgio, 16",
             "Prezzo": "4.0",
-            "Contatti": "+39 0785 35509"
+            "Contatti": "+39078535509"
           },
           "geometry": {
             "type": "Point",
@@ -4254,11 +4260,11 @@
           "properties": {
             "Regione": "Sardegna",
             "Denominazione": "CIMA - Civico Museo di Allai",
-            "Categoria": "museo, galleria e/o raccolta",
+            "Categoria": "museo, galleria, raccolta",
             "Comune": "Allai",
             "Indirizzo": "Via Parrocchia, 15",
             "Prezzo": "3.0",
-            "Contatti": "+39 3288789521"
+            "Contatti": "+393288789521"
           },
           "geometry": {
             "type": "Point",
@@ -4273,11 +4279,11 @@
           "properties": {
             "Regione": "Sardegna",
             "Denominazione": "Antiquarium Turritano e zona archeologica",
-            "Categoria": "museo, galleria e/o raccolta",
+            "Categoria": "museo, galleria, raccolta",
             "Comune": "Porto Torres",
             "Indirizzo": "Via Ponte Romano, 99",
             "Prezzo": "4.0",
-            "Contatti": "+39 079 514433"
+            "Contatti": "+39079514433"
           },
           "geometry": {
             "type": "Point",
@@ -4292,11 +4298,11 @@
           "properties": {
             "Regione": "Sardegna",
             "Denominazione": "Carcere baronale spagnolo",
-            "Categoria": "museo, galleria e/o raccolta",
+            "Categoria": "museo, galleria, raccolta",
             "Comune": "Seui",
             "Indirizzo": "Via Sassari, 47",
             "Prezzo": "5.0",
-            "Contatti": "+39 0782 539002"
+            "Contatti": "+390782539002"
           },
           "geometry": {
             "type": "Point",
@@ -4311,11 +4317,11 @@
           "properties": {
             "Regione": "Sardegna",
             "Denominazione": "Casa Farci",
-            "Categoria": "museo, galleria e/o raccolta",
+            "Categoria": "museo, galleria, raccolta",
             "Comune": "Seui",
             "Indirizzo": "Via Roma, 166",
             "Prezzo": "5.0",
-            "Contatti": "+39 0782 539002"
+            "Contatti": "+390782539002"
           },
           "geometry": {
             "type": "Point",
@@ -4334,7 +4340,7 @@
             "Comune": "Pula",
             "Indirizzo": "Viale Nora, s.n.c.",
             "Prezzo": "6.0",
-            "Contatti": "+39 070 9209366// +39 070 9209138"
+            "Contatti": "+390709209366//+390709209138"
           },
           "geometry": {
             "type": "Point",
@@ -4349,11 +4355,11 @@
           "properties": {
             "Regione": "Sardegna",
             "Denominazione": "Galleria Civica",
-            "Categoria": "museo, galleria e/o raccolta",
+            "Categoria": "museo, galleria, raccolta",
             "Comune": "Seui",
             "Indirizzo": "Via della Sapienza, 38",
             "Prezzo": "5.0",
-            "Contatti": "+39 0782 539002"
+            "Contatti": "+390782539002"
           },
           "geometry": {
             "type": "Point",
@@ -4372,7 +4378,7 @@
             "Comune": "Sassari",
             "Indirizzo": "Strada vicinale Monte d'Accoddi",
             "Prezzo": "4.0",
-            "Contatti": "+39 3348074449// +39 079 2008072// +39 079 514433"
+            "Contatti": "+393348074449//+390792008072//+39079514433"
           },
           "geometry": {
             "type": "Point",
@@ -4387,11 +4393,11 @@
           "properties": {
             "Regione": "Sardegna",
             "Denominazione": "Museo nazionale archeologico ed etnografico Giovanni Antonio Sanna",
-            "Categoria": "museo, galleria e/o raccolta",
+            "Categoria": "museo, galleria, raccolta",
             "Comune": "Sassari",
             "Indirizzo": "Via Roma, 64",
             "Prezzo": "3.0",
-            "Contatti": "+39 079 272203"
+            "Contatti": "+39079272203"
           },
           "geometry": {
             "type": "Point",
@@ -4406,11 +4412,11 @@
           "properties": {
             "Regione": "Sardegna",
             "Denominazione": "Pinacoteca nazionale di Sassari",
-            "Categoria": "museo, galleria e/o raccolta",
+            "Categoria": "museo, galleria, raccolta",
             "Comune": "Sassari",
             "Indirizzo": "Via Santa Caterina, 4",
             "Prezzo": "4.0",
-            "Contatti": "+39 079 231560"
+            "Contatti": "+39079231560"
           },
           "geometry": {
             "type": "Point",
@@ -4429,7 +4435,7 @@
             "Comune": "Cabras",
             "Indirizzo": "SP 6, San Giovanni di Sinis",
             "Prezzo": "6.5",
-            "Contatti": "+39 0783 370019"
+            "Contatti": "+390783370019"
           },
           "geometry": {
             "type": "Point",
@@ -4444,11 +4450,11 @@
           "properties": {
             "Regione": "Sardegna",
             "Denominazione": "S'Omu de sa maja",
-            "Categoria": "museo, galleria e/o raccolta",
+            "Categoria": "museo, galleria, raccolta",
             "Comune": "Seui",
             "Indirizzo": "Via della Sapienza, s.n.c.",
             "Prezzo": "5.0",
-            "Contatti": "+39 0782 539002"
+            "Contatti": "+390782539002"
           },
           "geometry": {
             "type": "Point",
@@ -4467,7 +4473,7 @@
             "Comune": "Cagliari",
             "Indirizzo": "Via Sant'Efisio, 14",
             "Prezzo": "2.0",
-            "Contatti": "+39 3662562826"
+            "Contatti": "+393662562826"
           },
           "geometry": {
             "type": "Point",
@@ -4482,11 +4488,11 @@
           "properties": {
             "Regione": "Sardegna",
             "Denominazione": "Carcere Spagnolo - Sa Bovida",
-            "Categoria": "museo, galleria e/o raccolta",
+            "Categoria": "museo, galleria, raccolta",
             "Comune": "Aritzo",
             "Indirizzo": "Via G. Marconi, s.n.c.",
             "Prezzo": "2.0",
-            "Contatti": "+39 3898731853// +39 0784 627200"
+            "Contatti": "+393898731853//+390784627200"
           },
           "geometry": {
             "type": "Point",
@@ -4501,11 +4507,11 @@
           "properties": {
             "Regione": "Sardegna",
             "Denominazione": "Parco-Museo S'Abba Frisca",
-            "Categoria": "museo, galleria e/o raccolta",
+            "Categoria": "museo, galleria, raccolta",
             "Comune": "Dorgali",
             "Indirizzo": "SS 125 Località Vallata di Littu",
             "Prezzo": "8.5",
-            "Contatti": "+39 3337655405// +39 3382380089// +39 3391464112// +39 3356569072"
+            "Contatti": "+393337655405//+393382380089//+393391464112//+393356569072"
           },
           "geometry": {
             "type": "Point",
@@ -4524,7 +4530,7 @@
             "Comune": "Tortolì",
             "Indirizzo": "Località S'Ortali e Su Monti",
             "Prezzo": "3.0",
-            "Contatti": "+39 0782 32704"
+            "Contatti": "+39078232704"
           },
           "geometry": {
             "type": "Point",
@@ -4543,7 +4549,7 @@
             "Comune": "Fordongianus",
             "Indirizzo": "SS 388",
             "Prezzo": "2.5",
-            "Contatti": "+39 0783 60157"
+            "Contatti": "+39078360157"
           },
           "geometry": {
             "type": "Point",
@@ -4558,11 +4564,11 @@
           "properties": {
             "Regione": "Sardegna",
             "Denominazione": "Museo diocesano Arborense",
-            "Categoria": "museo, galleria e/o raccolta",
+            "Categoria": "museo, galleria, raccolta",
             "Comune": "Oristano",
             "Indirizzo": "Piazza Duomo, 1",
             "Prezzo": "4.0",
-            "Contatti": "+39 3425887847"
+            "Contatti": "+393425887847"
           },
           "geometry": {
             "type": "Point",
@@ -4581,7 +4587,7 @@
             "Comune": "Armungia",
             "Indirizzo": "Piazza Municipio, s.n.c.",
             "Prezzo": "1.5",
-            "Contatti": "+39 070 9589011// +39 070 958076 FAX"
+            "Contatti": "+390709589011"
           },
           "geometry": {
             "type": "Point",
@@ -4596,11 +4602,11 @@
           "properties": {
             "Regione": "Sardegna",
             "Denominazione": "Museo Archeologico della Città",
-            "Categoria": "museo, galleria e/o raccolta",
+            "Categoria": "museo, galleria, raccolta",
             "Comune": "Alghero",
             "Indirizzo": "Via Carlo Alberto, 72",
             "Prezzo": "5.0",
-            "Contatti": "+39 079 979054// +39 079 980729"
+            "Contatti": "+39079979054//+39079980729"
           },
           "geometry": {
             "type": "Point",
@@ -4615,11 +4621,11 @@
           "properties": {
             "Regione": "Sardegna",
             "Denominazione": "Museo Laboratorio dell'Età Nuragica - LABENUR",
-            "Categoria": "museo, galleria e/o raccolta",
+            "Categoria": "museo, galleria, raccolta",
             "Comune": "Arzachena",
             "Indirizzo": "SP 115 - Stazione Ferroviaria, km 207,94",
             "Prezzo": "5.0",
-            "Contatti": "+39 3408209749// +39 3337389973"
+            "Contatti": "+393408209749//+393337389973"
           },
           "geometry": {
             "type": "Point",
@@ -4638,7 +4644,7 @@
             "Comune": "Carbonia",
             "Indirizzo": "Corso Iglesias, s.n.c./ Via Fertilia, s.n.c.",
             "Prezzo": "5.0",
-            "Contatti": "+39 0781 1867304// +39 3458886058"
+            "Contatti": "+3907811867304//+393458886058"
           },
           "geometry": {
             "type": "Point",
@@ -4654,10 +4660,10 @@
             "Regione": "Sardegna",
             "Denominazione": "Sito archeologico nuragico Lu Brandali",
             "Categoria": "area o parco archeologico",
-            "Comune": "Santa Teresa di Gallura",
+            "Comune": "Santa Teresa Gallura",
             "Indirizzo": "SP 90 - Via Capotesta, s.n.c.",
             "Prezzo": "5.0",
-            "Contatti": "+39 3498347698// +39 3477412166// +39 3920547979"
+            "Contatti": "+393498347698//+393477412166//+393920547979"
           },
           "geometry": {
             "type": "Point",
@@ -4673,10 +4679,10 @@
             "Regione": "Sardegna",
             "Denominazione": "Torre di Longosardo",
             "Categoria": "monumento o complesso monumentale",
-            "Comune": "Santa Teresa di Gallura",
+            "Comune": "Santa Teresa Gallura",
             "Indirizzo": "Via Bechi, s.n.c.",
             "Prezzo": "3.0",
-            "Contatti": "+39 3498347698// +39 3477412166// +39 3920547979"
+            "Contatti": "+393498347698//+393477412166//+393920547979"
           },
           "geometry": {
             "type": "Point",
@@ -4695,7 +4701,7 @@
             "Comune": "Sassari",
             "Indirizzo": "Via Medaglie d’Oro, s.n.c.",
             "Prezzo": "4.0",
-            "Contatti": "+39 079 2008072"
+            "Contatti": "+390792008072"
           },
           "geometry": {
             "type": "Point",
@@ -4714,7 +4720,7 @@
             "Comune": "Sassari",
             "Indirizzo": "Piazza del Comune, 1",
             "Prezzo": "4.0",
-            "Contatti": "+39 079 2008072"
+            "Contatti": "+390792008072"
           },
           "geometry": {
             "type": "Point",
@@ -4729,11 +4735,11 @@
           "properties": {
             "Regione": "Sardegna",
             "Denominazione": "Museo multimediale Torre di San Vittorio",
-            "Categoria": "museo, galleria e/o raccolta",
+            "Categoria": "museo, galleria, raccolta",
             "Comune": "Carloforte",
             "Indirizzo": "Viale Osservatorio Astronomico, s.n.c.",
             "Prezzo": "5.0",
-            "Contatti": "+39 0781 8589200// +39 0781 8589207// +39 3331816535"
+            "Contatti": "+3907818589200//+3907818589207//+393331816535"
           },
           "geometry": {
             "type": "Point",
@@ -4748,11 +4754,11 @@
           "properties": {
             "Regione": "Sardegna",
             "Denominazione": "Museo Geo-Mineralogico Naturalistico",
-            "Categoria": "museo, galleria e/o raccolta",
+            "Categoria": "museo, galleria, raccolta",
             "Comune": "La Maddalena",
             "Indirizzo": "Borgo di Stagnali, Isola di Caprera",
             "Prezzo": "2.5",
-            "Contatti": "+39 3385940560"
+            "Contatti": "+393385940560"
           },
           "geometry": {
             "type": "Point",
@@ -4767,11 +4773,11 @@
           "properties": {
             "Regione": "Sardegna",
             "Denominazione": "MIF - Museo dell'imprenditoria femminile Donna Francesca Sanna Sulis",
-            "Categoria": "museo, galleria e/o raccolta",
+            "Categoria": "museo, galleria, raccolta",
             "Comune": "Muravera",
             "Indirizzo": "Via Guglielmo Marconi, 99",
             "Prezzo": "1.5",
-            "Contatti": "+39 3939023141"
+            "Contatti": "+393939023141"
           },
           "geometry": {
             "type": "Point",
@@ -4786,11 +4792,11 @@
           "properties": {
             "Regione": "Sardegna",
             "Denominazione": "Museo del Sughero",
-            "Categoria": "museo, galleria e/o raccolta",
+            "Categoria": "museo, galleria, raccolta",
             "Comune": "Calangianus",
             "Indirizzo": "Via San Francesco, 3",
             "Prezzo": "3.0",
-            "Contatti": "+39 079 662034// +39 3463693859"
+            "Contatti": "+39079662034//+393463693859"
           },
           "geometry": {
             "type": "Point",
@@ -4805,11 +4811,11 @@
           "properties": {
             "Regione": "Sardegna",
             "Denominazione": "Ecomuseo delle Acque di Barbagia",
-            "Categoria": "museo, galleria e/o raccolta",
+            "Categoria": "museo, galleria, raccolta",
             "Comune": "Sadali",
             "Indirizzo": "Via Grazia Deledda, s.n.c. - Infopoint",
             "Prezzo": "10.0",
-            "Contatti": "+39 3206253278"
+            "Contatti": "+393206253278"
           },
           "geometry": {
             "type": "Point",
@@ -4824,11 +4830,11 @@
           "properties": {
             "Regione": "Sardegna",
             "Denominazione": "Museo Storico della Cava di Cala Francese",
-            "Categoria": "museo, galleria e/o raccolta",
+            "Categoria": "museo, galleria, raccolta",
             "Comune": "La Maddalena",
             "Indirizzo": "Cala Francese, Isola di La Maddalena",
             "Prezzo": "5.0",
-            "Contatti": "+39 3385940560"
+            "Contatti": "+393385940560"
           },
           "geometry": {
             "type": "Point",
@@ -4843,11 +4849,11 @@
           "properties": {
             "Regione": "Sardegna",
             "Denominazione": "Casa Devilla",
-            "Categoria": "museo, galleria e/o raccolta",
+            "Categoria": "museo, galleria, raccolta",
             "Comune": "Aritzo",
             "Indirizzo": "Via Caserma, 1",
             "Prezzo": "2.0",
-            "Contatti": "+39 3898731853// +39 0784 627200"
+            "Contatti": "+393898731853//+390784627200"
           },
           "geometry": {
             "type": "Point",
@@ -4862,11 +4868,11 @@
           "properties": {
             "Regione": "Sardegna",
             "Denominazione": "Museo Mura",
-            "Categoria": "museo, galleria e/o raccolta",
+            "Categoria": "museo, galleria, raccolta",
             "Comune": "Aritzo",
             "Indirizzo": "Pratz'e Iscola, 11",
             "Prezzo": "2.0",
-            "Contatti": "+39 3898731853// +39 0784 627200"
+            "Contatti": "+393898731853//+390784627200"
           },
           "geometry": {
             "type": "Point",
@@ -4881,11 +4887,11 @@
           "properties": {
             "Regione": "Sardegna",
             "Denominazione": "Giardino Sonoro - P.S. Museum",
-            "Categoria": "museo, galleria e/o raccolta",
+            "Categoria": "museo, galleria, raccolta",
             "Comune": "San Sperate",
             "Indirizzo": "Via oriana Fallaci, s.n.c.",
             "Prezzo": "5.0",
-            "Contatti": "+39 3245875094"
+            "Contatti": "+393245875094"
           },
           "geometry": {
             "type": "Point",
@@ -4904,7 +4910,7 @@
             "Comune": "Sassari",
             "Indirizzo": "Viale Adua, s.n.c.",
             "Prezzo": "8.0",
-            "Contatti": "+39 351 9359980"
+            "Contatti": "+393519359980"
           },
           "geometry": {
             "type": "Point",
@@ -4919,11 +4925,11 @@
           "properties": {
             "Regione": "Sardegna",
             "Denominazione": "Archivio Digitale e installazione museale Rixe per la cultura Tabarchina",
-            "Categoria": "museo, galleria e/o raccolta",
+            "Categoria": "museo, galleria, raccolta",
             "Comune": "Calasetta",
             "Indirizzo": "Via Umberto I, 61",
             "Prezzo": "3.0",
-            "Contatti": "+39 3473626183// +39 3288836251// +39 078 1840717"
+            "Contatti": "+393473626183//+393288836251//+390781840717"
           },
           "geometry": {
             "type": "Point",
@@ -4938,11 +4944,11 @@
           "properties": {
             "Regione": "Sardegna",
             "Denominazione": "Museo Civico Pedru Serra",
-            "Categoria": "museo, galleria e/o raccolta",
+            "Categoria": "museo, galleria, raccolta",
             "Comune": "Sagama",
             "Indirizzo": "Via Regina Elena, 27",
             "Prezzo": "3.0",
-            "Contatti": "+39 3288789521"
+            "Contatti": "+393288789521"
           },
           "geometry": {
             "type": "Point",
@@ -4957,11 +4963,11 @@
           "properties": {
             "Regione": "Sardegna",
             "Denominazione": "Centro di Documentazione e Studio sulla Sartiglia",
-            "Categoria": "museo, galleria e/o raccolta",
+            "Categoria": "museo, galleria, raccolta",
             "Comune": "Oristano",
             "Indirizzo": "Via Eleonora, 15",
             "Prezzo": "2.0",
-            "Contatti": "+39 0783303159// +39 0783302481"
+            "Contatti": "+390783303159//+390783302481"
           },
           "geometry": {
             "type": "Point",
@@ -4976,7 +4982,7 @@
           "properties": {
             "Regione": "Sicilia",
             "Denominazione": "Museo del Satiro (Chiesa di Sant'Egidio)",
-            "Categoria": "museo, galleria e/o raccolta",
+            "Categoria": "museo, galleria, raccolta",
             "Comune": "Mazara del Vallo",
             "Indirizzo": "piazza plebiscito, Mazara del Vallo, Italia",
             "Prezzo": "6.0",
@@ -4995,11 +5001,11 @@
           "properties": {
             "Regione": "Sicilia",
             "Denominazione": "Museo regionale casa-museo Antonino Uccello a Palazzolo Acreide",
-            "Categoria": "museo, galleria e/o raccolta",
+            "Categoria": "museo, galleria, raccolta",
             "Comune": "Palazzolo Acreide",
             "Indirizzo": "via machiavelli, Palazzolo Acreide, Italia",
             "Prezzo": "2.0",
-            "Contatti": "0931 881499"
+            "Contatti": "0931881499"
           },
           "geometry": {
             "type": "Point",
@@ -5056,7 +5062,7 @@
             "Comune": "Gela",
             "Indirizzo": "viale indipendenza, Gela, Italia",
             "Prezzo": "4.0",
-            "Contatti": "093391226 - 0933930975"
+            "Contatti": "093391226//0933930975"
           },
           "geometry": {
             "type": "Point",
@@ -5075,7 +5081,7 @@
             "Comune": "Monreale",
             "Indirizzo": "piazza guglielmo il buono, Monreale, Italia",
             "Prezzo": "6.0",
-            "Contatti": "0917071425 - 0917071411 -  0916404403"
+            "Contatti": "0917071425//0917071411//0916404403"
           },
           "geometry": {
             "type": "Point",
@@ -5094,7 +5100,7 @@
             "Comune": "Palermo",
             "Indirizzo": "via garibaldi, Palermo, Italia",
             "Prezzo": "0.0",
-            "Contatti": "0917071425 - 3357957161"
+            "Contatti": "0917071425//3357957161"
           },
           "geometry": {
             "type": "Point",
@@ -5109,17 +5115,17 @@
           "properties": {
             "Regione": "Sicilia",
             "Denominazione": "Museo delle Tradizioni silvo-pastorali di Mistretta",
-            "Categoria": "museo, galleria e/o raccolta",
+            "Categoria": "museo, galleria, raccolta",
             "Comune": "Mistretta",
             "Indirizzo": "via libertà, Mistretta, Italia",
             "Prezzo": "0.0",
-            "Contatti": "0921381696 (temporaneamente disattivato)"
+            "Contatti": "0921381696"
           },
           "geometry": {
             "type": "Point",
             "coordinates": [
-              14.360004,
-              37.92698
+              14.362896,
+              37.929023
             ]
           }
         },
@@ -5132,7 +5138,7 @@
             "Comune": "Palermo",
             "Indirizzo": "viale regina margherita, Palermo, Italia",
             "Prezzo": "0.0",
-            "Contatti": "0917025471 - 0917071425"
+            "Contatti": "0917025471//0917071425"
           },
           "geometry": {
             "type": "Point",
@@ -5151,7 +5157,7 @@
             "Comune": "Palermo",
             "Indirizzo": "via dei benedettini, Palermo, Italia",
             "Prezzo": "6.0",
-            "Contatti": "0917071425 - 0916515019  - 0917071411"
+            "Contatti": "0917071425//0916515019//0917071411"
           },
           "geometry": {
             "type": "Point",
@@ -5186,10 +5192,10 @@
             "Regione": "Sicilia",
             "Denominazione": "Bagni di Cefalà Diana",
             "Categoria": "area o parco archeologico",
-            "Comune": "Cefala' Diana",
-            "Indirizzo": "Cefala' Diana, Italia",
+            "Comune": "Cefalà Diana",
+            "Indirizzo": "Cefalà Diana, Italia",
             "Prezzo": "0.0",
-            "Contatti": "0917071425 - Rangers 0918291551"
+            "Contatti": "0917071425//0918291551"
           },
           "geometry": {
             "type": "Point",
@@ -5261,11 +5267,11 @@
           "properties": {
             "Regione": "Sicilia",
             "Denominazione": "Museo regionale di Kamarina",
-            "Categoria": "museo, galleria e/o raccolta",
+            "Categoria": "museo, galleria, raccolta",
             "Comune": "Ragusa",
             "Indirizzo": "Ragusa, Italia",
             "Prezzo": "4.0",
-            "Contatti": "0932 826004"
+            "Contatti": "0932826004"
           },
           "geometry": {
             "type": "Point",
@@ -5280,11 +5286,11 @@
           "properties": {
             "Regione": "Sicilia",
             "Denominazione": "Zona Archeologica",
-            "Categoria": "museo, galleria e/o raccolta",
+            "Categoria": "museo, galleria, raccolta",
             "Comune": "Ravanusa",
             "Indirizzo": "Ravanusa, Italia",
             "Prezzo": "0.0",
-            "Contatti": "Centralino Soprintendenza BB.CC.AA. di Agrigento 0922552611"
+            "Contatti": "0922552611"
           },
           "geometry": {
             "type": "Point",
@@ -5299,11 +5305,11 @@
           "properties": {
             "Regione": "Sicilia",
             "Denominazione": "Biblioteca - Museo regionale Luigi Pirandello di Agrigento",
-            "Categoria": "museo, galleria e/o raccolta",
+            "Categoria": "museo, galleria, raccolta",
             "Comune": "Agrigento",
             "Indirizzo": "Agrigento, Italia",
             "Prezzo": "4.0",
-            "Contatti": "0922511826 e-mail: polomuseale.ag.uo3@regione.sicilia.it"
+            "Contatti": "0922511826"
           },
           "geometry": {
             "type": "Point",
@@ -5322,7 +5328,7 @@
             "Comune": "Catania",
             "Indirizzo": "via della mecca, Catania, Italia",
             "Prezzo": "0.0",
-            "Contatti": "095/7150508 - polomuseale.ct@regione.sicilia.it  poloregionalect.urp@regione.sicilia.it"
+            "Contatti": "0957150508"
           },
           "geometry": {
             "type": "Point",
@@ -5337,7 +5343,7 @@
           "properties": {
             "Regione": "Sicilia",
             "Denominazione": "Antiquarium di Monte Adranone",
-            "Categoria": "museo, galleria e/o raccolta",
+            "Categoria": "museo, galleria, raccolta",
             "Comune": "Sambuca di Sicilia",
             "Indirizzo": "Sambuca di Sicilia, Italia",
             "Prezzo": "6.0",
@@ -5360,7 +5366,7 @@
             "Comune": "Catania",
             "Indirizzo": "piazza currò, Catania, Italia",
             "Prezzo": "0.0",
-            "Contatti": "095/7150508- polomuseale.ct@regione.sicilia.it  poloregionalect.urp@regione.sicilia.it"
+            "Contatti": "0957150508"
           },
           "geometry": {
             "type": "Point",
@@ -5375,7 +5381,7 @@
           "properties": {
             "Regione": "Sicilia",
             "Denominazione": "Antiquarium di Monte Kronio - Stufe di S. Calogero",
-            "Categoria": "museo, galleria e/o raccolta",
+            "Categoria": "museo, galleria, raccolta",
             "Comune": "Sciacca",
             "Indirizzo": "Sciacca, Italia",
             "Prezzo": "4.0",
@@ -5394,11 +5400,11 @@
           "properties": {
             "Regione": "Sicilia",
             "Denominazione": "Museo archeologico regionale Bernabo' Brea a Lipari",
-            "Categoria": "museo, galleria e/o raccolta",
+            "Categoria": "museo, galleria, raccolta",
             "Comune": "Lipari",
             "Indirizzo": "via del castello, Lipari, Italia",
             "Prezzo": "6.0",
-            "Contatti": "0909880174/594 fax 0909880175"
+            "Contatti": "0909880174//0909880175"
           },
           "geometry": {
             "type": "Point",
@@ -5432,7 +5438,7 @@
           "properties": {
             "Regione": "Sicilia",
             "Denominazione": "Museo archeologico \"Salvatore Lauricella\"",
-            "Categoria": "museo, galleria e/o raccolta",
+            "Categoria": "museo, galleria, raccolta",
             "Comune": "Ravanusa",
             "Indirizzo": "corso della repubblica, Ravanusa, Italia",
             "Prezzo": "0.0",
@@ -5493,7 +5499,7 @@
             "Comune": "Agrigento",
             "Indirizzo": "via santa maria dei greci, Agrigento, Italia",
             "Prezzo": "0.0",
-            "Contatti": "Centralino Soprintendenza BB.CC.AA. di Agrigento 0922552611"
+            "Contatti": "0922552611"
           },
           "geometry": {
             "type": "Point",
@@ -5508,11 +5514,11 @@
           "properties": {
             "Regione": "Sicilia",
             "Denominazione": "Museo regionale interdisciplinare di Enna",
-            "Categoria": "museo, galleria e/o raccolta",
+            "Categoria": "museo, galleria, raccolta",
             "Comune": "Enna",
             "Indirizzo": "piazza mazzini, Enna, Italia",
             "Prezzo": "0.0",
-            "Contatti": "09355076304 - fax 09355076323"
+            "Contatti": "09355076304//09355076323"
           },
           "geometry": {
             "type": "Point",
@@ -5607,7 +5613,7 @@
             "Comune": "Santa Flavia",
             "Indirizzo": "via collegio romano, Santa Flavia, Italia",
             "Prezzo": "4.0",
-            "Contatti": "UFFICIO AMMINISTRATIVO 091905043 - AREA PARCO ARCHEOLOGICO 091909339"
+            "Contatti": "091905043//091909339"
           },
           "geometry": {
             "type": "Point",
@@ -5622,7 +5628,7 @@
           "properties": {
             "Regione": "Sicilia",
             "Denominazione": "Museo archeologico regionale di Centuripe",
-            "Categoria": "museo, galleria e/o raccolta",
+            "Categoria": "museo, galleria, raccolta",
             "Comune": "Centuripe",
             "Indirizzo": "via ss. crocifisso, Centuripe, Italia",
             "Prezzo": "0.0",
@@ -5645,7 +5651,7 @@
             "Comune": "Taormina",
             "Indirizzo": "via del teatro greco, Taormina, Italia",
             "Prezzo": "10.0",
-            "Contatti": "Direzione 0942 628738 / Biglietteria Teatro 094223220 / Uffici Teatro 094224291"
+            "Contatti": "0942628738//094223220//094224291"
           },
           "geometry": {
             "type": "Point",
@@ -5664,7 +5670,7 @@
             "Comune": "Caccamo",
             "Indirizzo": "via del castello, Caccamo, Italia",
             "Prezzo": "4.0",
-            "Contatti": "Ufficio Turismo   Tel. 0918103207/221   turismo@comune.caccamo.pa.it\n\nBiglietteria Castello   Tel. 091/8149252\n\ncastello@comune.caccamo.pa.it"
+            "Contatti": "0918103207//0918149252"
           },
           "geometry": {
             "type": "Point",
@@ -5683,7 +5689,7 @@
             "Comune": "Palermo",
             "Indirizzo": "piazza magione, Palermo, Italia",
             "Prezzo": "0.0",
-            "Contatti": "0917071425  - 0917071411"
+            "Contatti": "0917071425//0917071411"
           },
           "geometry": {
             "type": "Point",
@@ -5702,7 +5708,7 @@
             "Comune": "Palermo",
             "Indirizzo": "via f. speciale, Palermo, Italia",
             "Prezzo": "0.0",
-            "Contatti": "3346001743 - 0917071425"
+            "Contatti": "3346001743//0917071425"
           },
           "geometry": {
             "type": "Point",
@@ -5721,7 +5727,7 @@
             "Comune": "Palermo",
             "Indirizzo": "via crispi, Palermo, Italia",
             "Prezzo": "2.0",
-            "Contatti": "0917071317/411"
+            "Contatti": "0917071317"
           },
           "geometry": {
             "type": "Point",
@@ -5736,11 +5742,11 @@
           "properties": {
             "Regione": "Sicilia",
             "Denominazione": "Museo archeologico regionale della Badia",
-            "Categoria": "museo, galleria e/o raccolta",
+            "Categoria": "museo, galleria, raccolta",
             "Comune": "Licata",
             "Indirizzo": "Licata, Italia",
             "Prezzo": "0.0",
-            "Contatti": "0922 772602"
+            "Contatti": "0922772602"
           },
           "geometry": {
             "type": "Point",
@@ -5774,11 +5780,11 @@
           "properties": {
             "Regione": "Sicilia",
             "Denominazione": "Castello della Favara a Maredolce",
-            "Categoria": "museo, galleria e/o raccolta",
+            "Categoria": "museo, galleria, raccolta",
             "Comune": "Palermo",
             "Indirizzo": "via giafar, Palermo, Italia",
             "Prezzo": "0.0",
-            "Contatti": "0917071425 - 3357957161"
+            "Contatti": "0917071425//3357957161"
           },
           "geometry": {
             "type": "Point",
@@ -5797,7 +5803,7 @@
             "Comune": "Palermo",
             "Indirizzo": "corso calatafimi, Palermo, Italia",
             "Prezzo": "2.0",
-            "Contatti": "0917071425 - 091590299"
+            "Contatti": "0917071425//091590299"
           },
           "geometry": {
             "type": "Point",
@@ -5812,7 +5818,7 @@
           "properties": {
             "Regione": "Sicilia",
             "Denominazione": "Museo archeologico regionale di Marianopoli",
-            "Categoria": "museo, galleria e/o raccolta",
+            "Categoria": "museo, galleria, raccolta",
             "Comune": "Marianopoli",
             "Indirizzo": "viale regione siciliana, Marianopoli, Italia",
             "Prezzo": "0.0",
@@ -5831,11 +5837,11 @@
           "properties": {
             "Regione": "Sicilia",
             "Denominazione": "Museo regionale Palazzo Mirto",
-            "Categoria": "museo, galleria e/o raccolta",
+            "Categoria": "museo, galleria, raccolta",
             "Comune": "Palermo",
             "Indirizzo": "via merlo, Palermo, Italia",
             "Prezzo": "6.0",
-            "Contatti": "tel e fax 0916164751  tel 0916167541\ne-mail: polomuseale.pa.uo4@regione.sicilia.it\nhttps://www.facebook.com/pages/CASA-MUSEO-Palazzo-MIRTO/265051623703706"
+            "Contatti": "0916164751//0916167541"
           },
           "geometry": {
             "type": "Point",
@@ -5850,11 +5856,11 @@
           "properties": {
             "Regione": "Sicilia",
             "Denominazione": "Oratorio dei Bianchi",
-            "Categoria": "museo, galleria e/o raccolta",
+            "Categoria": "museo, galleria, raccolta",
             "Comune": "Palermo",
             "Indirizzo": "piazzetta dei bianchi, Palermo, Italia",
             "Prezzo": "8.0",
-            "Contatti": "Telefono 0916173080 fax 0916165305 Mail:polomuseale.pa@regione.sicilia.it\nUrp 0916230068"
+            "Contatti": "0916173080//0916165305//0916230068"
           },
           "geometry": {
             "type": "Point",
@@ -5873,7 +5879,7 @@
             "Comune": "Palermo",
             "Indirizzo": "via duca degli abruzzi, Palermo, Italia",
             "Prezzo": "0.0",
-            "Contatti": "091 7071317/411"
+            "Contatti": "0917071317"
           },
           "geometry": {
             "type": "Point",
@@ -5926,11 +5932,11 @@
           "properties": {
             "Regione": "Sicilia",
             "Denominazione": "Museo archeologico regionale Paolo Orsi di Siracusa",
-            "Categoria": "museo, galleria e/o raccolta",
+            "Categoria": "museo, galleria, raccolta",
             "Comune": "Siracusa",
             "Indirizzo": "viale teocrito, Siracusa, Italia",
             "Prezzo": "8.0",
-            "Contatti": "0931489511 fax 0931489532\n\nAPERTURA STRAORDINARIA lunedì 24 Aprile e 1 maggio ore 9-14"
+            "Contatti": "0931489511//0931489532"
           },
           "geometry": {
             "type": "Point",
@@ -5968,7 +5974,7 @@
             "Comune": "Ragusa",
             "Indirizzo": "Ragusa, Italia",
             "Prezzo": "4.0",
-            "Contatti": "0932 826004"
+            "Contatti": "0932826004"
           },
           "geometry": {
             "type": "Point",
@@ -5987,7 +5993,7 @@
             "Comune": "Carlentini",
             "Indirizzo": "Carlentini, Italia",
             "Prezzo": "0.0",
-            "Contatti": "0957832962 (presso Museo)"
+            "Contatti": "0957832962"
           },
           "geometry": {
             "type": "Point",
@@ -6006,7 +6012,7 @@
             "Comune": "Montalbano Elicona",
             "Indirizzo": "via castello, Montalbano Elicona, Italia",
             "Prezzo": "3.0",
-            "Contatti": "09036746433, URP della Soprintendenza di Messina"
+            "Contatti": "09036746433"
           },
           "geometry": {
             "type": "Point",
@@ -6025,7 +6031,7 @@
             "Comune": "Palermo",
             "Indirizzo": "piazza zisa, Palermo, Italia",
             "Prezzo": "6.0",
-            "Contatti": "0916520269 - 0917071411"
+            "Contatti": "0916520269//0917071411"
           },
           "geometry": {
             "type": "Point",
@@ -6044,7 +6050,7 @@
             "Comune": "Catania",
             "Indirizzo": "piazza stesicoro, Catania, Italia",
             "Prezzo": "0.0",
-            "Contatti": "095/7150508 polomuseale.ct@regione.sicilia.it  poloregionalect.urp.@regione.sicilia.it"
+            "Contatti": "0957150508"
           },
           "geometry": {
             "type": "Point",
@@ -6078,11 +6084,11 @@
           "properties": {
             "Regione": "Sicilia",
             "Denominazione": "Museo archeologico regionale Lilibeo Marsala - Baglio Anselmi",
-            "Categoria": "museo, galleria e/o raccolta",
+            "Categoria": "museo, galleria, raccolta",
             "Comune": "Marsala",
             "Indirizzo": "lungomare boeo, Marsala, Italia",
             "Prezzo": "4.0",
-            "Contatti": "0923 952535 - per le visite su prenotazione rivolgersi al personale o telefonare allo 0923 952535"
+            "Contatti": "0923952535//0923952535"
           },
           "geometry": {
             "type": "Point",
@@ -6116,11 +6122,11 @@
           "properties": {
             "Regione": "Sicilia",
             "Denominazione": "Museo regionale interdisciplinare di Ragusa",
-            "Categoria": "museo, galleria e/o raccolta",
+            "Categoria": "museo, galleria, raccolta",
             "Comune": "Ragusa",
             "Indirizzo": "via natalelli, Ragusa, Italia",
             "Prezzo": "0.0",
-            "Contatti": "0932622963 - fax 0932622963"
+            "Contatti": "0932622963//0932622963"
           },
           "geometry": {
             "type": "Point",
@@ -6135,7 +6141,7 @@
           "properties": {
             "Regione": "Sicilia",
             "Denominazione": "Museo archeologico regionale di Lentini",
-            "Categoria": "museo, galleria e/o raccolta",
+            "Categoria": "museo, galleria, raccolta",
             "Comune": "Lentini",
             "Indirizzo": "via museo, Lentini, Italia",
             "Prezzo": "0.0",
@@ -6154,11 +6160,11 @@
           "properties": {
             "Regione": "Sicilia",
             "Denominazione": "Museo regionale d'Arte moderna e contemporanea di Palermo",
-            "Categoria": "museo, galleria e/o raccolta",
+            "Categoria": "museo, galleria, raccolta",
             "Comune": "Palermo",
             "Indirizzo": "corso vittorio emanuele, Palermo, Italia",
             "Prezzo": "6.0",
-            "Contatti": "091320532 fax 0916090166"
+            "Contatti": "091320532//0916090166"
           },
           "geometry": {
             "type": "Point",
@@ -6173,11 +6179,11 @@
           "properties": {
             "Regione": "Sicilia",
             "Denominazione": "Museo regionale Agostino Pepoli di Trapani - Museo interdisciplinare",
-            "Categoria": "museo, galleria e/o raccolta",
+            "Categoria": "museo, galleria, raccolta",
             "Comune": "Trapani",
             "Indirizzo": "via conte pepoli, Trapani, Italia",
             "Prezzo": "6.0",
-            "Contatti": "0923553269 - fax 0923535444"
+            "Contatti": "0923553269//0923535444"
           },
           "geometry": {
             "type": "Point",
@@ -6192,11 +6198,11 @@
           "properties": {
             "Regione": "Sicilia",
             "Denominazione": "Museo regionale della Ceramica di Caltagirone",
-            "Categoria": "museo, galleria e/o raccolta",
+            "Categoria": "museo, galleria, raccolta",
             "Comune": "Caltagirone",
             "Indirizzo": "via roma, Caltagirone, Italia",
             "Prezzo": "4.0",
-            "Contatti": "093358418 - 093358423 fax 093326972"
+            "Contatti": "093358418//093358423//093326972"
           },
           "geometry": {
             "type": "Point",
@@ -6253,7 +6259,7 @@
             "Comune": "Catania",
             "Indirizzo": "via g. sanfilippo, Catania, Italia",
             "Prezzo": "0.0",
-            "Contatti": "095/7150508 polomuseale.ct@regione.sicilia.it - poloregionalect.urp@regione.sicilia.it"
+            "Contatti": "0957150508"
           },
           "geometry": {
             "type": "Point",
@@ -6269,8 +6275,8 @@
             "Regione": "Sicilia",
             "Denominazione": "Area archeologica Segesta",
             "Categoria": "area o parco archeologico",
-            "Comune": "Calatafimi Segesta",
-            "Indirizzo": "Calatafimi Segesta, Italia",
+            "Comune": "Calatafimi-Segesta",
+            "Indirizzo": "Calatafimi-Segesta, Italia",
             "Prezzo": "6.0",
             "Contatti": "0924952356"
           },
@@ -6287,11 +6293,11 @@
           "properties": {
             "Regione": "Sicilia",
             "Denominazione": "Museo regionale di Adrano",
-            "Categoria": "museo, galleria e/o raccolta",
+            "Categoria": "museo, galleria, raccolta",
             "Comune": "Adrano",
             "Indirizzo": "piazza umberto i, Adrano, Italia",
             "Prezzo": "2.0",
-            "Contatti": "TEL. 0957691622 - 0957602608"
+            "Contatti": "0957691622//0957602608"
           },
           "geometry": {
             "type": "Point",
@@ -6310,7 +6316,7 @@
             "Comune": "Santa Croce Camerina",
             "Indirizzo": "via delle anticaglie, Santa Croce Camerina, Italia",
             "Prezzo": "0.0",
-            "Contatti": "NON REGISTRATO"
+            "Contatti": "3476974535"
           },
           "geometry": {
             "type": "Point",
@@ -6325,11 +6331,11 @@
           "properties": {
             "Regione": "Sicilia",
             "Denominazione": "Museo archeologico regionale di Agrigento",
-            "Categoria": "museo, galleria e/o raccolta",
+            "Categoria": "museo, galleria, raccolta",
             "Comune": "Agrigento",
             "Indirizzo": "Agrigento, Italia",
             "Prezzo": "8.0",
-            "Contatti": "0922401565 - fax 092220014\ne-mail: polomuseale.ag@regione.sicilia.it"
+            "Contatti": "0922401565//092220014"
           },
           "geometry": {
             "type": "Point",
@@ -6363,11 +6369,11 @@
           "properties": {
             "Regione": "Sicilia",
             "Denominazione": "Galleria regionale di Palazzo Bellomo di Siracusa – Museo interdisciplinare",
-            "Categoria": "museo, galleria e/o raccolta",
+            "Categoria": "museo, galleria, raccolta",
             "Comune": "Siracusa",
             "Indirizzo": "via capodieci, Siracusa, Italia",
             "Prezzo": "8.0",
-            "Contatti": "093169511, fax 093169529"
+            "Contatti": "093169511//093169529"
           },
           "geometry": {
             "type": "Point",
@@ -6382,11 +6388,11 @@
           "properties": {
             "Regione": "Sicilia",
             "Denominazione": "Museo regionale interdisciplinare di Messina",
-            "Categoria": "museo, galleria e/o raccolta",
+            "Categoria": "museo, galleria, raccolta",
             "Comune": "Messina",
             "Indirizzo": "viale della libertà, Messina, Italia",
             "Prezzo": "8.0",
-            "Contatti": "090361292/93"
+            "Contatti": "090361292"
           },
           "geometry": {
             "type": "Point",
@@ -6405,7 +6411,7 @@
             "Comune": "Naro",
             "Indirizzo": "Naro, Italia",
             "Prezzo": "0.0",
-            "Contatti": "Centralino Soprintendenza BB.CC.AA. di Agrigento 0922552611"
+            "Contatti": "0922552611"
           },
           "geometry": {
             "type": "Point",
@@ -6458,11 +6464,11 @@
           "properties": {
             "Regione": "Sicilia",
             "Denominazione": "Galleria regionale della Sicilia di Palazzo Abatellis di Palermo – Museo interdisciplinare",
-            "Categoria": "museo, galleria e/o raccolta",
+            "Categoria": "museo, galleria, raccolta",
             "Comune": "Palermo",
             "Indirizzo": "via alloro, Palermo, Italia",
             "Prezzo": "8.0",
-            "Contatti": "Telefono 0916230011, fax 0916165305, urp 0916230068, Biglietteria 0916230047\ne-mail:polomuseale.pa@regione.sicilia.it\nhttps://www.facebook.com/GalleriaRegionaledellaSiciliadiPalazzoAbatellis?fref=ts"
+            "Contatti": "0916230011//0916165305//0916230068//0916230047"
           },
           "geometry": {
             "type": "Point",
@@ -6481,7 +6487,7 @@
             "Comune": "Catania",
             "Indirizzo": "via vittorio emanuele, Catania, Italia",
             "Prezzo": "6.0",
-            "Contatti": "095/7150508 fax 095/311004- polomuseale.ct@regione.sicilia.it  poloregionalect.urp.@regione.sicilia.it"
+            "Contatti": "0957150508//095311004"
           },
           "geometry": {
             "type": "Point",
@@ -6496,7 +6502,7 @@
           "properties": {
             "Regione": "Sicilia",
             "Denominazione": "Museo archeologico di Palazzo Cappellani",
-            "Categoria": "museo, galleria e/o raccolta",
+            "Categoria": "museo, galleria, raccolta",
             "Comune": "Palazzolo Acreide",
             "Indirizzo": "via gaetano italia, Palazzolo Acreide, Italia",
             "Prezzo": "0.0",
@@ -6519,7 +6525,7 @@
             "Comune": "Gela",
             "Indirizzo": "via europa, Gela, Italia",
             "Prezzo": "0.0",
-            "Contatti": "0933 912626"
+            "Contatti": "0933912626"
           },
           "geometry": {
             "type": "Point",
@@ -6557,7 +6563,7 @@
             "Comune": "Termini Imerese",
             "Indirizzo": "Termini Imerese, Italia",
             "Prezzo": "4.0",
-            "Contatti": "Tel. 0918140128 e 0918140906, fax 0918140906 indirizzo email poloarcheologico.pa.uo5@regione.sicilia.it"
+            "Contatti": "0918140128//0918140906//0918140906"
           },
           "geometry": {
             "type": "Point",
@@ -6595,7 +6601,7 @@
             "Comune": "Sant'Angelo Muxaro",
             "Indirizzo": "Sant'Angelo Muxaro, Italia",
             "Prezzo": "0.0",
-            "Contatti": "0922 919806"
+            "Contatti": "0922919806"
           },
           "geometry": {
             "type": "Point",
@@ -6611,10 +6617,10 @@
             "Regione": "Sicilia",
             "Denominazione": "Zona Archeologica \"Vito Soldano\"",
             "Categoria": "area o parco archeologico",
-            "Comune": "Canicatti'",
-            "Indirizzo": "Canicatti', Italia",
+            "Comune": "Canicattì",
+            "Indirizzo": "Canicattì, Italia",
             "Prezzo": "0.0",
-            "Contatti": "Centralino Soprintendenza BB.CC.AA. di Agrigento 0922552611"
+            "Contatti": "0922552611"
           },
           "geometry": {
             "type": "Point",
@@ -6648,14 +6654,11 @@
           "properties": {
             "Regione": "Sicilia",
             "Denominazione": "Museo archeologico regionale e Area archeologica di Naxos",
-            "Categoria": "museo, galleria e/o raccolta",
-            "Comune": "Giardini-Naxos",
-            "Indirizzo": "lungomare schisò giardini naxos, Giardini-Naxos, Italia",
+            "Categoria": "museo, galleria, raccolta",
+            "Comune": "Giardini Naxos",
+            "Indirizzo": "lungomare schisò giardini naxos, Giardini Naxos, Italia",
             "Prezzo": "4.0",
-            "Contatti": "Direzione 0942628738 Museo e area archeologica 094251001 - Fax 0942571813",
-            "_umap_options": {
-              "labelInteractive": false
-            }
+            "Contatti": "0942628738//094251001//0942571813"
           },
           "geometry": {
             "type": "Point",
@@ -6670,7 +6673,7 @@
           "properties": {
             "Regione": "Sicilia",
             "Denominazione": "Casa Museo Giovanni Verga",
-            "Categoria": "museo, galleria e/o raccolta",
+            "Categoria": "museo, galleria, raccolta",
             "Comune": "Catania",
             "Indirizzo": "via sant'anna, Catania, Italia",
             "Prezzo": "4.0",
@@ -6712,7 +6715,7 @@
             "Comune": "Cattolica Eraclea",
             "Indirizzo": "Cattolica Eraclea, Italia",
             "Prezzo": "4.0",
-            "Contatti": "0922 846005"
+            "Contatti": "0922846005"
           },
           "geometry": {
             "type": "Point",
@@ -6731,7 +6734,7 @@
             "Comune": "Palermo",
             "Indirizzo": "piazza della vittoria, Palermo, Italia",
             "Prezzo": "0.0",
-            "Contatti": "0917071317/411"
+            "Contatti": "0917071317"
           },
           "geometry": {
             "type": "Point",
@@ -6750,7 +6753,7 @@
             "Comune": "San Fratello",
             "Indirizzo": "San Fratello, Italia",
             "Prezzo": "0.0",
-            "Contatti": "09036746433, URP-Soprintendenza di Messina"
+            "Contatti": "09036746433"
           },
           "geometry": {
             "type": "Point",
@@ -6784,11 +6787,11 @@
           "properties": {
             "Regione": "Sicilia",
             "Denominazione": "Museo regionale di Terrasini",
-            "Categoria": "museo, galleria e/o raccolta",
+            "Categoria": "museo, galleria, raccolta",
             "Comune": "Terrasini",
             "Indirizzo": "lungomare peppino impastato, Terrasini, Italia",
             "Prezzo": "6.0",
-            "Contatti": "Centralino 091.8810989 - Personale di custodia 091.8683327\ne-mail: poloartemoderna.pa.ou3@regione.sicilia.it"
+            "Contatti": "8810989//8683327"
           },
           "geometry": {
             "type": "Point",
@@ -6822,11 +6825,11 @@
           "properties": {
             "Regione": "Sicilia",
             "Denominazione": "Museo regionale interdisciplinare di Caltanissetta",
-            "Categoria": "museo, galleria e/o raccolta",
+            "Categoria": "museo, galleria, raccolta",
             "Comune": "Caltanissetta",
             "Indirizzo": "Caltanissetta, Italia",
             "Prezzo": "4.0",
-            "Contatti": "0934567062 - fax 0934567086"
+            "Contatti": "0934567062//0934567086"
           },
           "geometry": {
             "type": "Point",
@@ -6841,7 +6844,7 @@
           "properties": {
             "Regione": "Sicilia",
             "Denominazione": "Museo archeologico regionale di Gela",
-            "Categoria": "museo, galleria e/o raccolta",
+            "Categoria": "museo, galleria, raccolta",
             "Comune": "Gela",
             "Indirizzo": "corso vittorio emanuele, Gela, Italia",
             "Prezzo": "4.0",
@@ -6860,11 +6863,11 @@
           "properties": {
             "Regione": "Sicilia",
             "Denominazione": "Zona archeologica di Tranchina",
-            "Categoria": "museo, galleria e/o raccolta",
+            "Categoria": "museo, galleria, raccolta",
             "Comune": "Sciacca",
             "Indirizzo": "Sciacca, Italia",
             "Prezzo": "0.0",
-            "Contatti": "Centralino Soprintendenza BB.CC.AA. di Agrigento 0922552611"
+            "Contatti": "0922552611"
           },
           "geometry": {
             "type": "Point",
@@ -6883,7 +6886,7 @@
             "Comune": "Spadafora",
             "Indirizzo": "via nazionale, Spadafora, Italia",
             "Prezzo": "0.0",
-            "Contatti": "090 36894435 (URP)"
+            "Contatti": "09036894435"
           },
           "geometry": {
             "type": "Point",
@@ -6898,7 +6901,7 @@
           "properties": {
             "Regione": "Sicilia",
             "Denominazione": "Museo regionale di Aidone",
-            "Categoria": "museo, galleria e/o raccolta",
+            "Categoria": "museo, galleria, raccolta",
             "Comune": "Aidone",
             "Indirizzo": "Aidone, Italia",
             "Prezzo": "6.0",
@@ -6940,7 +6943,7 @@
             "Comune": "Partanna",
             "Indirizzo": "piazza b. graffeo, Partanna, Italia",
             "Prezzo": "4.0",
-            "Contatti": "0924 923970"
+            "Contatti": "0924923970"
           },
           "geometry": {
             "type": "Point",
@@ -6959,7 +6962,7 @@
             "Comune": "Messina",
             "Indirizzo": "Messina, Italia",
             "Prezzo": "0.0",
-            "Contatti": "NON REGISTRATO"
+            "Contatti": "3488831172"
           },
           "geometry": {
             "type": "Point",
@@ -6974,11 +6977,11 @@
           "properties": {
             "Regione": "Sicilia",
             "Denominazione": "Museo archeologico regionale Antonino Salinas di Palermo",
-            "Categoria": "museo, galleria e/o raccolta",
+            "Categoria": "museo, galleria, raccolta",
             "Comune": "Palermo",
             "Indirizzo": "via bara all'olivella, Palermo, Italia",
             "Prezzo": "0.0",
-            "Contatti": "0916116807 - 0916116806 - FAX 0916110740"
+            "Contatti": "0916116807//0916116806//0916110740"
           },
           "geometry": {
             "type": "Point",
@@ -6997,7 +7000,7 @@
             "Comune": "Sambuca di Sicilia",
             "Indirizzo": "Sambuca di Sicilia, Italia",
             "Prezzo": "6.0",
-            "Contatti": "0925 946083"
+            "Contatti": "0925946083"
           },
           "geometry": {
             "type": "Point",
@@ -7035,7 +7038,7 @@
             "Comune": "Aci Catena",
             "Indirizzo": "via alimena, Aci Catena, Italia",
             "Prezzo": "0.0",
-            "Contatti": "0957150508 (Uffici del Polo Museale)"
+            "Contatti": "0957150508"
           },
           "geometry": {
             "type": "Point",
@@ -7054,7 +7057,7 @@
             "Comune": "Scicli",
             "Indirizzo": "Scicli, Italia",
             "Prezzo": "2.0",
-            "Contatti": "0932249440/456 info:polomuseale.rg@regione.sicilia.it"
+            "Contatti": "0932249440"
           },
           "geometry": {
             "type": "Point",
@@ -7073,7 +7076,7 @@
             "Comune": "Taormina",
             "Indirizzo": "via nazionale, Taormina, Italia",
             "Prezzo": "4.0",
-            "Contatti": "Tel: 0942628738 Fax 0942628738"
+            "Contatti": "0942628738//0942628738"
           },
           "geometry": {
             "type": "Point",
@@ -7092,7 +7095,7 @@
             "Comune": "Casalvecchio Siculo",
             "Indirizzo": "Casalvecchio Siculo, Italia",
             "Prezzo": "0.0",
-            "Contatti": "09036746433, URP della Soprintendenza di Messina"
+            "Contatti": "09036746433"
           },
           "geometry": {
             "type": "Point",
@@ -7106,18 +7109,13 @@
       "_umap_options": {
         "displayOnLoad": true,
         "browsable": false,
+        "name": "POI_SARDEGNA_SICILIA.csv",
         "remoteData": {},
+        "color": "DarkBlue",
         "type": "Cluster",
-        "heat": {},
         "cluster": {
           "radius": 50
-        },
-        "id": 2393567,
-        "popupContentTemplate": "# {Denominazione}\n{description}",
-        "description": "",
-        "popupTemplate": "Table",
-        "labelInteractive": true,
-        "showLabel": true
+        }
       }
     }
   ]
